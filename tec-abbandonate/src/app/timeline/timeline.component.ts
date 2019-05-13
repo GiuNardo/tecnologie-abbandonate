@@ -19,9 +19,9 @@ export class TimelineComponent {
       return b.yearTo - a.yearTo;
     });
 
-    var margin = {top: 20, right: 20, bottom: 60, left: 20},
+    var margin = {top: 20, right: 20, bottom: 60, left: 200},
     width = 1000 - margin.left - margin.right,
-    height = 550 - margin.top - margin.bottom;
+    height = 350 - margin.top - margin.bottom;
 
     var y = d3.scaleBand()
       .range([height, 0])
@@ -49,28 +49,64 @@ export class TimelineComponent {
         .attr("x", d => x(d.yearFrom) )
         .attr("width", d => x(d.yearTo)-x(d.yearFrom) )
         .attr("y", d => y(d.name) )
-        .attr("height", (height/data.length) - 10 )
-        .style("fill", d => d.fill);
+        .attr("height", y.bandwidth())
+        .style("fill", d => d.fill)
+        .on("mouseover", function(d) {           
+           svg.append('line')
+            .attr('x1', 0)
+            .attr('y1', (parseInt(d3.select(this).attr('y')) + parseInt(d3.select(this).attr('height'))/2))
+            .attr('x2', width)
+            .attr('y2', (parseInt(d3.select(this).attr('y')) + parseInt(d3.select(this).attr('height'))/2))
+            .attr('stroke', d.fill)
+            .attr('opacity', '1')
+            .attr('class', 'linea');
+          d3.select('.yaxis')
+            .selectAll('text')
+            .filter(t=>t==d.name)
+            .attr('font-weight', '700');
+            
+        }
+          
+        )
+        .on("mouseout", function(d) {           
+          svg.select('.linea').remove();
+         d3.select('.yaxis')
+           .selectAll('text')
+           .filter(t=>t==d.name)
+           .attr('font-weight', '400');
+       });
+        
+
+/*      .on("mouseout", function(d, i) {
+          d3.select(this).attr("fill", d => d.fill);
+      });
+      */
+    
+      
 
     // add the x Axis
     svg.append("g")
       .attr('class','xaxis')
-      .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate(0," + height + ")")     
       .call(d3.axisBottom(x))
       .selectAll('text')
         .attr('text-anchor', 'end')
         .attr('transform','rotate(-65)')
-        .attr('font-size', '2em')
+        .attr('font-size', '1.8em')
         
 
     // add the y Axis
     svg.append("g")
       .attr('class','yaxis')
-      .call(d3.axisRight(y))
+      .call(d3.axisLeft(y))
       .selectAll("text")	
-        .attr('font-size', '1.5em')
+        .attr('font-size', '1.8em')
+        .attr('font', 'Roboto')
+        
 
   }
+
+  
 
   private chart: am4charts.XYChart;
 
