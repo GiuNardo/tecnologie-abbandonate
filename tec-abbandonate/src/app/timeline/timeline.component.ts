@@ -1,10 +1,7 @@
 import { Component, OnInit, NgZone } from '@angular/core';
-import * as am4core from "@amcharts/amcharts4/core";
-import * as am4charts from "@amcharts/amcharts4/charts";
 import * as d3 from 'd3';
 
 import { DATA } from 'src/app/mock-data';
-
 
 @Component({
   selector: 'app-timeline',
@@ -40,7 +37,7 @@ export class TimelineComponent {
 
     var margin = {top: 20, right: 20, bottom: 60, left: 200},
     width = 1200 - margin.left - margin.right,
-    height = 100 + 30*this.techs.length - margin.top - margin.bottom;
+    height = 100 + 15*this.techs.length - margin.top - margin.bottom;
 
     var y = d3.scaleBand()
       .range([height, 0])
@@ -54,7 +51,7 @@ export class TimelineComponent {
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+    
     //INDICAZIONE SE NON CI SONO DATI DA MOSTRARE
     if(this.techs.length == 0) {
       svg.append('text')
@@ -119,7 +116,7 @@ export class TimelineComponent {
     svg.append("g")
       .attr('class','xaxis')
       .attr("transform", "translate(0," + height + ")")     
-      .call(d3.axisBottom(x))
+      .call(d3.axisBottom(x).tickFormat(t => t.toString()) )
       .selectAll('text')
         .attr('text-anchor', 'end')
         .attr('transform','rotate(-65)')
@@ -130,7 +127,7 @@ export class TimelineComponent {
       .attr('class','yaxis')
       .call(d3.axisLeft(y))
       .selectAll("text")	
-        .attr('font-size', '1.8em')
+        .attr('font-size', '1.6em')
         .attr('font', 'Roboto');
         
   }
