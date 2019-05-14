@@ -37,3 +37,8 @@ body {
 .container-fluid{
   padding: 50px!important;
 }
+
+.smaller {
+  width: 60%;
+  height: auto;
+}

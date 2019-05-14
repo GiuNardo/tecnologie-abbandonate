@@ -16,7 +16,7 @@ export const DATA: Data[] =   [
     latitude: 43.157285,
     longitude: -77.615214,
     fill : '#38bc9b',
-    image: './assets/DataImage/lome-super-8.png',
+    image: './assets/DataImage/lomo-super-8.png',
     license : ""
   },{
     id: 2,

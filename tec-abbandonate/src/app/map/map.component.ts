@@ -134,7 +134,7 @@ export class MapComponent {
 		imageSeriesTemplate.height = 8;
 		imageSeriesTemplate.nonScaling = true;
 		//imageSeriesTemplate.scale = 0.8;
-		imageSeriesTemplate.tooltipHTML = "<b>{name}</b> <br/> from: {author} ";
+		imageSeriesTemplate.tooltipHTML = "<b>{name}</b> <br/> from: {author}";
 		imageSeriesTemplate.fill = am4core.color("#000000");
 		imageSeriesTemplate.background.fillOpacity = 0;
 		imageSeriesTemplate.background.fill = am4core.color("#ffffff");
@@ -146,8 +146,8 @@ export class MapComponent {
 		imageSeriesTemplate.events.on("hit", function(ev) {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
-					//console.log(d);
 					document.getElementById("descr").innerHTML = d.description + "<br/>" + d.dateFrom + ", " + d.dateTo;
+					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
 					document.getElementById("anteprima").style.display = "block";
 				}
 			})
