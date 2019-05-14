@@ -16,13 +16,14 @@ export const DATA: Data[] =   [
     latitude: 43.157285,
     longitude: -77.615214,
     fill : '#8fffe4',
-    image: 'src\assets\DataImage\polaroid.jpg'
+    image: 'src\assets\DataImage\polaroid.jpg',
+    license : ""
   },{
     id: 2,
     name: 'Betamax',
     description: 'Videocassette.',
     shortDescription: 'Primo sistema di videoregistrazione a nastro magnetico, ideato appositamente per il mercato domestico. ',
-    category: 'video', // o elettrodomestici?
+    category: 'video',
     dateFrom: '10/05/1975',
     dateTo: '1/12/2002',
     yearFrom: 1975,
@@ -31,9 +32,8 @@ export const DATA: Data[] =   [
     latitude: 36,
     longitude: 140,
     fill : '#db50a4',
-    image: 'src\assets\DataImage\polaroid.jpg'
-  //creata in Giappone ma venduta negli Stati Uniti
-  //videotape format war contro VHS - 1970s e 1980s
+    image: './assets/DataImage/betamax.jpg',
+    license : ""
   },{
     id: 3,
     name: 'Formato VHS',
@@ -49,7 +49,7 @@ export const DATA: Data[] =   [
     longitude: 139.636768,
     fill : '#db50a4',
     image: '',
-  /*1999 hanno ridotto tantissimo la produzione, ma hanno continuato a vendere fino al 2015. Dal 2016 solo un'azienda al mondo li produce. Credo siano ancora prodotti - WIKI DICE 2008 */        
+    license : ""
   },{
     id: 4,
     name: 'Laserdisc',
@@ -65,7 +65,7 @@ export const DATA: Data[] =   [
     longitude: -118.259722 ,
     fill :'#db50a4',
     image: '',
-  //poco popolare in Europa e Nord America, mentre negli USA andava fortissimo
+    license:""
   },{
     id: 5 ,
     name: 'Grammofono',
@@ -77,12 +77,11 @@ export const DATA: Data[] =   [
     yearFrom: 1877,
     yearTo: 1929,
     author: 'Thomas Edison',
-    latitude: 40.565 ,
+    latitude: 40.565,
     longitude: -74.3375 ,
     fill : '#dd9933',
     image: '',
-  /* Edison continued to manufacture and sell cylinder records until quitting the record business entirely in November of 1929, and the history of disc and cylinder rivalry was concluded */
-  //facciamo riferimento solo ai primi - cilindrici - e non quelli elettronici con braccetto
+    license:""
   },{
     id: 6 ,
     name: 'Giradischi',
@@ -94,12 +93,11 @@ export const DATA: Data[] =   [
     yearFrom: 1937,
     yearTo: 1997,
     author: 'RCA Victor',
-    latitude: 40.565, 
-    longitude: -74.3375,
-    fill :'#dd9933',
+    latitude: 39, 
+    longitude: -76,
+    fill: "#dd9933",
     image: '',
-  //dopo la grande depressione i soldi erano pochi
-  //dal 2007 tornati in voga
+    license:""
   },{
     id: 7,
     name: 'Bobina Aperta',
@@ -115,6 +113,7 @@ export const DATA: Data[] =   [
     longitude: 13.3888599,
     fill : '#dd9933',
     image: '',
+    license : ""
   },{
     id: 8,
     name: 'Registratore a nastro / cassette-tape recorder',
@@ -130,6 +129,7 @@ export const DATA: Data[] =   [
     longitude: 4.866667 ,
     fill: '#dd9933',
     image: '',
+    license : ""
   },{
     id: 9 ,
     name: 'Radio Transistor',
@@ -145,6 +145,7 @@ export const DATA: Data[] =   [
     longitude: -96.8,
     fill:'#dd9933',
     image: '',
+    license : ""
   },{
     id:10 ,
     name: 'Cassette',
@@ -160,6 +161,7 @@ export const DATA: Data[] =   [
     longitude: 5.3375,
     fill: '#dd9933',
     image: '',
+    license : ""
   },{
     id: 11,
     name: 'Ghetto Blaster',
@@ -175,6 +177,7 @@ export const DATA: Data[] =   [
     longitude: 4.866667,
     fill: '#dd9933',
     image: '',
+    license : ""
   },{
     id: 12,
     name:  'Telegrafo',
@@ -190,6 +193,7 @@ export const DATA: Data[] =   [
     longitude:2.351944,
     fill:'#8fffe4',
     image: '',
+    license : ""
   },{
     id: 13,
     name: 'Telex',
@@ -205,6 +209,7 @@ export const DATA: Data[] =   [
     longitude:52.516667,
     fill:'#8fffe4',
     image: '',
+    license : ""
   },{
     id: 14,
     name: 'Siemens S62, //analog telephones',
@@ -220,6 +225,7 @@ export const DATA: Data[] =   [
     longitude: 11.5755,
     fill: '#8fffe4',
     image: '',
+    license : ""
   },{
     id: 15,
     name: 'Computer Palmare',
@@ -235,6 +241,7 @@ export const DATA: Data[] =   [
     longitude: -0.5720182,
     fill:'yellow',
     image: '',
+    license : ""
   },{
     id: 16,
     name: 'Watchman - Televisori Portatili',
@@ -250,6 +257,7 @@ export const DATA: Data[] =   [
     longitude: 138,
     fill : '#db50a4',
     image: '',
+    license : ""
   },{
     id: 17,
     name: 'Walkman',
@@ -265,6 +273,7 @@ export const DATA: Data[] =   [
     longitude: 139.239128,
     fill : '#dd9933',
     image: '',
+    license : ""
   },{
     id: 18 ,
     name: 'Cercapersone',
@@ -280,6 +289,7 @@ export const DATA: Data[] =   [
     longitude: -74.2534548,
     fill: '#8fffe4',
     image: '',
+    license : ""
   },
 ]/*{
     id: 19,
