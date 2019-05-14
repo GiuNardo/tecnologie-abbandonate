@@ -116,7 +116,7 @@ export const DATA: Data[] =   [
     license : ""
   },{
     id: 8,
-    name: 'Registratore a nastro / cassette-tape recorder',
+    name: 'Registratore a nastro',
     description: 'Dispositivo per la registrazione su cassette a nastro',
     shortDescription: ' In origine lanciato sul mercato nel come dispositivo per dettatura vocale progettato per uso portatile e successivamente utilizzato per la lettura delle cassette audio ',
     category: 'audio',
@@ -212,7 +212,7 @@ export const DATA: Data[] =   [
     license : ""
   },{
     id: 14,
-    name: 'Siemens S62, //analog telephones',
+    name: 'Siemens S62',
     description: 'Telefono a disco',
     shortDescription: '',
     category: 'comunicazione',
@@ -244,7 +244,7 @@ export const DATA: Data[] =   [
     license : ""
   },{
     id: 16,
-    name: 'Watchman - Televisori Portatili',
+    name: 'Watchman',
     description: 'televisore portatile',
     shortDescription: '',
     category: 'video',
