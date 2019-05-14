@@ -16,7 +16,7 @@ export const DATA: Data[] =   [
     latitude: 43.157285,
     longitude: -77.615214,
     fill : '#38bc9b',
-    image: 'src\assets\DataImage\polaroid.jpg',
+    image: './assets/DataImage/lome-super-8.png',
     license : ""
   },{
     id: 2,
@@ -32,7 +32,7 @@ export const DATA: Data[] =   [
     latitude: 36,
     longitude: 140,
     fill : '#db50a4',
-    image: './assets/DataImage/betamax.jpg',
+    image: './assets/DataImage/betamax.png',
     license : ""
   },{
     id: 3,
@@ -48,7 +48,7 @@ export const DATA: Data[] =   [
     latitude: 35.444991,
     longitude: 139.636768,
     fill : '#db50a4',
-    image: './assets/DataImage/vhs.jpg',
+    image: './assets/DataImage/vhs.png',
     license : ""
   },{
     id: 4,
@@ -80,7 +80,7 @@ export const DATA: Data[] =   [
     latitude: 40.565,
     longitude: -74.3375 ,
     fill : '#dd9933',
-    image: './assets/DataImage/old-gramophone.jpg',
+    image: './assets/DataImage/old-gramophone.png',
     license:""
   },{
     id: 6 ,
@@ -96,7 +96,7 @@ export const DATA: Data[] =   [
     latitude: 39, 
     longitude: -76,
     fill: "#dd9933",
-    image: './assets/DataImage/vinyl.jpg',
+    image: './assets/DataImage/vinyl.png',
     license:""
   },{
     id: 7,
@@ -144,7 +144,7 @@ export const DATA: Data[] =   [
     latitude: 32.783333,
     longitude: -96.8,
     fill:'#dd9933',
-    image: './assets/DataImage/radio.jpg',
+    image: './assets/DataImage/radio.png',
     license : ""
   },{
     id:10 ,
@@ -160,12 +160,12 @@ export const DATA: Data[] =   [
     latitude: 50.93,
     longitude: 5.3375,
     fill: '#dd9933',
-    image: './assets/DataImage/cassette.jpg',
+    image: './assets/DataImage/cassette.png',
     license : ""
   },{
     id: 11,
     name: 'Ghetto Blaster',
-    description: 'Stereo Portatile / Boombox',
+    description: 'Stereo Portatile',
     shortDescription: 'Stereo portatile con altoparlanti integrati in grado di riprodurre musicassette e sintonizzarsi su stazioni radio',
     category: 'audio',
     dateFrom: 'year 1966',
@@ -192,7 +192,7 @@ export const DATA: Data[] =   [
     latitude:48.856667,
     longitude:2.351944,
     fill:'#3594dd',
-    image: './assets/DataImage/telegraph.jpg',
+    image: './assets/DataImage/telegraph.png',
     license : ""
   },{
     id: 13,
@@ -272,7 +272,7 @@ export const DATA: Data[] =   [
     latitude: 34.5,
     longitude: 139.239128,
     fill : '#dd9933',
-    image: '',
+    image: './assets/DataImage/walkman.png',
     license : ""
   },{
     id: 18 ,
