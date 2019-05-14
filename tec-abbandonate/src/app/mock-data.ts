@@ -15,7 +15,7 @@ export const DATA: Data[] =   [
     author: 'Kodak',
     latitude: 43.157285,
     longitude: -77.615214,
-    fill : '#8fffe4',
+    fill : '#38bc9b',
     image: 'src\assets\DataImage\polaroid.jpg',
     license : ""
   },{
@@ -191,7 +191,7 @@ export const DATA: Data[] =   [
     author: 'Claude Chappe',
     latitude:48.856667,
     longitude:2.351944,
-    fill:'#8fffe4',
+    fill:'#3594dd',
     image: '',
     license : ""
   },{
@@ -207,7 +207,7 @@ export const DATA: Data[] =   [
     author: 'Servizio postale del Reich',
     latitude:52.516667 ,
     longitude:52.516667,
-    fill:'#8fffe4',
+    fill:'#3594dd',
     image: '',
     license : ""
   },{
@@ -223,7 +223,7 @@ export const DATA: Data[] =   [
     author: 'Siemens',
     latitude: 48.137194 ,
     longitude: 11.5755,
-    fill: '#8fffe4',
+    fill: '#3594dd',
     image: '',
     license : ""
   },{
@@ -239,7 +239,7 @@ export const DATA: Data[] =   [
     author: 'Psion',
     latitude: 51.1121679,
     longitude: -0.5720182,
-    fill:'yellow',
+    fill:'#f87060',
     image: '',
     license : ""
   },{
@@ -287,7 +287,7 @@ export const DATA: Data[] =   [
     author: '',
     latitude: 40.6906512,
     longitude: -74.2534548,
-    fill: '#8fffe4',
+    fill: '#3594dd',
     image: '',
     license : ""
   },
