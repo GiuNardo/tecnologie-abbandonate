@@ -20,3 +20,20 @@ body {
   --main-color: #f2a737;
   --dark-1: #7A7A7A;
 }
+
+.title{
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+#chartdiv{
+  margin:40px;
+}
+
+.container-fluid{
+  padding: 50px!important;
+}

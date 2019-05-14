@@ -1,27 +1,11 @@
-.container-fluid{
-    padding: 50px!important;
-}
-
 .map{
     margin: auto;
     margin-top: 30px;
 }
+
 .timeline{
     text-align: center;
     margin-top: 40px;
-}
-
-#chartdiv{
-    margin:40px;
-}
-
-.title{
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--main-color);
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    font-weight: 700;
 }
 
 #anteprima{

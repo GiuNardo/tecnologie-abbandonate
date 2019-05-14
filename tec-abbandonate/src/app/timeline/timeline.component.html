@@ -1,6 +1,10 @@
-<app-nav-filter></app-nav-filter>
-<div class="container">
-    <div id="chartdiv">
+<app-nav-filter
+    (chosen)="onChosen($event)"
+></app-nav-filter>
 
+
+<div class="container-fluid">
+    <div class="title">TIMELINE of TECHNOLOGIES</div>
+    <div id="chartdiv" style="text-align : center;">
     </div>
 </div>

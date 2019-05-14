@@ -30,8 +30,6 @@ export class MapComponent {
 
 	ngAfterViewInit() {
 
-		
-
 		this.zone.runOutsideAngular(() => {
 			let map = am4core.create("chartdiv", am4maps.MapChart);
 
