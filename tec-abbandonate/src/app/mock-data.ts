@@ -48,7 +48,7 @@ export const DATA: Data[] =   [
     latitude: 35.444991,
     longitude: 139.636768,
     fill : '#db50a4',
-    image: '',
+    image: './assets/DataImage/vhs.jpg',
     license : ""
   },{
     id: 4,
@@ -80,7 +80,7 @@ export const DATA: Data[] =   [
     latitude: 40.565,
     longitude: -74.3375 ,
     fill : '#dd9933',
-    image: '',
+    image: './assets/DataImage/old-gramophone.jpg',
     license:""
   },{
     id: 6 ,
@@ -96,7 +96,7 @@ export const DATA: Data[] =   [
     latitude: 39, 
     longitude: -76,
     fill: "#dd9933",
-    image: '',
+    image: './assets/DataImage/vinyl.jpg',
     license:""
   },{
     id: 7,
@@ -144,7 +144,7 @@ export const DATA: Data[] =   [
     latitude: 32.783333,
     longitude: -96.8,
     fill:'#dd9933',
-    image: '',
+    image: './assets/DataImage/radio.jpg',
     license : ""
   },{
     id:10 ,
@@ -160,7 +160,7 @@ export const DATA: Data[] =   [
     latitude: 50.93,
     longitude: 5.3375,
     fill: '#dd9933',
-    image: '',
+    image: './assets/DataImage/cassette.jpg',
     license : ""
   },{
     id: 11,
@@ -192,7 +192,7 @@ export const DATA: Data[] =   [
     latitude:48.856667,
     longitude:2.351944,
     fill:'#3594dd',
-    image: '',
+    image: './assets/DataImage/telegraph.jpg',
     license : ""
   },{
     id: 13,
@@ -212,7 +212,7 @@ export const DATA: Data[] =   [
     license : ""
   },{
     id: 14,
-    name: 'Siemens S62, //analog telephones',
+    name: 'Siemens S62,',
     description: 'Telefono a disco',
     shortDescription: '',
     category: 'comunicazione',
