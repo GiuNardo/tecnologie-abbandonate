@@ -26,6 +26,7 @@
     "@angular/router": "~7.2.0",
     "angular-fusioncharts": "^3.0.1",
     "angular-rangeslider": "0.0.14",
+    "animated-scroll-to": "^1.2.2",
     "core-js": "^2.5.4",
     "d3": "^5.9.2",
     "fusioncharts": "^3.13.4",
@@ -33,8 +34,8 @@
     "lodash": "^4.17.11",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26",
-    "typescript": "~3.2.2"
+    "typescript": "~3.2.2",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
