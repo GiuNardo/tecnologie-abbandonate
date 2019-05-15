@@ -11,3 +11,7 @@
 #img-parent{
     text-align: center;
 }
+
+img {
+    height : 50px;
+}

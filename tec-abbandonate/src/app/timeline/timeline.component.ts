@@ -36,8 +36,8 @@ export class TimelineComponent {
     });
 
     var margin = {top: 20, right: 20, bottom: 60, left: 200},
-    width = 1200 - margin.left - margin.right,
-    height = 100 + 15*this.techs.length - margin.top - margin.bottom;
+    width = 1150 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
     var y = d3.scaleBand()
       .range([height, 0])
@@ -114,7 +114,17 @@ export class TimelineComponent {
         .on("click", function(d){
 					document.getElementById("descr").innerHTML = d.description + "<div class='date'> from " + d.dateFrom + " to " + d.dateTo +"</div>";
 					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
-					document.getElementById("anteprima").style.display = "block";
+          document.getElementById("anteprima").style.display = "block";
+          document.getElementById("timeline-container").className = "col-9";
+
+					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
+					document.getElementById("item-name").innerHTML = d.name;
+					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
+					document.getElementById("year-to").innerHTML = ""+d.yearTo;
+
+					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
+					document.getElementById("image").style.height = '250px';
+
         });
         
     // add the x Axis

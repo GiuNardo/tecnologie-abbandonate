@@ -149,16 +149,13 @@ export class MapComponent {
 					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
 					document.getElementById("anteprima").style.display = "block";
 
-					document.getElementById("item-descr").innerHTML = d.description;
+					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
 					document.getElementById("item-name").innerHTML = d.name;
 					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
 					document.getElementById("year-to").innerHTML = ""+d.yearTo;
-					var image = document.createElement("img");
-					var imageParent = document.getElementById("img-parent");
-					image.className = "image";
-					image.style.height = "200px";
-					image.src = d.image;            // image.src = "IMAGE URL/PATH"
-					imageParent.appendChild(image);
+
+					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
+					document.getElementById("image").style.height = '250px';
 					
 				}
 			})

@@ -8,18 +8,15 @@
     
 
     <div class="row">
-        <div class="col">
+
+        <div class="col" id="timeline-container">
             <div id="chartdiv" style="text-align : center;"> </div>
         </div>
-        <div class="col-3" id="anteprima" style="display:none">
-            <div class="title" >ANTEPRIMA DESCRIZIONE:</div>
-            <div id="esterno">
-                <div id="descr"><div id="date" class="date"></div></div>
-                <br/>
-                <div id="icon"></div>
-                <button class="btn" onclick='document.getElementById("anteprima").style.display = "none"; '> Chiudi</button>          
-            </div>
-        </div>
+        
+        <app-anteprima class="col-3" id="anteprima" style="display:none"></app-anteprima>
     
     </div>
+
+    <app-item-descr></app-item-descr>
+
 </div>
