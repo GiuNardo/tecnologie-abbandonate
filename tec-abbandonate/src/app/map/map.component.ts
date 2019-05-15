@@ -1,4 +1,4 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, NgZone, Output } from '@angular/core';
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
@@ -142,17 +142,27 @@ export class MapComponent {
 		imageSeriesTemplate.states.create("hover");
 
 		let a = this.data;
-
 		imageSeriesTemplate.events.on("hit", function(ev) {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
-					document.getElementById("descr").innerHTML = d.description + "<br/>" + d.dateFrom + ", " + d.dateTo;
+					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo + "</b>";
 					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
 					document.getElementById("anteprima").style.display = "block";
+
+					document.getElementById("item-descr").innerHTML = d.description;
+					document.getElementById("item-name").innerHTML = d.name;
+					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
+					document.getElementById("year-to").innerHTML = ""+d.yearTo;
+					var image = document.createElement("img");
+					var imageParent = document.getElementById("img-parent");
+					image.className = "image";
+					image.style.height = "200px";
+					image.src = d.image;            // image.src = "IMAGE URL/PATH"
+					imageParent.appendChild(image);
+					
 				}
 			})
 		})
-
 		imageSeries.data = this.techs;
 	}
 
@@ -218,5 +228,4 @@ export class MapComponent {
 		})
 	}
 	*/
-	
 }

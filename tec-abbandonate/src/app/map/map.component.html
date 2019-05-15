@@ -2,7 +2,6 @@
     (chosen)="onChosen($event)"
 ></app-nav-filter>
 
-
 <div class="container-fluid">
 <div class="title">WORLD MAP of TECHNOLOGIES</div>
 
@@ -17,10 +16,19 @@
     <div class="col-3" id="anteprima" style="display:none">
         <div class="title" >ANTEPRIMA DESCRIZIONE:</div>
         <div id="esterno">
-            <div id="descr"></div>
-            <br />
+            <div id="descr">
+            </div>
+            <br/>
             <div id="icon"></div>
-            <button class="btn" onclick='document.getElementById("anteprima").style.display = "none"; '> Chiudi</button>          
+            <div id="link-span">
+                <a id="link" class="link" onclick='document.getElementById("item-container").style.display = "block";'>
+                        Altro..
+                </a>
+            </div>
+            <div id="btn-span">
+                <button class="btn" onclick='document.getElementById("anteprima").style.display = "none"; '> Chiudi</button> 
+            </div>
+                     
         </div>
     </div>
 
@@ -32,5 +40,7 @@
         (timed)="onChanged($event) "
     ></app-timeslider>
 </div>
+
+<app-item-descr></app-item-descr>
 
 </div>

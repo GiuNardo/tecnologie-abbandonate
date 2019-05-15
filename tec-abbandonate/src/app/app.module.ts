@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatSliderModule } from "@angular/material";
 import { TimesliderComponent } from './timeslider/timeslider.component';
+import { ItemDescrComponent } from './item-descr/item-descr.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TimesliderComponent } from './timeslider/timeslider.component';
     TimelineComponent,
     ArchivioComponent,
     HomeComponent,
-    TimesliderComponent
+    TimesliderComponent,
+    ItemDescrComponent
   ],
   imports: [
     BrowserModule,

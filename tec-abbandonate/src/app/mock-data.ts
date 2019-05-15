@@ -232,7 +232,7 @@ export const DATA: Data[] =   [
     description: 'PDA. E\' un computer di dimensioni contenute, tali da essere portato sul palmo di una mano, dotato di uno schermo tattile',
     shortDescription: '',
     category: 'computer',
-    dateFrom: '',
+    dateFrom: '-',
     dateTo: 'year 2010',
     yearFrom: 1984,
     yearTo: 2010,

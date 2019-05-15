@@ -110,6 +110,11 @@ export class TimelineComponent {
             .selectAll('text')
             .filter(t=>t==d.name)
             .attr('font-weight', '400');
+        })
+        .on("click", function(d){
+					document.getElementById("descr").innerHTML = d.description + "<div class='date'> from " + d.dateFrom + " to " + d.dateTo +"</div>";
+					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
+					document.getElementById("anteprima").style.display = "block";
         });
         
     // add the x Axis

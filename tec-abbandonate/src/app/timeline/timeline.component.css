@@ -1,0 +1,24 @@
+#anteprima{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-right:80px;
+}
+
+#esterno{
+    
+    border: 2px solid  #d9d9d9;    
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.btn{
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.date{
+    color: var(--main-color);
+}
