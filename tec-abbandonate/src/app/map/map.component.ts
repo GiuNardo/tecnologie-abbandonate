@@ -5,7 +5,7 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
-import { DATA } from 'src/app/mock-data';
+import { DATA } from '../mock-data';
 import { makeParamDecorator } from '@angular/core/src/util/decorators';
 
 am4core.useTheme(am4themes_animated);
@@ -101,7 +101,8 @@ export class MapComponent {
 		circle.propertyFields.fill = "fill";
 		circle.opacity = 1;
 		circle.stroke = am4core.color("white");
-		
+		circle.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+
 		this.data.map( d => {
 			if(
 				(this.categoria =='all' ? true : d.category==this.categoria) && (

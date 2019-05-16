@@ -3,13 +3,13 @@
 ></app-nav-filter>
 
 <div class="container-fluid">
-    <div class="title">WORLD MAP of TECHNOLOGIES</div>
+    <!--<div class="title">WORLD MAP of TECHNOLOGIES</div>-->
 
     <div class="row">
 
         <div class="col">
             <div class="map">
-                <div id="chartdiv" style="height: 450px"></div>
+                <div id="chartdiv"></div>
             </div>
         </div>
 
@@ -18,7 +18,7 @@
     </div>
 
     <div class="timeline margin">
-        <div class="title">TIME SELECTOR</div>
+        <div class="title">Select date</div>
         <app-timeslider
             (timed)="onChanged($event) "
         ></app-timeslider>

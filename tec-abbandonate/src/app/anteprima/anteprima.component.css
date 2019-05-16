@@ -1,14 +1,12 @@
 #anteprima{
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    padding-right:80px;
+    
 }
 
 #esterno{
     border: 2px solid  #d9d9d9;    
     padding: 20px;
     border-radius: 20px;
+    height: 300px;
 }
 
 .btn{
@@ -29,4 +27,8 @@
 #btn-span{
     text-align: center;
     margin-top: 50px;
+}
+
+#descr {
+    font-size: 0.8em;
 }

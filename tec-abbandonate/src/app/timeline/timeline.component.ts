@@ -1,7 +1,7 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import * as d3 from 'd3';
 
-import { DATA } from 'src/app/mock-data';
+import { DATA } from '../mock-data';
 
 @Component({
   selector: 'app-timeline',
@@ -18,25 +18,25 @@ export class TimelineComponent {
 
   ngAfterViewInit() {
 
-    this.draw(this.techs);
+    this.draw(this.data);
 
   }
 
-  draw(data : any) {
+  draw(tec : any) {
     //DISEGNA TUTTO IL GRAFICO DI NUOVO QUANDO CAMBIA LA CATEGORIA SCELTA
 
-    this.data.map( d => {
+    /*this.data.map( d => {
 			if(this.categoria =='all' ? true : d.category==this.categoria) {
-        data.push(d);
+        tec.push(d);
       }
-    });
+    });*/
 
-    data.sort( (a,b) => {
+    tec.sort( (a,b) => {
       return b.yearTo - a.yearTo;
     });
 
     var margin = {top: 20, right: 20, bottom: 60, left: 200},
-    width = 1150 - margin.left - margin.right,
+    width = 950 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
     var y = d3.scaleBand()
@@ -47,35 +47,37 @@ export class TimelineComponent {
       .range([0, width]);
 
     var svg = d3.select("#chartdiv").append("svg")
+      .attr('class', 'grafico')
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
     //INDICAZIONE SE NON CI SONO DATI DA MOSTRARE
-    if(this.techs.length == 0) {
+    /*if(this.techs.length == 0) {
       svg.append('text')
         .text("NO DATA : Scegli un\'altra categoria")
         .attr('x', width/3)
         .attr('y', height/2)
         .style('font-weight', 'bold');
-    }
+    }*/
 
     // Scale the range of the data in the domains
-    x.domain([d3.min(data, d => d.yearFrom), d3.max(data, d => d.yearTo)] )
-    y.domain(data.map(d => d.name));
+    x.domain([d3.min(tec, d => d.yearFrom), d3.max(tec, d => d.yearTo)] )
+    y.domain(tec.map(d => d.name));
     //y.domain([0, d3.max(data, function(d) { return d.sales; })]);
 
     // append the rectangles for the bar chart
     svg.selectAll(".bar")
-        .data(data)
+        .data(tec)
       .enter().append("rect")
         .attr("class", "bar")
         .attr("x", d => x(d.yearFrom) )
         .attr("width", d => x(d.yearTo)-x(d.yearFrom) )
         .attr("y", d => y(d.name) )
         .attr("height", y.bandwidth())
-        .style("fill", d => d.fill)
+        .style("fill", d => (d.category != this.categoria && this.categoria!='all') ? '#555358' : d.fill)
+        .style("opacity", d => (d.category != this.categoria && this.categoria!='all') ? 0.2 : 1)
         .on("mouseover", function(d) { 
         //DUE LINEE UNA PRIMA E UNA DOPO SENNò QUANDO DISEGNI LA LINEA SOPRA IL RETTANGOLO
         //SI BUGGA COL MOUSE OVER (NON SEI PIù SOPRA IL RETTANGOLO MA SOPRA LA LINEA, QUINDI LAMPEGGIA)
@@ -112,7 +114,7 @@ export class TimelineComponent {
             .attr('font-weight', '400');
         })
         .on("click", function(d){
-					document.getElementById("descr").innerHTML = d.description + "<div class='date'> from " + d.dateFrom + " to " + d.dateTo +"</div>";
+					document.getElementById("descr").innerHTML = d.shortDescription + "<div class='date'> from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo +"</b></div>";
 					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
           document.getElementById("anteprima").style.display = "block";
           document.getElementById("timeline-container").className = "col-9";
@@ -150,9 +152,9 @@ export class TimelineComponent {
   onChosen(c : string) {
 		this.categoria = c;
 		//this.map.series.pop();
-    this.techs = [];
+    //this.techs = [];
     d3.select("#chartdiv").select('svg').remove();
-		this.draw(this.techs);	
+		this.draw(this.data);	
 	}
 
 }

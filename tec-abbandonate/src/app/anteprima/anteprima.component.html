@@ -1,21 +1,24 @@
-<div>
+<div class="anteprima">
     <div class="title" >ANTEPRIMA DESCRIZIONE:</div>
+    
     <div id="esterno">
-        <div id="descr">
-        </div>
-        <br/>
+        
+        <p id="descr"></p>
+
         <div id="icon"></div>
+        
         <div id="link-span">
-            <b>
+            <i><b>
                 <a id="link" class="link" 
                   (click)="onClick()">
                     Altro ...
                 </a>
-            </b>
+            </b></i>
         </div>
-        <div id="btn-span">
+        <br/>
+    </div>
+
+    <div id="btn-span">
             <button class="btn" (click)="onClose()"> Chiudi</button> 
         </div>
-                 
-    </div>
 </div>
