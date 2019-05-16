@@ -1,0 +1,61 @@
+.navbar{
+    background-color: var(--dark-1);
+  }
+  
+  .navbar > a{
+    color: var(--light-bg);
+    margin-right: 20px;
+  }
+  
+  .nav-item a {
+      color: var(--light-bg);
+  }
+  
+  .nav-item a:hover {
+    color: var(--light-bg);
+  }
+ 
+  #nav-filter {
+    z-index: 0;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;
+  }
+  
+  .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .navbar-nav > li {
+    display: inline-block;
+    float:none;
+  }
+  
+  .nav-link{
+    text-align: center;
+    width: 150px;
+  
+  }
+  
+  
+  
+  .nav-item:hover {
+    cursor: pointer;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {background-color:var(--light-bg); left:0px; top:0px;}
+    100% {background-color:var(--light-bg); left:0px; top:0px;}
+  }
+  /* Standard syntax */
+  @keyframes example {
+    0%   {top:-80px;}
+    100% {top:0px;}
+  }
+  

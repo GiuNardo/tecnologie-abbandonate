@@ -1,6 +1,4 @@
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { color } from '@amcharts/amcharts4/core';
 
 @Component({
   selector: 'app-nav-filter',

@@ -18,6 +18,7 @@ import { MatButtonModule, MatCheckboxModule, MatSliderModule } from "@angular/ma
 import { TimesliderComponent } from './timeslider/timeslider.component';
 import { ItemDescrComponent } from './item-descr/item-descr.component';
 import { AnteprimaComponent } from './anteprima/anteprima.component';
+import { NavSearchComponent } from './nav-search/nav-search.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AnteprimaComponent } from './anteprima/anteprima.component';
     HomeComponent,
     TimesliderComponent,
     ItemDescrComponent,
-    AnteprimaComponent
+    AnteprimaComponent,
+    NavSearchComponent
   ],
   imports: [
     BrowserModule,
