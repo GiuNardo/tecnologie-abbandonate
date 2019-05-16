@@ -2,9 +2,9 @@
 import { Data } from './data';
 
 var video = '#b10f2e'
-var audio = '#ce617a'
+var audio = '#0A8AB5'
 var comunicazione = '#eac435'
-var foto = '#086788'
+var foto = '#0F5257'
 var computer = '#5fad56'
 
 export const DATA: Data[] =   [
@@ -23,7 +23,7 @@ export const DATA: Data[] =   [
     longitude: -77.615214,
     fill : foto,
     image: "./assets/DataImage/foto/super8.jpg",
-    icon: './assets/DataImage/polaroid.jpg',
+    icon: './assets/DataImage/lomo-super-8.png',
     license : ""
   },{
     id: 2,
@@ -38,7 +38,7 @@ export const DATA: Data[] =   [
     author: 'Sony',
     latitude: 36,
     longitude: 140,
-    icon: './assets/DataImage/betamax.jpg',
+    icon: './assets/DataImage/betamax.png',
     image: "./assets/DataImage/foto/betamax.jpeg",
     fill : video,
     license : ""
@@ -57,7 +57,7 @@ export const DATA: Data[] =   [
     longitude: 139.636768,
     fill : video,
     image: "./assets/DataImage/foto/VHS-cassette.jpg",
-    icon: './assets/DataImage/vhs.jpg',
+    icon: './assets/DataImage/vhs.png',
     license : ""
   },{
     id: 4,
@@ -91,7 +91,7 @@ export const DATA: Data[] =   [
     longitude: -74.3375 ,
     fill : audio,
     image: "./assets/DataImage/foto/Grammofono.jpg",
-    icon: './assets/DataImage/old-gramophone.jpg',
+    icon: './assets/DataImage/old-gramophone.png',
     license:""
   },{
     id: 6 ,
@@ -107,7 +107,7 @@ export const DATA: Data[] =   [
     latitude: 39, 
     longitude: -76,
     fill: audio,
-    icon: './assets/DataImage/vinyl.jpg',
+    icon: './assets/DataImage/icon/vinyl.png',
     image: "./assets/DataImage/foto/Giradischi.jpg",
     license:""
   },{
@@ -158,7 +158,7 @@ export const DATA: Data[] =   [
     latitude: 32.783333,
     longitude: -96.8,
     image: "./assets/DataImage/foto/radioTransistor.jpg",
-    icon: './assets/DataImage/radio.jpg',
+    icon: './assets/DataImage/radio.png',
     fill: audio,
     license : ""
   },{
@@ -176,7 +176,7 @@ export const DATA: Data[] =   [
     longitude: 5.3375,
     fill: audio,
     image: "./assets/DataImage/foto/Compactcassette.jpg",
-    icon: './assets/DataImage/cassette.jpg',
+    icon: './assets/DataImage/cassette.png',
     license : ""
   },{
     id: 11,
@@ -209,7 +209,7 @@ export const DATA: Data[] =   [
     latitude:48.856667,
     longitude:2.351944,
     image: "./assets/DataImage/foto/telegrafo.jpg",
-    icon: './assets/DataImage/telegraph.jpg',
+    icon: './assets/DataImage/telegraph.png',
     fill: comunicazione,
     license : ""
   },{
@@ -227,7 +227,7 @@ export const DATA: Data[] =   [
     longitude:52.516667,
     fill: comunicazione,
     icon: '',
-    image: "",
+    image: "./assets/DataImage/foto/olivetti.png",
     license : ""
   },{
     id: 14,
@@ -259,7 +259,7 @@ export const DATA: Data[] =   [
     author: 'Psion',
     latitude: 51.1121679,
     longitude: -0.5720182,
-    image: "",
+    image: "./assets/DataImage/foto/Apple_Newton.jpg",
     icon: '',
     fill: computer,
     license : ""
@@ -312,7 +312,7 @@ export const DATA: Data[] =   [
     longitude: -74.2534548,
     fill: comunicazione,
     icon: '',
-    image: "",
+    image: "./assets/DataImage/foto/motorola.jpg",
     license : ""
   },
 ]/*{

@@ -147,7 +147,7 @@ export class MapComponent {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
 					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo + "</b>";
-					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
+					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.icon + " />";
 					document.getElementById("anteprima").style.display = "block";
 
 					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
