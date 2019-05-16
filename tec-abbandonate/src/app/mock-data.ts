@@ -1,5 +1,11 @@
 
-import { Data } from 'src/app/data';
+import { Data } from './data';
+
+var video = '#b10f2e'
+var audio = '#ce617a'
+var comunicazione = '#eac435'
+var foto = '#086788'
+var computer = '#5fad56'
 
 export const DATA: Data[] =   [
   {
@@ -15,7 +21,7 @@ export const DATA: Data[] =   [
     author: 'Kodak',
     latitude: 43.157285,
     longitude: -77.615214,
-    fill : '#38bc9b',
+    fill : foto,
     image: './assets/DataImage/lomo-super-8.png',
     license : ""
   },{
@@ -31,7 +37,7 @@ export const DATA: Data[] =   [
     author: 'Sony',
     latitude: 36,
     longitude: 140,
-    fill : '#db50a4',
+    fill : video,
     image: './assets/DataImage/betamax.png',
     license : ""
   },{
@@ -47,7 +53,7 @@ export const DATA: Data[] =   [
     author: 'JVC',
     latitude: 35.444991,
     longitude: 139.636768,
-    fill : '#db50a4',
+    fill : video,
     image: './assets/DataImage/vhs.png',
     license : ""
   },{
@@ -63,7 +69,7 @@ export const DATA: Data[] =   [
     author: 'David Paul Greg - James Russell',
     latitude: 33.839722 ,
     longitude: -118.259722 ,
-    fill :'#db50a4',
+    fill : video,
     image: '',
     license:""
   },{
@@ -79,7 +85,7 @@ export const DATA: Data[] =   [
     author: 'Thomas Edison',
     latitude: 40.565,
     longitude: -74.3375 ,
-    fill : '#dd9933',
+    fill : audio,
     image: './assets/DataImage/old-gramophone.png',
     license:""
   },{
@@ -95,7 +101,7 @@ export const DATA: Data[] =   [
     author: 'RCA Victor',
     latitude: 39, 
     longitude: -76,
-    fill: "#dd9933",
+    fill: audio,
     image: './assets/DataImage/vinyl.png',
     license:""
   },{
@@ -111,7 +117,7 @@ export const DATA: Data[] =   [
     author: 'AEG',
     latitude: 52.5170365,
     longitude: 13.3888599,
-    fill : '#dd9933',
+    fill : audio,
     image: '',
     license : ""
   },{
@@ -127,7 +133,7 @@ export const DATA: Data[] =   [
     author: 'Philips',
     latitude: 52.366667 ,
     longitude: 4.866667 ,
-    fill: '#dd9933',
+    fill: audio,
     image: '',
     license : ""
   },{
@@ -143,7 +149,7 @@ export const DATA: Data[] =   [
     author: 'Texas Instruments',
     latitude: 32.783333,
     longitude: -96.8,
-    fill:'#dd9933',
+    fill: audio,
     image: './assets/DataImage/radio.png',
     license : ""
   },{
@@ -159,7 +165,7 @@ export const DATA: Data[] =   [
     author: 'Philips',
     latitude: 50.93,
     longitude: 5.3375,
-    fill: '#dd9933',
+    fill: audio,
     image: './assets/DataImage/cassette.png',
     license : ""
   },{
@@ -175,7 +181,7 @@ export const DATA: Data[] =   [
     author: 'Philips',
     latitude: 52.366667,
     longitude: 4.866667,
-    fill: '#dd9933',
+    fill: audio,
     image: '',
     license : ""
   },{
@@ -191,7 +197,7 @@ export const DATA: Data[] =   [
     author: 'Claude Chappe',
     latitude:48.856667,
     longitude:2.351944,
-    fill:'#3594dd',
+    fill: comunicazione,
     image: './assets/DataImage/telegraph.png',
     license : ""
   },{
@@ -207,7 +213,7 @@ export const DATA: Data[] =   [
     author: 'Servizio postale del Reich',
     latitude:52.516667 ,
     longitude:52.516667,
-    fill:'#3594dd',
+    fill: comunicazione,
     image: '',
     license : ""
   },{
@@ -223,7 +229,7 @@ export const DATA: Data[] =   [
     author: 'Siemens',
     latitude: 48.137194 ,
     longitude: 11.5755,
-    fill: '#3594dd',
+    fill: comunicazione,
     image: '',
     license : ""
   },{
@@ -239,7 +245,7 @@ export const DATA: Data[] =   [
     author: 'Psion',
     latitude: 51.1121679,
     longitude: -0.5720182,
-    fill:'#f87060',
+    fill: computer,
     image: '',
     license : ""
   },{
@@ -255,7 +261,7 @@ export const DATA: Data[] =   [
     author: 'Sony',
     latitude: 34,
     longitude: 138,
-    fill : '#db50a4',
+    fill : video,
     image: '',
     license : ""
   },{
@@ -271,7 +277,7 @@ export const DATA: Data[] =   [
     author: 'Sony',
     latitude: 34.5,
     longitude: 139.239128,
-    fill : '#dd9933',
+    fill : audio,
     image: './assets/DataImage/walkman.png',
     license : ""
   },{
@@ -287,7 +293,7 @@ export const DATA: Data[] =   [
     author: '',
     latitude: 40.6906512,
     longitude: -74.2534548,
-    fill: '#3594dd',
+    fill: comunicazione,
     image: '',
     license : ""
   },
