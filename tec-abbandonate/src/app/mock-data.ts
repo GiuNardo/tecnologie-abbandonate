@@ -11,7 +11,7 @@ export const DATA: Data[] =   [
   {
     id: 1,
     name: 'Super 8',
-    description: 'Il Super 8 millimetri è un formato cinematografico. ',
+    description: 'Nel 1965 è stato introdotto il formato Super8 dall’azienda Kodak, ed è stato un periodo fondamentale per questo settore in quanto è stato il periodo di punta dell’home cinema. In questo periodo infatti tutti coloro che disponevano di una cinepresa si dilettavano nelle riprese di momenti della loro vita sia professionale che lavorativa.Tra i più famosi filmati girati in questo formato si ha il video dell’assassinio di John Fitzgerald Kennedy a Dallas. Questo formato, nonostante fornisse dei grandiosi risultati, era molto difficile da utilizzare. Infatti il caricamento dei film doveva accadere al buio e andava eseguito manualmente. Per questo motivo la Kodak decise di realizzare ed introdurre un formato più semplice da utilizzare. Questo nuovo formato doveva essere contenuto nelle cartucce e doveva sfruttare in maniera più logica ed intelligente lo spazio disponibile sulla pellicola. Il Super 8 mm nasce a seguito di queste necessità ed esigenze. La novità era l’introduzione di spazio sulla pellicola che registrasse anche la colonna sonora. Viene quindi standardizzato da Kodak la ripresa a 18 fotogrammi al secondo, a differenza dei precedenti 16.',
     shortDescription: 'La Super 8 millimetri, o semplicemente Super 8, è una videocamera che utilizza nello specifico il formato 8 millimetri, dal quale prende il nome.',
     category: 'fotografia',
     dateFrom: 'year 1965',
@@ -22,12 +22,13 @@ export const DATA: Data[] =   [
     latitude: 43.157285,
     longitude: -77.615214,
     fill : foto,
-    image: './assets/DataImage/lomo-super-8.png',
+    image: "./assets/DataImage/foto/super8.jpg",
+    icon: './assets/DataImage/polaroid.jpg',
     license : ""
   },{
     id: 2,
     name: 'Betamax',
-    description: 'Videocassette.',
+    description: 'Betamax rappresenta il primo sistema di registrazione video su supporto a nastro magnetico pensato per il mercato domestico. Pensato da Sony e immesso sul mercato alcuni anni prima del VHS, non fu in grado di imporsi come standard rispetto alle videocassette. Sony lanciò in Giappone nel 1975 due modelli di betamax, SL-6300 e LV-1801, mentre negli USA venne presentato il modello SL-7200. Dopo un anno e 30.000 prodotti venduti arrivò il VHS della JVC che sotto alcuni punti di vista risultava inferiore rispetto al Betamax. I prezzi dei VHS risultavano significativamente più bassi rispetto a Betamax e questo sancì la maggiore diffusione del primo. A fine 2002 Sony dichiarò che avrebbe prodotto ancora duemila videoregistratori Betamax entro qualche mese dopodichè avrebbe abbandonato il progetto. Nel gennaio 2003 fu ufficialmente cessata la produzione di videoregistratori Betamax. Successivamente il 10 novembre 2015 Sony annunciò la fine della produzione delle videocassette Betamax a partire da marzo 2016 dopo oltre 40 anni di presenza sul mercato.',
     shortDescription: 'Primo sistema di videoregistrazione a nastro magnetico, ideato appositamente per il mercato domestico. ',
     category: 'video',
     dateFrom: '10/05/1975',
@@ -37,13 +38,14 @@ export const DATA: Data[] =   [
     author: 'Sony',
     latitude: 36,
     longitude: 140,
+    icon: './assets/DataImage/betamax.jpg',
+    image: "./assets/DataImage/foto/betamax.jpeg",
     fill : video,
-    image: './assets/DataImage/betamax.png',
     license : ""
   },{
     id: 3,
     name: 'Formato VHS',
-    description: 'Formato video predominante degli anni \'80. ',
+    description: 'Il Video Home System è un sistema di videoregistrazione standard in formato analogico su supporto meccanico. Inizialmente il nome derivava da “Vertical Helicoidal Scan” cioè la tecnica utilizzata per la lettura. JVC presentò il suo primo VHS a cassetta nel 1976 che divenne poi lo standard per la registrazione su nastro e la riproduzione di filmati analogici tramite videoregistratore. Questo apparecchio viste le ridotte dimensioni divenne lo strumento dominante per la registrazione domestica vendendo una notevole diffusione nelle case dei consumatori. La maggior diffusione rispetto al Betamax derivò dal minor costo dei videoregistratori VHS che divennero presto il sistema dominante del mercato. Durante gli anni 80 i videoregistratori VHS divennero stereofonici, guadagnando così un audio di migliore qualità. Negli stessi anni venne implementata  la modalità LP (long play) che permetteva, di raddoppiare la durata di registrazione, a discapito della qualità video, ma non di quella audio. Verso la fine degli anni novanta l’introduzione dei DVD e di altri supporti di registrazione digitale fecero lentamente ridurre la fetta di mercato del VHS. VHS è entrato ufficialmente nell’elenco delle tecnologie dimenticate nel luglio 2016 quando la Funai Electric, l’ultima azienda rimasta al mondo a produrre questo tipo di supporto cessò la produzione.',
     shortDescription: 'Sistema di videoregistrazione standard in formato analogico su supporto meccanico. ',
     category: 'video',
     dateFrom: '09/11/1976',
@@ -54,12 +56,13 @@ export const DATA: Data[] =   [
     latitude: 35.444991,
     longitude: 139.636768,
     fill : video,
-    image: './assets/DataImage/vhs.png',
+    image: "./assets/DataImage/foto/VHS-cassette.jpg",
+    icon: './assets/DataImage/vhs.jpg',
     license : ""
   },{
     id: 4,
     name: 'Laserdisc',
-    description: 'Primo standard di registrazione su disco ottico. ',
+    description: 'David Paul regg durante la fine degli anni cinquanta ha inventato la tecnologia che sta alla base del Laserdisc per la Gauss inc. Pochi anni dopo anche la Philips si è cimentata nella realizzazione di tecnologie Laserdisc. Ufficialmente nel 1978 è avvenuta la prima presentazione del Discovision e del primo dispositivo per leggere questa tecnologia, ovvero un lettore.Il tipo di dati contenuti nelle tecnologie Laserdisc è quello analogico, e non digitale - come invece siamo abituati oggi, inoltre riesce a contenere più tracce audio. Questo permette di ottenere una quantità di formato molto elevata, e può essere inoltre registrata su tutti e due i lati.',
     shortDescription: 'Simili ai classici CD, ma dalle dimensioni dei vinili.',
     category: 'video',
     dateFrom: '11/12/1978',
@@ -69,8 +72,9 @@ export const DATA: Data[] =   [
     author: 'David Paul Greg - James Russell',
     latitude: 33.839722 ,
     longitude: -118.259722 ,
+    image: "./assets/DataImage/foto/laserdisc.png",
+    icon: '',
     fill : video,
-    image: '',
     license:""
   },{
     id: 5 ,
@@ -86,7 +90,8 @@ export const DATA: Data[] =   [
     latitude: 40.565,
     longitude: -74.3375 ,
     fill : audio,
-    image: './assets/DataImage/old-gramophone.png',
+    image: "./assets/DataImage/foto/Grammofono.jpg",
+    icon: './assets/DataImage/old-gramophone.jpg',
     license:""
   },{
     id: 6 ,
@@ -102,7 +107,8 @@ export const DATA: Data[] =   [
     latitude: 39, 
     longitude: -76,
     fill: audio,
-    image: './assets/DataImage/vinyl.png',
+    icon: './assets/DataImage/vinyl.jpg',
+    image: "./assets/DataImage/foto/Giradischi.jpg",
     license:""
   },{
     id: 7,
@@ -117,12 +123,13 @@ export const DATA: Data[] =   [
     author: 'AEG',
     latitude: 52.5170365,
     longitude: 13.3888599,
+    image: "./assets/DataImage/foto/bobinaAperta.jpg",
+    icon: '',
     fill : audio,
-    image: '',
     license : ""
   },{
     id: 8,
-    name: 'Registratore a nastro',
+    name: 'Registratore a nastro / cassette-tape recorder',
     description: 'Dispositivo per la registrazione su cassette a nastro',
     shortDescription: ' In origine lanciato sul mercato nel come dispositivo per dettatura vocale progettato per uso portatile e successivamente utilizzato per la lettura delle cassette audio ',
     category: 'audio',
@@ -134,7 +141,8 @@ export const DATA: Data[] =   [
     latitude: 52.366667 ,
     longitude: 4.866667 ,
     fill: audio,
-    image: '',
+    image: "./assets/DataImage/foto/registratoreNastro.jpg",
+    icon: '',
     license : ""
   },{
     id: 9 ,
@@ -149,8 +157,9 @@ export const DATA: Data[] =   [
     author: 'Texas Instruments',
     latitude: 32.783333,
     longitude: -96.8,
+    image: "./assets/DataImage/foto/radioTransistor.jpg",
+    icon: './assets/DataImage/radio.jpg',
     fill: audio,
-    image: './assets/DataImage/radio.png',
     license : ""
   },{
     id:10 ,
@@ -166,12 +175,13 @@ export const DATA: Data[] =   [
     latitude: 50.93,
     longitude: 5.3375,
     fill: audio,
-    image: './assets/DataImage/cassette.png',
+    image: "./assets/DataImage/foto/Compactcassette.jpg",
+    icon: './assets/DataImage/cassette.jpg',
     license : ""
   },{
     id: 11,
     name: 'Ghetto Blaster',
-    description: 'Stereo Portatile',
+    description: 'Stereo Portatile / Boombox',
     shortDescription: 'Stereo portatile con altoparlanti integrati in grado di riprodurre musicassette e sintonizzarsi su stazioni radio',
     category: 'audio',
     dateFrom: 'year 1966',
@@ -181,8 +191,9 @@ export const DATA: Data[] =   [
     author: 'Philips',
     latitude: 52.366667,
     longitude: 4.866667,
+    image: "./assets/DataImage/foto/boombox.png",
+    icon: '',
     fill: audio,
-    image: '',
     license : ""
   },{
     id: 12,
@@ -197,8 +208,9 @@ export const DATA: Data[] =   [
     author: 'Claude Chappe',
     latitude:48.856667,
     longitude:2.351944,
+    image: "./assets/DataImage/foto/telegrafo.jpg",
+    icon: './assets/DataImage/telegraph.jpg',
     fill: comunicazione,
-    image: './assets/DataImage/telegraph.png',
     license : ""
   },{
     id: 13,
@@ -214,11 +226,12 @@ export const DATA: Data[] =   [
     latitude:52.516667 ,
     longitude:52.516667,
     fill: comunicazione,
-    image: '',
+    icon: '',
+    image: "",
     license : ""
   },{
     id: 14,
-    name: 'Siemens S62',
+    name: 'Siemens S62,',
     description: 'Telefono a disco',
     shortDescription: '',
     category: 'comunicazione',
@@ -230,7 +243,8 @@ export const DATA: Data[] =   [
     latitude: 48.137194 ,
     longitude: 11.5755,
     fill: comunicazione,
-    image: '',
+    icon: '',
+    image: "./assets/DataImage/foto/s62.jpg",
     license : ""
   },{
     id: 15,
@@ -238,19 +252,20 @@ export const DATA: Data[] =   [
     description: 'PDA. E\' un computer di dimensioni contenute, tali da essere portato sul palmo di una mano, dotato di uno schermo tattile',
     shortDescription: '',
     category: 'computer',
-    dateFrom: '-',
+    dateFrom: '',
     dateTo: 'year 2010',
     yearFrom: 1984,
     yearTo: 2010,
     author: 'Psion',
     latitude: 51.1121679,
     longitude: -0.5720182,
+    image: "",
+    icon: '',
     fill: computer,
-    image: '',
     license : ""
   },{
     id: 16,
-    name: 'Watchman',
+    name: 'Watchman - Televisori Portatili',
     description: 'televisore portatile',
     shortDescription: '',
     category: 'video',
@@ -262,7 +277,8 @@ export const DATA: Data[] =   [
     latitude: 34,
     longitude: 138,
     fill : video,
-    image: '',
+    image: "./assets/DataImage/foto/watchman.jpeg",
+    icon: '',
     license : ""
   },{
     id: 17,
@@ -277,8 +293,9 @@ export const DATA: Data[] =   [
     author: 'Sony',
     latitude: 34.5,
     longitude: 139.239128,
+    icon: '',
+    image: "./assets/DataImage/foto/walkman.jpg",
     fill : audio,
-    image: './assets/DataImage/walkman.png',
     license : ""
   },{
     id: 18 ,
@@ -294,7 +311,8 @@ export const DATA: Data[] =   [
     latitude: 40.6906512,
     longitude: -74.2534548,
     fill: comunicazione,
-    image: '',
+    icon: '',
+    image: "",
     license : ""
   },
 ]/*{
@@ -311,7 +329,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude: ,
     fill: '',
-    image: '',
+    icon: '',
   }, {
     id: 20,
     name: 'TV Watch',
@@ -326,7 +344,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 21,
     name: 'Seiko Wrist Computer',
@@ -341,7 +359,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }, {
     id: 22,
     name: 'Calculator Watches',
@@ -356,7 +374,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }, {
     id: 23,
     name: 'Monitor a Tubo Catodico',
@@ -371,7 +389,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }, {
     id: 24,
     name: 'Macchina da Scrivere',
@@ -386,7 +404,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 25,
     name: 'Dial-up Modem',
@@ -401,7 +419,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 26,
     name: 'Zip Drive',
@@ -416,7 +434,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 27,
     name: 'Proiettore di Diapositive',
@@ -431,7 +449,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 28,
     name: 'Floppy Disk',
@@ -446,7 +464,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 29,
     name: 'Polaroid',
@@ -461,7 +479,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 30,
     name: 'Videoproiettore a nastro',
@@ -476,7 +494,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }, {
     id: 31,
     name: 'Disco in Vinile',
@@ -491,7 +509,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 32,
     name: 'Televisione a Tubo Catodico',
@@ -506,7 +524,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   },  {
     id: 33,
     name: 'Stereo8',
@@ -521,7 +539,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }
 ]
 
@@ -540,7 +558,7 @@ export const DATA: Data[] =   [
     latitude: ,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }
   */
 
@@ -560,6 +578,6 @@ export const DATA: Data[] =   [
     latitude: 35.5,
     longitude:,
     fill: '',
-    image: '',
+    icon: '',
   }
   */
