@@ -115,7 +115,7 @@ export class TimelineComponent {
         })
         .on("click", function(d){
 					document.getElementById("descr").innerHTML = d.shortDescription + "<div class='date'> from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo +"</b></div>";
-					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.image + " />";
+					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.icon + " />";
           document.getElementById("anteprima").style.display = "block";
           document.getElementById("timeline-container").className = "col-9";
 

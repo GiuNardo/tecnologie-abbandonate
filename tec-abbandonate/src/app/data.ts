@@ -12,6 +12,7 @@ export class Data{
   latitude: number;
   longitude: number;
   fill : string;
+  icon: string;
   image: string;
   license: string
 }
