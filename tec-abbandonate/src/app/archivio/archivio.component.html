@@ -1,48 +1,6 @@
-<app-nav-search></app-nav-search>
+<app-nav-search (author)="onChange($event)"></app-nav-search>
+
 <div class="container-fluid">
-    <ul>
-        <li *ngFor = "let data of data">
-            <div class="row main-row">
-                <div class="col-5 img">
-                   <img src="{{data.image}}">
-                   {{data.license}}
-                </div>
-                <div class="col-7 data-col">
-                    <div class="row">
-                        <div class="col-3 cell cell-title"> 
-                            NAME: 
-                        </div>
-                        <div class="col cell text-justify">
-                            {{data.name}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 cell cell-title"> 
-                            DESCRIPTION: 
-                        </div>
-                        <div class="col cell text-justify">
-                            {{data.description}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 cell cell-title"> 
-                            SINCE: 
-                        </div>
-                        <div class="col cell ">
-                            {{data.yearFrom}}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 cell cell-title"> 
-                            TO: 
-                        </div>
-                        <div class="col cell ">
-                            {{data.yearTo}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-        </li>
+    <ul id = "content">
     </ul>      
 </div>

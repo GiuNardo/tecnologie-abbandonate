@@ -14,7 +14,7 @@ export class NavFilterComponent implements OnInit {
   cat4 = 'computer';
   cat5 = 'fotografia';
   all = 'all';
-
+ 
   @Output() chosen = new EventEmitter<string>();
  
   constructor() { }

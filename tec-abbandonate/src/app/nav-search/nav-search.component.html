@@ -4,7 +4,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <input class="input" name="cerca_autore"/>
+    <input id="input" class="input" name="cerca_autore" ngDefaultControl [(ngModel)]="playerName" (keyup)="onChange(playerName)"/>
   </div>
 
   </nav>
