@@ -265,7 +265,7 @@ export const DATA: Data[] =   [
     license : ""
   },{
     id: 16,
-    name: 'Watchman - Televisori Portatili',
+    name: 'Watchman',
     description: 'televisore portatile',
     shortDescription: '',
     category: 'video',
