@@ -76,11 +76,11 @@ export class MapComponent {
 			//UI ELEMENTS TO CONTROL ZOOM AND RECENTER MAP
 			var zoomControl = new am4maps.ZoomControl();
 			map.zoomControl = zoomControl;
-			zoomControl.slider.height = 350;
+			zoomControl.slider.height = 200;
 			zoomControl.fill = am4core.color("#000000");
 
 			let home = map.chartContainer.createChild(am4core.Button);
-			home.label.text = "Center";
+			home.label.text = "Reset";
 			home.align = "center";
 			home.events.on("hit", function(ev) {
 				map.goHome();
@@ -147,16 +147,16 @@ export class MapComponent {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
 					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo + "</b>";
-					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.icon + " />";
+					document.getElementById("icon").innerHTML = "<img width='180px' src=" + d.icon + " />";
 					document.getElementById("anteprima").style.display = "block";
-
+					document.getElementById("name").innerHTML = '<span style="color:var(--main-color);font-weight:500">'+ d.name + '<span>';
 					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
 					document.getElementById("item-name").innerHTML = d.name;
 					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
 					document.getElementById("year-to").innerHTML = ""+d.yearTo;
 
 					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
-					document.getElementById("image").style.height = '250px';
+					document.getElementById("image").style.height = '200px';
 					
 				}
 			})

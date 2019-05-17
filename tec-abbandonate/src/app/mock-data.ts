@@ -209,7 +209,7 @@ export const DATA: Data[] =   [
     latitude:48.856667,
     longitude:2.351944,
     image: "./assets/DataImage/foto/telegrafo.jpg",
-    icon: './assets/DataImage/telegraph.png',
+    icon: './assets/DataImage/icon/telegraph.png',
     fill: comunicazione,
     license : ""
   },{
@@ -243,7 +243,7 @@ export const DATA: Data[] =   [
     latitude: 48.137194 ,
     longitude: 11.5755,
     fill: comunicazione,
-    icon: '',
+    icon: './assets/DataImage/icon/vintage-hand-phone.png',
     image: "./assets/DataImage/foto/s62.jpg",
     license : ""
   },{

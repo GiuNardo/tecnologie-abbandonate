@@ -1,12 +1,8 @@
-#anteprima{
-    
-}
-
 #esterno{
     border: 2px solid  #d9d9d9;    
     padding: 20px;
     border-radius: 20px;
-    height: 300px;
+    min-height: 400px;
 }
 
 .btn{
@@ -30,5 +26,13 @@
 }
 
 #descr {
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+#link-span{
+    margin-top: 20px;
+}
+
+.small{
+    width: 200px;
 }

@@ -114,18 +114,17 @@ export class TimelineComponent {
             .attr('font-weight', '400');
         })
         .on("click", function(d){
-					document.getElementById("descr").innerHTML = d.shortDescription + "<div class='date'> from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo +"</b></div>";
-					document.getElementById("icon").innerHTML = "<img class=\"smaller\" src=" + d.icon + " />";
-          document.getElementById("anteprima").style.display = "block";
-          document.getElementById("timeline-container").className = "col-9";
-
+					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo + "</b>";
+					document.getElementById("icon").innerHTML = "<img width='180px' src=" + d.icon + " />";
+					document.getElementById("anteprima").style.display = "block";
+					document.getElementById("name").innerHTML = '<span style="color:var(--main-color);font-weight:500">'+ d.name + '<span>';
 					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
 					document.getElementById("item-name").innerHTML = d.name;
 					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
 					document.getElementById("year-to").innerHTML = ""+d.yearTo;
 
 					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
-					document.getElementById("image").style.height = '250px';
+					document.getElementById("image").style.height = '200px';
 
         });
         
