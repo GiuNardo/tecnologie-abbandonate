@@ -1,5 +1,12 @@
-<app-nav-search (author)="onChange($event)"></app-nav-search>
 
+<div class="row" id="filter-row">
+    <div class="col-3 col-f">
+        <app-nav-search (author)="onChange($event)"></app-nav-search>
+    </div>
+    <div class="col col-f">
+        <app-nav-filter (chosen)="onChosen($event)"></app-nav-filter>
+    </div>
+</div>
 <div class="container-fluid">
     <ul id = "content">
     </ul>      

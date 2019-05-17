@@ -1,5 +1,5 @@
 import { Component, OnInit, Output,  EventEmitter, Input  } from '@angular/core';
-import { Author } from '../author';
+
 
 @Component({
   selector: 'app-nav-search',
@@ -8,10 +8,13 @@ import { Author } from '../author';
 })
 export class NavSearchComponent {
 
-  @Output() author = new EventEmitter<string>();;
+  @Output() author = new EventEmitter<string>();
 
+  cat ="";
   value = "";
   playerName = "";
+  
+
   constructor() { }
 
   ngOnInit() {
@@ -19,7 +22,12 @@ export class NavSearchComponent {
 
   onChange(name:string){
     this.author.emit(name);
-    
   }
-
+/*
+  onChosen(chosen:string){
+    this.cat = chosen;
+    console.log("a"+ chosen);
+    this.category.emit(chosen);
+  }
+  */
 }

@@ -71,6 +71,7 @@
   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 1s;
+  height: 60px;
 }
 
 .navbar-nav {

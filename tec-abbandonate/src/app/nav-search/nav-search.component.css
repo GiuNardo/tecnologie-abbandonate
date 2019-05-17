@@ -12,10 +12,37 @@ input {
   color: var(--light-bg);
   width: 37%;
   padding-left: 5px;
+} 
+
+.sub-title {
+  color: var(--main-color);
 }
 
-.title {
-  padding-left: 30px;
+.input{
+  width: 100%;
+}
+
+#nav-search {
+  z-index: 0;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 1s;
+  height: 60px;
+  padding-right:0px!important;
+  text-align: center;
+}
+
+#navbarSupportedContent{
+  padding:0!important;
+}
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  padding:0;
+  display: block;
+  text-align: center;
 }
 
 #navbarSupportedContent {
@@ -32,3 +59,9 @@ input {
     100% {top:0px;}
   }
   
+
+  @media (min-width: 1400px) {
+    .sub-title{
+      padding-right: 20px;
+    }
+   }

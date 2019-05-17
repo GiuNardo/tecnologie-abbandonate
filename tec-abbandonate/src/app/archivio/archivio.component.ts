@@ -1,27 +1,36 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { DATA } from 'src/app/mock-data';
 import { createContentChild } from '@angular/compiler/src/core';
+import { filter } from '@amcharts/amcharts4/.internal/core/utils/Iterator';
 
 @Component({
   selector: 'app-archivio',
   templateUrl: './archivio.component.html',
   styleUrls: ['./archivio.component.css']
 })
+
 export class ArchivioComponent implements OnInit {
 
   constructor() { }
-
+    
   data = DATA;
   author ="";
+  category="";
 
   ngOnInit() {
       this.createContent();
   }
-
+  
   onChange(author:string){
     this.author = author;
     this.createContent();
   }
+
+  onChosen(chosen:string){
+    this.category = chosen;
+    this.createContent();
+  }
+  
 
   createContent(){
     document.getElementById("content").innerHTML = 
@@ -38,38 +47,74 @@ export class ArchivioComponent implements OnInit {
                 //'.main-row{ margin-top: 40px; border-bottom: 2px solid grey; padding: 20px; }' +
             '</style>';
     this.data.forEach(d => {
-        if(d.author.toLocaleLowerCase().includes(this.author.toLocaleLowerCase())){
+        if(this.category=="" || this.category=="all"){
+            if(d.author.toLocaleLowerCase().includes(this.author.toLocaleLowerCase())){
             
-            document.getElementById("content").innerHTML += 
-            '<li id="elemento-archivio">'+
-                '<div class="row main-row" >' +
-                    '<div class="col-5 img">' +
-                        '<img src="' + d.image + '">' + d.license +
-                    ' </div>' +
-                    '<div class="col-7 data-col">' +
-                        '<div class="row">' +
-                            '<div class="col-3 cell cell-title"> Name: </div>' +
-                            '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
-                        '</div>' +
-                        '<div class="row">' +
-                            '<div class="col-3 cell cell-title"> From: </div>' +
-                            '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
-                        '</div>' +
-                        '<div class="row">' + 
-                            '<div class="col-3 cell cell-title"> Since: </div>' +
-                            '<div class="col-3 cell ">' + d.yearFrom + '</div>' +
-                        '</div>' +
-                        '<div class="row">' + 
-                            '<div class="col-3 cell cell-title"> To: </div>' +
-                            '<div class="col-3 cell ">' + d.yearTo + '</div>' +
-                        '</div>' +
-                        '<div class="row">' +
-                            '<div class="col-3 cell cell-title"> Description: </div>' +
-                            '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
+                document.getElementById("content").innerHTML += 
+                '<li id="elemento-archivio">'+
+                    '<div class="row main-row" >' +
+                        '<div class="col-5 img">' +
+                            '<img src="' + d.image + '">' + d.license +
+                        ' </div>' +
+                        '<div class="col-7 data-col">' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> Name: </div>' +
+                                '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
+                            '</div>' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> From: </div>' +
+                                '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
+                            '</div>' +
+                            '<div class="row">' + 
+                                '<div class="col-3 cell cell-title"> Since: </div>' +
+                                '<div class="col-3 cell ">' + d.yearFrom + '</div>' +
+                            '</div>' +
+                            '<div class="row">' + 
+                                '<div class="col-3 cell cell-title"> To: </div>' +
+                                '<div class="col-3 cell ">' + d.yearTo + '</div>' +
+                            '</div>' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> Description: </div>' +
+                                '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
+                            '</div>' + 
                         '</div>' + 
-                    '</div>' + 
-                '</div>'+
-            '</li> <br/>';
+                    '</div>'+
+                '</li> <br/>';
+            }
+        }else{
+            if(d.author.toLocaleLowerCase().includes(this.author.toLocaleLowerCase()) && this.category==d.category){
+            
+                document.getElementById("content").innerHTML += 
+                '<li id="elemento-archivio">'+
+                    '<div class="row main-row" >' +
+                        '<div class="col-5 img">' +
+                            '<img src="' + d.image + '">' + d.license +
+                        ' </div>' +
+                        '<div class="col-7 data-col">' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> Name: </div>' +
+                                '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
+                            '</div>' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> From: </div>' +
+                                '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
+                            '</div>' +
+                            '<div class="row">' + 
+                                '<div class="col-3 cell cell-title"> Since: </div>' +
+                                '<div class="col-3 cell ">' + d.yearFrom + '</div>' +
+                            '</div>' +
+                            '<div class="row">' + 
+                                '<div class="col-3 cell cell-title"> To: </div>' +
+                                '<div class="col-3 cell ">' + d.yearTo + '</div>' +
+                            '</div>' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> Description: </div>' +
+                                '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
+                            '</div>' + 
+                        '</div>' + 
+                    '</div>'+
+                '</li> <br/>';
+            }
         }
     });
   }

@@ -38,3 +38,12 @@ li{
     border-bottom: 2px solid grey;
     padding: 20px;
 }
+
+#filter-row{
+    margin:0!important;
+}
+
+.col-f{
+    margin: 0!important;
+    padding: 0!important;
+}
