@@ -32,7 +32,7 @@ export class TimelineComponent {
     });*/
 
     tec.sort( (a,b) => {
-      return b.yearTo - a.yearTo;
+      return b.yearFrom - a.yearFrom;
     });
 
     var margin = {top: 20, right: 20, bottom: 60, left: 200},
@@ -143,7 +143,7 @@ export class TimelineComponent {
       .attr('class','yaxis')
       .call(d3.axisLeft(y))
       .selectAll("text")	
-        .attr('font-size', '1.6em')
+        .attr('font-size', '1.4em')
         .attr('font', 'Roboto');
         
   }

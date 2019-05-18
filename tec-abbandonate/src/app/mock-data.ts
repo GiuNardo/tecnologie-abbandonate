@@ -81,8 +81,8 @@ export const DATA: Data[] =   [
   },{
     id: 5 ,
     name: 'Grammofono',
-    description: 'Sistema di registrazione e riproduzione del suono. ',
-    shortDescription: 'Questo strumento permetteva di registrare suoni e melodie su degli appositi dispositivi che lo supportavano, rendendo quindi possibile riascoltare ciò che si era inciso in precedenza. ',
+    shortDescription: 'Sistema di registrazione e riproduzione del suono. ',
+    description: 'Questo strumento permetteva di registrare suoni e melodie su degli appositi dispositivi che lo supportavano, rendendo quindi possibile riascoltare ciò che si era inciso in precedenza. ',
     category: 'audio',
     dateFrom: 'year 1877',
     dateTo: 'year 1929',
@@ -115,8 +115,8 @@ export const DATA: Data[] =   [
   },{
     id: 7,
     name: 'Bobina Aperta',
-    description: 'Supporto per la registrazione del suono / reel-to-reel',
-    shortDescription: 'La bobina aperta è un formato di nastro magnetico che lascia un\'estremità del nastro libera',
+    shortDescription: 'Supporto per la registrazione del suono / reel-to-reel',
+    description: 'La bobina aperta è un formato di nastro magnetico che lascia un\'estremità del nastro libera',
     category: 'audio',
     dateFrom: 'year 1950',
     dateTo: 'year 2000',
@@ -132,8 +132,8 @@ export const DATA: Data[] =   [
   },{
     id: 8,
     name: 'Registratore a nastro',
-    description: 'Dispositivo per la registrazione su cassette a nastro',
-    shortDescription: ' In origine lanciato sul mercato nel come dispositivo per dettatura vocale progettato per uso portatile e successivamente utilizzato per la lettura delle cassette audio ',
+    shortDescription: 'Dispositivo per la registrazione su cassette a nastro',
+    description: ' In origine lanciato sul mercato nel come dispositivo per dettatura vocale progettato per uso portatile e successivamente utilizzato per la lettura delle cassette audio ',
     category: 'audio',
     dateFrom: 'year 1963',
     dateTo: 'year 2000',
@@ -149,8 +149,8 @@ export const DATA: Data[] =   [
   },{
     id: 9 ,
     name: 'Radio Transistor',
-    description: 'Dispositivo audio con circuito a transistor',
-    shortDescription: 'Dispositivo di piccole dimensioni funzionante grazie ad circuito a transistor utilizzato per la riproduzione di segnali audio',
+    shortDescription: 'Dispositivo audio con circuito a transistor',
+    description: 'Dispositivo di piccole dimensioni funzionante grazie ad circuito a transistor utilizzato per la riproduzione di segnali audio',
     category: 'audio',
     dateFrom: 'year 1954',
     dateTo: 'still in use',
@@ -166,8 +166,8 @@ export const DATA: Data[] =   [
   },{
     id:10 ,
     name: 'Cassette',
-    description: 'Supporto audio a nastro magnetico / compact cassette',
-    shortDescription: 'Supporto per nastro magnetico analogico utilizzato per la registrazione e la riproduzione audio.',
+    shortDescription: 'Supporto audio a nastro magnetico / compact cassette',
+    description: 'Supporto per nastro magnetico analogico utilizzato per la registrazione e la riproduzione audio.',
     category: 'audio',
     dateFrom: 'year 1962',
     dateTo: 'still in use',
@@ -183,8 +183,8 @@ export const DATA: Data[] =   [
   },{
     id: 11,
     name: 'Ghetto Blaster',
-    description: 'Stereo Portatile / Boombox',
-    shortDescription: 'Stereo portatile con altoparlanti integrati in grado di riprodurre musicassette e sintonizzarsi su stazioni radio',
+    shortDescription: 'Stereo Portatile / Boombox',
+    description: 'Stereo portatile con altoparlanti integrati in grado di riprodurre musicassette e sintonizzarsi su stazioni radio',
     category: 'audio',
     dateFrom: 'year 1966',
     dateTo: 'year 2003',
@@ -200,8 +200,8 @@ export const DATA: Data[] =   [
   },{
     id: 12,
     name:  'Telegrafo',
-    description: 'Il telegrafo è un sistema di comunicazione a distanza',
-    shortDescription: 'La comunicazione per mezzo del telegrafo è definita telegrafia e si distingue dal telefono e dalla telefonia, che è un sistema di trasmissione sviluppato successivamente, nato per il trasferimento di dati vocali e che nel tempo ha sostituito il telegrafo',
+    shortDescription: 'Il telegrafo è un sistema di comunicazione a distanza',
+    description: 'La comunicazione per mezzo del telegrafo è definita telegrafia e si distingue dal telefono e dalla telefonia, che è un sistema di trasmissione sviluppato successivamente, nato per il trasferimento di dati vocali e che nel tempo ha sostituito il telegrafo',
     category: 'comunicazione',
     dateFrom: 'year 1793',
     dateTo: '21/06/2013',
@@ -364,7 +364,7 @@ export const DATA: Data[] =   [
     latitude: 0,
     longitude: 0,
     fill: elettronica,
-    icon: '',
+    icon: iconePath+'seiko.png',
     image: imgPath+'seiko.jpg',
     license: ''
   }, {
@@ -449,7 +449,7 @@ export const DATA: Data[] =   [
     latitude: 0,
     longitude: 0,
     fill: elettronica,
-    icon: iconePath+'floppydisk.png',
+    icon: iconePath+'zipdrive.png',
     image: imgPath+'zipdrive.jpeg',
     license: ''
   },  {

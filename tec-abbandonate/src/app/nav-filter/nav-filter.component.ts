@@ -11,7 +11,7 @@ export class NavFilterComponent implements OnInit {
   cat1 = 'audio';
   cat2 = 'video';
   cat3 = 'comunicazione';
-  cat4 = 'computer';
+  cat4 = 'elettronica';
   cat5 = 'fotografia';
   all = 'all';
  
@@ -30,11 +30,10 @@ export class NavFilterComponent implements OnInit {
     var i:number;
     for (i = 0; i < x.length; i++) {
       x[i].classList.remove("active");
-      x[i].classList.remove("audio");  
       x[i].classList.remove("audio");
       x[i].classList.remove("video");
       x[i].classList.remove("fotografia");
-      x[i].classList.remove("computer");
+      x[i].classList.remove("elettronica");
       x[i].classList.remove("comunicazione"); 
       x[i].classList.remove("all");
     }
@@ -52,7 +51,7 @@ export class NavFilterComponent implements OnInit {
       break;
       case "comunicazione" : document.getElementById(id).className += " "+id;
       break;
-      case "computer" : document.getElementById(id).className += " "+id;
+      case "elettronica" : document.getElementById(id).className += " "+id;
       break;
       case "all" : document.getElementById(id).className += " "+id;
       break;
