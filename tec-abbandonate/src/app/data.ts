@@ -11,6 +11,8 @@ export class Data{
   author: string;
   latitude: number;
   longitude: number;
+  image: string;
+  icon: string;
   fill : string;
   icon: string;
   image: string;
