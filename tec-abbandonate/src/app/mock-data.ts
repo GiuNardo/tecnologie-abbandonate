@@ -228,7 +228,7 @@ export const DATA: Data[] =   [
     latitude:52.516667 ,
     longitude:52.516667,
     fill: comunicazione,
-    icon: '',
+    icon: iconePath+'telex.png',
     image: imgPath+"telex.png",
     license : ""
   },{
@@ -313,8 +313,8 @@ export const DATA: Data[] =   [
     latitude: 40.6906512,
     longitude: -74.2534548,
     fill: comunicazione,
-    icon: '',
-    image: imgPath+"motorola.jpg",
+    icon: iconePath+'pager.png',
+    image: imgPath+"pager.jpg",
     license : ""
   },{
     id: 19,
@@ -398,8 +398,8 @@ export const DATA: Data[] =   [
     latitude: 0,
     longitude: 0,
     fill: elettronica,
-    icon: '',
-    image: imgPath+'ctm.jpg',
+    icon: iconePath+'computer.png',
+    image: imgPath+'computer.png',
     license: ''
   }, {
     id: 24,
@@ -517,7 +517,7 @@ export const DATA: Data[] =   [
     latitude: 0,
     longitude: 0,
     fill: video,
-    icon: iconePath+'videprojector.png',
+    icon: iconePath+'videoprojector.png',
     image: imgPath+'videoprojector.jpg',
     license: ''
   }, {
@@ -589,26 +589,8 @@ export const DATA: Data[] =   [
     latitude: 0,
     longitude: 0,
     fill: '',
+    image: '',
     icon: '',
-  }
-  */
-
-  /**
-   * Tape Drives
-   * {
-    id: 18 ,
-    name: 'Discman',
-    description: 'Lettore cd',
-    shortDescription: '',
-    category: '',
-    dateFrom: 'year 1984',
-    dateTo: 'year 2019',
-    yearFrom: 1984,
-    yearTo: 201,
-    author: 'Sony',
-    latitude: 35.5,
-    longitude: 0,
-    fill: '',
-    icon: '',
+    license: ''
   }
   */
