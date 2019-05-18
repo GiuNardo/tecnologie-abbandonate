@@ -54,8 +54,8 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
                         '<div class="col-5 img">' +
-                            '<img src="' + d.image + '">' + d.license +
-                        ' </div>' +
+                            '<img src="' + d.image + '"><p>' + d.license +
+                        ' </p></div>' +
                         '<div class="col-7 data-col">' +
                             '<div class="row">' +
                                 '<div class="col-3 cell cell-title"> Name: </div>' +

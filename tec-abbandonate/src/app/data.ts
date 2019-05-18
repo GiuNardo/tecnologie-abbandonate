@@ -14,7 +14,5 @@ export class Data{
   image: string;
   icon: string;
   fill : string;
-  icon: string;
-  image: string;
   license: string
 }

@@ -110,7 +110,7 @@ export const DATA: Data[] =   [
     longitude: -76,
     fill: audio,
     icon: iconePath+'giradischi.png',
-    image: imgPath+"giradischi.jpg",
+    image: imgPath+"Giradischi.jpg",
     license:""
   },{
     id: 7,
@@ -501,7 +501,7 @@ export const DATA: Data[] =   [
     longitude: 0,
     fill: foto,
     icon: iconePath+'polaroid.png',
-    image: imgPath+'polaroid.jpg',
+    image: imgPath+'Polaroid.jpg',
     license: ''
   },  {
     id: 30,
