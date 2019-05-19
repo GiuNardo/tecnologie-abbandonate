@@ -531,7 +531,7 @@ export const DATA: Data[] =   [
     longitude: 0,
     fill: foto,
     icon: iconePath+'polaroid.png',
-    image: imgPath+'Polaroid.jpg',
+    image: imgPath+'polaroid.jpg',
     license: '',
     spot: youtube+'mqLhZwbA3Ok'
   },  {
