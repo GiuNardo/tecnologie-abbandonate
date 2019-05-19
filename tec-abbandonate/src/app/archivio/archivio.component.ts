@@ -46,16 +46,26 @@ export class ArchivioComponent implements OnInit {
                 '#descrizione { font-size: 0.8em; margin-right: 20px; margin-bottom: 10px; }' +
                 //'.main-row{ margin-top: 40px; border-bottom: 2px solid grey; padding: 20px; }' +
             '</style>';
+
     this.data.forEach(d => {
         if(this.category=="" || this.category=="all"){
             if(d.author.toLocaleLowerCase().includes(this.author.toLocaleLowerCase())){
             
+                var link = '';
+                if(d.spot!='') {
+                    link = 
+                        '<iframe width="560" height="315" src="' + d.spot + '? ' +
+                            'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
+                        '</iframe>' 
+                }
+
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
                         '<div class="col-5 img">' +
-                            '<img src="' + d.image + '"><p>' + d.license +
-                        ' </p></div>' +
+                            '<img src="' + d.image + '">' +
+                            '<p>' + d.license + '</p>' +
+                        '</div>' +
                         '<div class="col-7 data-col">' +
                             '<div class="row">' +
                                 '<div class="col-3 cell cell-title"> Name: </div>' +

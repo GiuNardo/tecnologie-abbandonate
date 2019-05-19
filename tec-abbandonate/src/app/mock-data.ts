@@ -6,8 +6,10 @@ var audio = '#0A8AB5'
 var comunicazione = '#eac435'
 var foto = '#0F5257'
 var elettronica = '#5fad56'
+
 var iconePath = './assets/DataImage/icone/'
 var imgPath = './assets/DataImage/foto/'
+var youtube = 'https://www.youtube.com/embed/'
 
 export const DATA: Data[] =   [
   {
@@ -26,7 +28,8 @@ export const DATA: Data[] =   [
     fill : video,
     image: imgPath+"super8.jpg",
     icon: iconePath+'super8.png',
-    license : ""
+    license : "",
+    spot: youtube+'ly0mn0Jev4Y'
   },{
     id: 2,
     name: 'Betamax',
@@ -43,7 +46,8 @@ export const DATA: Data[] =   [
     icon: iconePath+'betamax.png',
     image: imgPath+"betamax.jpeg",
     fill : video,
-    license : ""
+    license : "",
+    spot: youtube+'suclT9u51Fc'
   },{
     id: 3,
     name: 'Formato VHS',
@@ -60,7 +64,8 @@ export const DATA: Data[] =   [
     fill : video,
     image: imgPath+"vhs.jpg",
     icon: iconePath+'vhs.png',
-    license : ""
+    license : "",
+    spot: youtube+'pjXh-tNLqHQ'
   },{
     id: 4,
     name: 'Laserdisc',
@@ -77,7 +82,8 @@ export const DATA: Data[] =   [
     image: imgPath+"laserdisc.png",
     icon: iconePath+'laserdisc.png',
     fill : video,
-    license:""
+    license:"",
+    spot: youtube+'ZGjw3gUwMOo'
   },{
     id: 5 ,
     name: 'Grammofono',
@@ -94,7 +100,8 @@ export const DATA: Data[] =   [
     fill : audio,
     image: imgPath+"gramophone.jpg",
     icon: iconePath+'gramophone.png',
-    license:""
+    license:"",
+    spot: ''
   },{
     id: 6 ,
     name: 'Giradischi',
@@ -110,8 +117,9 @@ export const DATA: Data[] =   [
     longitude: -76,
     fill: audio,
     icon: iconePath+'giradischi.png',
-    image: imgPath+"Giradischi.jpg",
-    license:""
+    image: imgPath+"giradischi.jpg",
+    license:"",
+    spot: youtube+'apf_tjyRVfl'
   },{
     id: 7,
     name: 'Bobina Aperta',
@@ -122,13 +130,14 @@ export const DATA: Data[] =   [
     dateTo: 'anno 2000',
     yearFrom: 1950,
     yearTo: 2000,
-    author: 'AEG',
+    author: 'AEG / Wollensak',
     latitude: 52,
     longitude: 13,
     image: imgPath+"taperecorder.jpg",
     icon: iconePath+'taperecorder.png',
     fill : audio,
-    license : ""
+    license : "",
+    spot: youtube+'0V426FsFvX8'
   },{
     id: 8,
     name: 'Registratore a nastro',
@@ -145,7 +154,8 @@ export const DATA: Data[] =   [
     fill: audio,
     image: imgPath+"registr_nastro.jpg",
     icon: iconePath+'registr_nastro.png',
-    license : ""
+    license : "",
+    spot: ''
   },{
     id: 9 ,
     name: 'Radio Transistor',
@@ -162,7 +172,8 @@ export const DATA: Data[] =   [
     image: imgPath+"radio.jpg",
     icon: iconePath+'radio.png',
     fill: audio,
-    license : ""
+    license : "",
+    spot: youtube+'oXIN3AwB5Ng'
   },{
     id:10 ,
     name: 'Cassette',
@@ -179,7 +190,8 @@ export const DATA: Data[] =   [
     fill: audio,
     image: imgPath+"cassette.jpg",
     icon: iconePath+'cassette.png',
-    license : ""
+    license : "",
+    spot: youtube+'EMN1FqYMbRw'
   },{
     id: 11,
     name: 'Ghetto Blaster',
@@ -196,7 +208,8 @@ export const DATA: Data[] =   [
     image: imgPath+"boombox.png",
     icon: iconePath+'boombox.png',
     fill: audio,
-    license : ""
+    license : "",
+    spot: youtube+'xwpp5pNyKFo'
   },{
     id: 12,
     name:  'Telegrafo',
@@ -213,7 +226,8 @@ export const DATA: Data[] =   [
     image: imgPath+"telegraph.jpg",
     icon: iconePath+'telegraph.png',
     fill: comunicazione,
-    license : ""
+    license : "",
+    spot: ''
   },{
     id: 13,
     name: 'Telex',
@@ -230,7 +244,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'telex.png',
     image: imgPath+"telex.png",
-    license : ""
+    license : "",
+    spot: youtube+'byarX5L_Ki8'
   },{
     id: 14,
     name: 'Siemens S62',
@@ -247,7 +262,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'s62.png',
     image: imgPath+"s62.jpg",
-    license : ""
+    license : "",
+    spot: youtube+'jwO7Qr-O9OU'
   },{
     id: 15,
     name: 'Computer Palmare',
@@ -264,7 +280,8 @@ export const DATA: Data[] =   [
     image: imgPath+"palmare.jpg",
     icon: iconePath+'palmare.png',
     fill: elettronica,
-    license : ""
+    license : "",
+    spot: youtube+'k6QjICoMgso'
   },{
     id: 16,
     name: 'Watchman',
@@ -281,7 +298,8 @@ export const DATA: Data[] =   [
     fill : video,
     image: imgPath+"watchman.jpeg",
     icon: iconePath+'portabletv.png',
-    license : ""
+    license : "",
+    spot: youtube+'tdZ6LyaHJWI'
   },{
     id: 17,
     name: 'Walkman',
@@ -298,7 +316,8 @@ export const DATA: Data[] =   [
     icon: iconePath+'walkman.png',
     image: imgPath+"walkman.jpg",
     fill : audio,
-    license : ""
+    license : "",
+    spot: youtube+'xOTfzZCyCmo'
   },{
     id: 18 ,
     name: 'Cercapersone',
@@ -315,7 +334,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'pager.png',
     image: imgPath+"pager.jpg",
-    license : ""
+    license : "",
+    spot: youtube+'jrUVYTqvIfI'
   },{
     id: 19,
     name: 'Pulsar',
@@ -332,7 +352,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'pulsar.png',
     image: imgPath+'pulsar.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'Ixj5125v4j8'
   }, {
     id: 20,
     name: 'TV Watch',
@@ -349,7 +370,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'tvwatch.png',
     image: imgPath+'tvwatch.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'5tIAPwyVuXI'
   },  {
     id: 21,
     name: 'Seiko Wrist Computer',
@@ -366,7 +388,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'seiko.png',
     image: imgPath+'seiko.jpg',
-    license: ''
+    license: '',
+    spot: ''
   }, {
     id: 22,
     name: 'Calculator Watches',
@@ -383,7 +406,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'calculatorwatch.png',
     image: imgPath+'calculatorwatch.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'jdwLdEv3z2Q'
   }, {
     id: 23,
     name: 'Monitor CTM',
@@ -400,7 +424,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'computer.png',
     image: imgPath+'computer.png',
-    license: ''
+    license: '',
+    spot: ''
   }, {
     id: 24,
     name: 'Macchina da Scrivere',
@@ -417,7 +442,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'typewriter.png',
     image: imgPath+'typewriter.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'7mxlroZT6no'
   },  {
     id: 25,
     name: 'Dial-up Modem',
@@ -434,7 +460,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'harddrive.png',
     image: imgPath+'modem.jpg',
-    license: ''
+    license: '',
+    spot: ''
   },  {
     id: 26,
     name: 'Zip Drive',
@@ -451,7 +478,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'zipdrive.png',
     image: imgPath+'zipdrive.jpeg',
-    license: ''
+    license: '',
+    spot: youtube+'civsZLQzrjs'
   },  {
     id: 27,
     name: 'Proiettore di Diapositive',
@@ -468,7 +496,8 @@ export const DATA: Data[] =   [
     fill: foto,
     icon: iconePath+'projector.png',
     image: imgPath+'projector.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'OEGiOHoTqfk'
   },  {
     id: 28,
     name: 'Floppy Disk',
@@ -485,7 +514,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'floppydisk.png',
     image: imgPath+'floppydisk.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'hJ0CebOs8aE'
   },  {
     id: 29,
     name: 'Polaroid',
@@ -502,7 +532,8 @@ export const DATA: Data[] =   [
     fill: foto,
     icon: iconePath+'polaroid.png',
     image: imgPath+'Polaroid.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'mqLhZwbA3Ok'
   },  {
     id: 30,
     name: 'Videoproiettore a nastro',
@@ -519,7 +550,8 @@ export const DATA: Data[] =   [
     fill: video,
     icon: iconePath+'videoprojector.png',
     image: imgPath+'videoprojector.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'YaJndQhYiaI'
   }, {
     id: 31,
     name: 'Disco in Vinile',
@@ -536,7 +568,8 @@ export const DATA: Data[] =   [
     fill: audio,
     icon: iconePath+'discovinile.png',
     image: imgPath+'discovinile.jpeg',
-    license: ''
+    license: '',
+    spot: ''
   },  {
     id: 32,
     name: 'Televisione a Tubo Catodico',
@@ -553,7 +586,8 @@ export const DATA: Data[] =   [
     fill: video,
     icon: iconePath+'catodico.png',
     image: imgPath+'catodico.jpg',
-    license: ''
+    license: '',
+    spot: ''
   },  {
     id: 33,
     name: 'Stereo 8',
@@ -570,7 +604,8 @@ export const DATA: Data[] =   [
     fill: audio,
     icon: iconePath+'stereo8.png',
     image: imgPath+'stereo8.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'uovdc3C08gQ'
   }
 ]
 

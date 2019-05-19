@@ -154,8 +154,8 @@ export class MapComponent {
 					document.getElementById("item-name").innerHTML = d.name;
 					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
 					document.getElementById("year-to").innerHTML = ""+d.yearTo;
-
 					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
+					document.getElementById("video-parent").innerHTML = '<iframe width="560" height="315" src="'+ d.spot +'?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 					document.getElementById("image").style.height = '200px';
 					
 				}
