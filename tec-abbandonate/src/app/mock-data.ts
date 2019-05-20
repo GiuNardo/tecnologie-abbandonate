@@ -163,7 +163,7 @@ export const DATA: Data[] =   [
     description: 'Dispositivo di piccole dimensioni funzionante grazie ad circuito a transistor utilizzato per la riproduzione di segnali audio',
     category: 'audio',
     dateFrom: 'anno 1954',
-    dateTo: 'still in use',
+    dateTo: 'ancora in uso',
     yearFrom: 1954,
     yearTo: 2019,
     author: 'Texas Instruments',
@@ -181,7 +181,7 @@ export const DATA: Data[] =   [
     description: 'Supporto per nastro magnetico analogico utilizzato per la registrazione e la riproduzione audio.',
     category: 'audio',
     dateFrom: 'anno 1962',
-    dateTo: 'still in use',
+    dateTo: 'ancora in uso',
     yearFrom: 1962,
     yearTo: 2019,
     author: 'Philips',
@@ -336,7 +336,7 @@ export const DATA: Data[] =   [
     image: imgPath+"pager.jpg",
     license : "",
     spot: youtube+'jrUVYTqvIfI'
-  },{
+  }/*,{
     id: 19,
     name: 'Pulsar',
     description: 'Primo orologio led',
@@ -606,7 +606,7 @@ export const DATA: Data[] =   [
     image: imgPath+'stereo8.jpg',
     license: '',
     spot: youtube+'uovdc3C08gQ'
-  }
+  }*/
 ]
 
   /**

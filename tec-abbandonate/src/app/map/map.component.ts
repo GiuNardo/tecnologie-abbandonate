@@ -135,7 +135,7 @@ export class MapComponent {
 		imageSeriesTemplate.height = 8;
 		imageSeriesTemplate.nonScaling = true;
 		//imageSeriesTemplate.scale = 0.8;
-		imageSeriesTemplate.tooltipHTML = "<b>{name}</b> <br/> from: {author}";
+		imageSeriesTemplate.tooltipHTML = "<b>{name}</b> <br/> di: {author}";
 		imageSeriesTemplate.fill = am4core.color("#000000");
 		imageSeriesTemplate.background.fillOpacity = 0;
 		imageSeriesTemplate.background.fill = am4core.color("#ffffff");
@@ -146,7 +146,7 @@ export class MapComponent {
 		imageSeriesTemplate.events.on("hit", function(ev) {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
-					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo + "</b>";
+					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
 					document.getElementById("icon").innerHTML = "<img width='180px' src=" + d.icon + " />";
 					document.getElementById("anteprima").style.display = "block";
 					document.getElementById("name").innerHTML = '<span style="color:var(--main-color);font-weight:500">'+ d.name + '<span>';

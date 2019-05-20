@@ -63,28 +63,29 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
                         '<div class="col-5 img">' +
-                            '<img src="' + d.image + '">' +
-                            '<p>' + d.license + '</p>' +
+                            '<img src="' + d.image + '"><hr/>' +
+                            '<div id="video-parent">' + link + '</div>' +
                         '</div>' +
-                        '<div class="col-7 data-col">' +
+                        '<div class="col-1"></div>' + 
+                        '<div class="col-6 data-col">' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Name: </div>' +
+                                '<div class="col-3 cell cell-title"> Nome: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> From: </div>' +
+                                '<div class="col-3 cell cell-title"> Di: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
                             '</div>' +
-                            '<div class="row">' + 
-                                '<div class="col-3 cell cell-title"> Since: </div>' +
+                            '<div class="row">' +
+                                '<div class="col-3 cell cell-title"> Anno invenzione: </div>' +
                                 '<div class="col-3 cell ">' + d.yearFrom + '</div>' +
                             '</div>' +
                             '<div class="row">' + 
-                                '<div class="col-3 cell cell-title"> To: </div>' +
+                                '<div class="col-3 cell cell-title"> Anno ritiro: </div>' +
                                 '<div class="col-3 cell ">' + d.yearTo + '</div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Description: </div>' +
+                                '<div class="col-3 cell cell-title"> Descrizione: </div>' +
                                 '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
                             '</div>' + 
                         '</div>' + 

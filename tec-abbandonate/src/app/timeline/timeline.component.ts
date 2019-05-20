@@ -114,7 +114,7 @@ export class TimelineComponent {
             .attr('font-weight', '400');
         })
         .on("click", function(d){
-					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>from <b>" + d.dateFrom + "</b> to <b>" + d.dateTo + "</b>";
+					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
 					document.getElementById("icon").innerHTML = "<img width='180px' src=" + d.icon + " />";
 					document.getElementById("anteprima").style.display = "block";
 					document.getElementById("name").innerHTML = '<span style="color:var(--main-color);font-weight:500">'+ d.name + '<span>';
