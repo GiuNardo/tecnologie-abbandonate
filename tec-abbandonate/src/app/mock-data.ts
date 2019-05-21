@@ -6,8 +6,10 @@ var audio = '#0A8AB5'
 var comunicazione = '#eac435'
 var foto = '#0F5257'
 var elettronica = '#5fad56'
+
 var iconePath = './assets/DataImage/icone/'
 var imgPath = './assets/DataImage/foto/'
+var youtube = 'https://www.youtube.com/embed/'
 
 export const DATA: Data[] =   [
   {
@@ -16,8 +18,8 @@ export const DATA: Data[] =   [
     description: 'Nel 1965 è stato introdotto il formato Super8 dall’azienda Kodak, ed è stato un periodo fondamentale per questo settore in quanto è stato il periodo di punta dell’home cinema. In questo periodo infatti tutti coloro che disponevano di una cinepresa si dilettavano nelle riprese di momenti della loro vita sia professionale che lavorativa.Tra i più famosi filmati girati in questo formato si ha il video dell’assassinio di John Fitzgerald Kennedy a Dallas. Questo formato, nonostante fornisse dei grandiosi risultati, era molto difficile da utilizzare. Infatti il caricamento dei film doveva accadere al buio e andava eseguito manualmente. Per questo motivo la Kodak decise di realizzare ed introdurre un formato più semplice da utilizzare. Questo nuovo formato doveva essere contenuto nelle cartucce e doveva sfruttare in maniera più logica ed intelligente lo spazio disponibile sulla pellicola. Il Super 8 mm nasce a seguito di queste necessità ed esigenze. La novità era l’introduzione di spazio sulla pellicola che registrasse anche la colonna sonora. Viene quindi standardizzato da Kodak la ripresa a 18 fotogrammi al secondo, a differenza dei precedenti 16.',
     shortDescription: 'La Super 8 millimetri, o semplicemente Super 8, è una videocamera che utilizza nello specifico il formato 8 millimetri, dal quale prende il nome.',
     category: 'video',
-    dateFrom: 'anno 1965',
-    dateTo: 'anno 1075',
+    dateFrom: '1965',
+    dateTo: '1075',
     yearFrom: 1965,
     yearTo: 1975,
     author: 'Kodak',
@@ -26,7 +28,8 @@ export const DATA: Data[] =   [
     fill : video,
     image: imgPath+"super8.jpg",
     icon: iconePath+'super8.png',
-    license : ""
+    license : "",
+    spot: youtube+'ly0mn0Jev4Y'
   },{
     id: 2,
     name: 'Betamax',
@@ -43,7 +46,8 @@ export const DATA: Data[] =   [
     icon: iconePath+'betamax.png',
     image: imgPath+"betamax.jpeg",
     fill : video,
-    license : ""
+    license : "",
+    spot: youtube+'suclT9u51Fc'
   },{
     id: 3,
     name: 'Formato VHS',
@@ -51,7 +55,7 @@ export const DATA: Data[] =   [
     shortDescription: 'Sistema di videoregistrazione standard in formato analogico su supporto meccanico. ',
     category: 'video',
     dateFrom: '09/11/1976',
-    dateTo: 'anno 2008',
+    dateTo: '2008',
     yearFrom: 1976,
     yearTo: 2008,
     author: 'JVC',
@@ -60,7 +64,8 @@ export const DATA: Data[] =   [
     fill : video,
     image: imgPath+"vhs.jpg",
     icon: iconePath+'vhs.png',
-    license : ""
+    license : "",
+    spot: youtube+'pjXh-tNLqHQ'
   },{
     id: 4,
     name: 'Laserdisc',
@@ -68,7 +73,7 @@ export const DATA: Data[] =   [
     shortDescription: 'Simili ai classici CD, ma dalle dimensioni dei vinili.',
     category: 'video',
     dateFrom: '11/12/1978',
-    dateTo: 'anno 1995',
+    dateTo: '1995',
     yearFrom: 1978,
     yearTo: 1995,
     author: 'David Paul Greg - James Russell',
@@ -77,15 +82,16 @@ export const DATA: Data[] =   [
     image: imgPath+"laserdisc.png",
     icon: iconePath+'laserdisc.png',
     fill : video,
-    license:""
+    license:"",
+    spot: youtube+'ZGjw3gUwMOo'
   },{
     id: 5 ,
     name: 'Grammofono',
     shortDescription: 'Sistema di registrazione e riproduzione del suono. ',
     description: 'Questo strumento permetteva di registrare suoni e melodie su degli appositi dispositivi che lo supportavano, rendendo quindi possibile riascoltare ciò che si era inciso in precedenza. ',
     category: 'audio',
-    dateFrom: 'anno 1877',
-    dateTo: 'anno 1929',
+    dateFrom: '1877',
+    dateTo: '1929',
     yearFrom: 1877,
     yearTo: 1929,
     author: 'Thomas Edison',
@@ -94,15 +100,16 @@ export const DATA: Data[] =   [
     fill : audio,
     image: imgPath+"gramophone.jpg",
     icon: iconePath+'gramophone.png',
-    license:""
+    license:"",
+    spot: ''
   },{
     id: 6 ,
     name: 'Giradischi',
     description: 'Dispositivi per registrare e ascoltare suoni e musica.',
     shortDescription: 'Il giradischi è l\'evoluzione economica del grammofono.',
     category: 'audio',
-    dateFrom: 'anno 1937',
-    dateTo: 'anno 1997',
+    dateFrom: '1937',
+    dateTo: '1997',
     yearFrom: 1937,
     yearTo: 1997,
     author: 'RCA Victor',
@@ -110,33 +117,35 @@ export const DATA: Data[] =   [
     longitude: -76,
     fill: audio,
     icon: iconePath+'giradischi.png',
-    image: imgPath+"Giradischi.jpg",
-    license:""
+    image: imgPath+"giradischi.jpg",
+    license:"",
+    spot: youtube+'apf_tjyRVfI'
   },{
     id: 7,
     name: 'Bobina Aperta',
     shortDescription: 'Supporto per la registrazione del suono / reel-to-reel',
     description: 'La bobina aperta è un formato di nastro magnetico che lascia un\'estremità del nastro libera',
     category: 'audio',
-    dateFrom: 'anno 1950',
-    dateTo: 'anno 2000',
+    dateFrom: '1950',
+    dateTo: '2000',
     yearFrom: 1950,
     yearTo: 2000,
-    author: 'AEG',
+    author: 'AEG / Wollensak',
     latitude: 52,
     longitude: 13,
     image: imgPath+"taperecorder.jpg",
     icon: iconePath+'taperecorder.png',
     fill : audio,
-    license : ""
+    license : "",
+    spot: youtube+'0V426FsFvX8'
   },{
     id: 8,
     name: 'Registratore a nastro',
     shortDescription: 'Dispositivo per la registrazione su cassette a nastro',
     description: ' In origine lanciato sul mercato nel come dispositivo per dettatura vocale progettato per uso portatile e successivamente utilizzato per la lettura delle cassette audio ',
     category: 'audio',
-    dateFrom: 'anno 1963',
-    dateTo: 'anno 2000',
+    dateFrom: '1963',
+    dateTo: '2000',
     yearFrom: 1963,
     yearTo: 2000,
     author: 'Philips',
@@ -145,15 +154,16 @@ export const DATA: Data[] =   [
     fill: audio,
     image: imgPath+"registr_nastro.jpg",
     icon: iconePath+'registr_nastro.png',
-    license : ""
+    license : "",
+    spot: ''
   },{
     id: 9 ,
     name: 'Radio Transistor',
     shortDescription: 'Dispositivo audio con circuito a transistor',
     description: 'Dispositivo di piccole dimensioni funzionante grazie ad circuito a transistor utilizzato per la riproduzione di segnali audio',
     category: 'audio',
-    dateFrom: 'anno 1954',
-    dateTo: 'still in use',
+    dateFrom: '1954',
+    dateTo: 'ancora in uso',
     yearFrom: 1954,
     yearTo: 2019,
     author: 'Texas Instruments',
@@ -162,15 +172,16 @@ export const DATA: Data[] =   [
     image: imgPath+"radio.jpg",
     icon: iconePath+'radio.png',
     fill: audio,
-    license : ""
+    license : "",
+    spot: youtube+'mO5d63WpNa8'
   },{
     id:10 ,
     name: 'Cassette',
     shortDescription: 'Supporto audio a nastro magnetico / compact cassette',
     description: 'Supporto per nastro magnetico analogico utilizzato per la registrazione e la riproduzione audio.',
     category: 'audio',
-    dateFrom: 'anno 1962',
-    dateTo: 'still in use',
+    dateFrom: '1962',
+    dateTo: 'ancora in uso',
     yearFrom: 1962,
     yearTo: 2019,
     author: 'Philips',
@@ -179,15 +190,16 @@ export const DATA: Data[] =   [
     fill: audio,
     image: imgPath+"cassette.jpg",
     icon: iconePath+'cassette.png',
-    license : ""
+    license : "",
+    spot: youtube+'EMN1FqYMbRw'
   },{
     id: 11,
     name: 'Ghetto Blaster',
     shortDescription: 'Stereo Portatile / Boombox',
     description: 'Stereo portatile con altoparlanti integrati in grado di riprodurre musicassette e sintonizzarsi su stazioni radio',
     category: 'audio',
-    dateFrom: 'anno 1966',
-    dateTo: 'anno 2003',
+    dateFrom: '1966',
+    dateTo: '2003',
     yearFrom: 1966,
     yearTo: 2003,
     author: 'Philips',
@@ -196,14 +208,15 @@ export const DATA: Data[] =   [
     image: imgPath+"boombox.png",
     icon: iconePath+'boombox.png',
     fill: audio,
-    license : ""
+    license : "",
+    spot: youtube+'xwpp5pNyKFo'
   },{
     id: 12,
     name:  'Telegrafo',
     shortDescription: 'Il telegrafo è un sistema di comunicazione a distanza',
     description: 'La comunicazione per mezzo del telegrafo è definita telegrafia e si distingue dal telefono e dalla telefonia, che è un sistema di trasmissione sviluppato successivamente, nato per il trasferimento di dati vocali e che nel tempo ha sostituito il telegrafo',
     category: 'comunicazione',
-    dateFrom: 'anno 1793',
+    dateFrom: '1793',
     dateTo: '21/06/2013',
     yearFrom: 1893,
     yearTo: 2013,
@@ -213,14 +226,15 @@ export const DATA: Data[] =   [
     image: imgPath+"telegraph.jpg",
     icon: iconePath+'telegraph.png',
     fill: comunicazione,
-    license : ""
+    license : "",
+    spot: ''
   },{
     id: 13,
     name: 'Telex',
     description: 'Sistema di telecomunicazione',
     shortDescription: 'Un sistema di telecomunicazione sviluppato a partire dagli anni trenta e largamente usato nel XX secolo per la corrispondenza commerciale tra aziende',
     category: 'comunicazione',
-    dateFrom: 'anno 1930',
+    dateFrom: '1930',
     dateTo: '31/12/2001',
     yearFrom: 1930,
     yearTo: 2001,
@@ -230,15 +244,16 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'telex.png',
     image: imgPath+"telex.png",
-    license : ""
+    license : "",
+    spot: youtube+'byarX5L_Ki8'
   },{
     id: 14,
     name: 'Siemens S62',
     description: 'Telefono a disco',
     shortDescription: '',
     category: 'comunicazione',
-    dateFrom: 'anno 1962',
-    dateTo: 'anno 1985',
+    dateFrom: '1962',
+    dateTo: '1985',
     yearFrom: 1962,
     yearTo: 1985,
     author: 'Siemens',
@@ -247,15 +262,16 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'s62.png',
     image: imgPath+"s62.jpg",
-    license : ""
+    license : "",
+    spot: youtube+'jwO7Qr-O9OU'
   },{
     id: 15,
     name: 'Computer Palmare',
     description: 'PDA. E\' un computer di dimensioni contenute, tali da essere portato sul palmo di una mano, dotato di uno schermo tattile',
     shortDescription: '',
     category: 'elettronica',
-    dateFrom: 'anno 1984',
-    dateTo: 'anno 2010',
+    dateFrom: '1984',
+    dateTo: '2010',
     yearFrom: 1984,
     yearTo: 2010,
     author: 'Psion',
@@ -264,15 +280,16 @@ export const DATA: Data[] =   [
     image: imgPath+"palmare.jpg",
     icon: iconePath+'palmare.png',
     fill: elettronica,
-    license : ""
+    license : "",
+    spot: youtube+'k6QjICoMgso'
   },{
     id: 16,
     name: 'Watchman',
     description: 'Televisore portatile',
     shortDescription: '',
     category: 'video',
-    dateFrom: 'anno 1982',
-    dateTo: 'anno 2000',
+    dateFrom: '1982',
+    dateTo: '2000',
     yearFrom: 1982,
     yearTo: 2000,
     author: 'Sony',
@@ -281,7 +298,8 @@ export const DATA: Data[] =   [
     fill : video,
     image: imgPath+"watchman.jpeg",
     icon: iconePath+'portabletv.png',
-    license : ""
+    license : "",
+    spot: youtube+'tdZ6LyaHJWI'
   },{
     id: 17,
     name: 'Walkman',
@@ -298,15 +316,16 @@ export const DATA: Data[] =   [
     icon: iconePath+'walkman.png',
     image: imgPath+"walkman.jpg",
     fill : audio,
-    license : ""
+    license : "",
+    spot: youtube+'xOTfzZCyCmo'
   },{
     id: 18 ,
     name: 'Cercapersone',
     description: 'Pagers apparecchio elettronico precedente ai telefoni cellulare',
     shortDescription: '',
     category: 'comunicazione',
-    dateFrom: 'anno 1949',
-    dateTo: 'anno 2001',
+    dateFrom: '1949',
+    dateTo: '2001',
     yearFrom: 1949,
     yearTo: 2001,
     author: '',
@@ -315,8 +334,9 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'pager.png',
     image: imgPath+"pager.jpg",
-    license : ""
-  },{
+    license : "",
+    spot: youtube+'jrUVYTqvIfI'
+  }/*,{
     id: 19,
     name: 'Pulsar',
     description: 'Primo orologio led',
@@ -332,7 +352,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'pulsar.png',
     image: imgPath+'pulsar.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'Ixj5125v4j8'
   }, {
     id: 20,
     name: 'TV Watch',
@@ -349,7 +370,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'tvwatch.png',
     image: imgPath+'tvwatch.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'5tIAPwyVuXI'
   },  {
     id: 21,
     name: 'Seiko Wrist Computer',
@@ -366,7 +388,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'seiko.png',
     image: imgPath+'seiko.jpg',
-    license: ''
+    license: '',
+    spot: ''
   }, {
     id: 22,
     name: 'Calculator Watches',
@@ -383,7 +406,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'calculatorwatch.png',
     image: imgPath+'calculatorwatch.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'jdwLdEv3z2Q'
   }, {
     id: 23,
     name: 'Monitor CTM',
@@ -400,7 +424,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'computer.png',
     image: imgPath+'computer.png',
-    license: ''
+    license: '',
+    spot: ''
   }, {
     id: 24,
     name: 'Macchina da Scrivere',
@@ -417,7 +442,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'typewriter.png',
     image: imgPath+'typewriter.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'7mxlroZT6no'
   },  {
     id: 25,
     name: 'Dial-up Modem',
@@ -434,7 +460,8 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     icon: iconePath+'harddrive.png',
     image: imgPath+'modem.jpg',
-    license: ''
+    license: '',
+    spot: ''
   },  {
     id: 26,
     name: 'Zip Drive',
@@ -451,7 +478,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'zipdrive.png',
     image: imgPath+'zipdrive.jpeg',
-    license: ''
+    license: '',
+    spot: youtube+'civsZLQzrjs'
   },  {
     id: 27,
     name: 'Proiettore di Diapositive',
@@ -468,7 +496,8 @@ export const DATA: Data[] =   [
     fill: foto,
     icon: iconePath+'projector.png',
     image: imgPath+'projector.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'OEGiOHoTqfk'
   },  {
     id: 28,
     name: 'Floppy Disk',
@@ -485,7 +514,8 @@ export const DATA: Data[] =   [
     fill: elettronica,
     icon: iconePath+'floppydisk.png',
     image: imgPath+'floppydisk.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'hJ0CebOs8aE'
   },  {
     id: 29,
     name: 'Polaroid',
@@ -502,7 +532,8 @@ export const DATA: Data[] =   [
     fill: foto,
     icon: iconePath+'polaroid.png',
     image: imgPath+'polaroid.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'mqLhZwbA3Ok'
   },  {
     id: 30,
     name: 'Videoproiettore a nastro',
@@ -519,7 +550,8 @@ export const DATA: Data[] =   [
     fill: video,
     icon: iconePath+'videoprojector.png',
     image: imgPath+'videoprojector.jpg',
-    license: ''
+    license: '',
+    spot: youtube+'YaJndQhYiaI'
   }, {
     id: 31,
     name: 'Disco in Vinile',
@@ -536,7 +568,8 @@ export const DATA: Data[] =   [
     fill: audio,
     icon: iconePath+'discovinile.png',
     image: imgPath+'discovinile.jpeg',
-    license: ''
+    license: '',
+    spot: ''
   },  {
     id: 32,
     name: 'Televisione a Tubo Catodico',
@@ -553,7 +586,8 @@ export const DATA: Data[] =   [
     fill: video,
     icon: iconePath+'catodico.png',
     image: imgPath+'catodico.jpg',
-    license: ''
+    license: '',
+    spot: ''
   },  {
     id: 33,
     name: 'Stereo 8',
@@ -570,8 +604,9 @@ export const DATA: Data[] =   [
     fill: audio,
     icon: iconePath+'stereo8.png',
     image: imgPath+'stereo8.jpg',
-    license: ''
-  }
+    license: '',
+    spot: youtube+'uovdc3C08gQ'
+  }*/
 ]
 
   /**

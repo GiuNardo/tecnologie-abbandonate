@@ -1,0 +1,39 @@
+#esterno{
+    border: 2px solid  #d9d9d9;    
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 400px;
+}
+
+.btn{
+    margin: auto;
+    color: white;
+    background-color: var(--main-color);
+}
+
+#link:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#link{
+    float: left;
+}
+
+#btn-span{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#descr {
+    font-size: 0.9em;
+}
+
+#link-span{
+    margin-top: 20px;
+}
+
+.small{
+    width: 200px;
+}
+

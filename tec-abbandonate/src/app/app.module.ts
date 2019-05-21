@@ -16,6 +16,12 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatSliderModule } from "@angular/material";
 import { TimesliderComponent } from './timeslider/timeslider.component';
+import { ItemDescrComponent } from './item-descr/item-descr.component';
+import { AnteprimaComponent } from './anteprima/anteprima.component';
+import { NavSearchComponent } from './nav-search/nav-search.component';
+import { InfoComponent } from './info/info.component';
+import { NotizieComponent } from './notizie/notizie.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,12 @@ import { TimesliderComponent } from './timeslider/timeslider.component';
     TimelineComponent,
     ArchivioComponent,
     HomeComponent,
-    TimesliderComponent
+    TimesliderComponent,
+    ItemDescrComponent,
+    AnteprimaComponent,
+    NavSearchComponent,
+    InfoComponent,
+    NotizieComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,7 @@ import { TimesliderComponent } from './timeslider/timeslider.component';
     MatCheckboxModule,
     MatSliderModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

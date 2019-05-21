@@ -1,5 +1,7 @@
 .navbar{
-  background-color: var(--dark-1);
+  /*background-color: var(--dark-1);*/
+  margin-top: 60px;
+  background-image: linear-gradient( var(--dark-bg) 0%, var(--dark-1) 100%);
 }
 
 .navbar > a{
@@ -13,9 +15,56 @@
 }
 
 .nav-item a:hover {
-  background-color: var(--main-color);
+  color: var(--light-bg);
 }
 
+#fotografia:hover{
+  background-color: #0F5257;
+}
+
+.fotografia{
+  background-color: #0F5257;
+}
+
+#video:hover{
+  background-color: #b10f2e;
+}
+
+.video{
+  background-color: #b10f2e;
+}
+
+#audio:hover{
+  background-color: #0A8AB5;
+}
+
+.audio{
+  background-color: #0A8AB5;
+}
+
+#comunicazione:hover{
+  background-color: #eac435;
+}
+
+.comunicazione{
+  background-color: #eac435;
+}
+
+#computer:hover{
+  background-color: #5fad56;
+}
+
+.computer{
+  background-color: #5fad56;
+}
+
+#all:hover{
+  background-color: var(--dark-bg);
+}
+
+.all{
+  background-color: var(--dark-bg);
+}
 
 #nav-filter {
   z-index: 0;
@@ -24,6 +73,7 @@
   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 1s;
+  height: 60px;
 }
 
 .navbar-nav {
@@ -39,13 +89,12 @@
 }
 
 .nav-link{
-  width: 100px;
+  text-align: center;
+  width: 150px;
 
 }
 
-.active{
-  background-color: var(--main-color);
-}
+
 
 .nav-item:hover {
   cursor: pointer;

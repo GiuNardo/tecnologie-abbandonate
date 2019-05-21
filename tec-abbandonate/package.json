@@ -2,8 +2,9 @@
   "name": "tec-abbandonate",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -25,12 +26,15 @@
     "@angular/router": "~7.2.0",
     "angular-fusioncharts": "^3.0.1",
     "angular-rangeslider": "0.0.14",
+    "animated-scroll-to": "^1.2.2",
     "core-js": "^2.5.4",
+    "d3": "^5.9.2",
     "fusioncharts": "^3.13.4",
     "hammerjs": "^2.0.8",
     "lodash": "^4.17.11",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "typescript": "~3.2.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -53,5 +57,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.0.1"
   }
 }

@@ -1,6 +1,22 @@
-<app-nav-filter></app-nav-filter>
-<div class="container">
-    <div id="chartdiv">
+<app-nav-filter
+    (chosen)="onChosen($event)"
+></app-nav-filter>
 
+
+<div class="container-fluid">
+    <!--<div class="title">TIMELINE of TECHNOLOGIES</div>-->
+    
+
+    <div class="row">
+
+        <div class="col" id="timeline-container">
+            <div id="chartdiv" style="text-align : center;"> </div>
+        </div>
+        
+        <app-anteprima class="col-3" id="anteprima" style="display:none"></app-anteprima>
+    
     </div>
+
+    <app-item-descr></app-item-descr>
+
 </div>

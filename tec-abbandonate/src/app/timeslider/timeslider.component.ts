@@ -17,7 +17,7 @@ export class TimesliderComponent {
   max = 2019;
   min = 1850;
   showTicks = false;
-  step = 1;
+  step = 10;
   thumbLabel = true;
   value = 2010;
   vertical = false;

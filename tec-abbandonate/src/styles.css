@@ -1,7 +1,7 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 body{
-  background-color: #FDFFFC;
+  background-color: #f7f7f7 !important;
 
 }
 
@@ -15,8 +15,26 @@ body {
 }
 
 :root {
-  --dark-bg: #3F3F3F;  
-  --light-bg: #FFFFFF;
-  --main-color: #f2a737;
-  --dark-1: #7A7A7A;
+  --dark-bg: #393e46;  
+  --light-bg: #f3eacc;
+  --main-color: #f8b500;
+  --dark-1: #5c636e;
+}
+
+.title{
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.container-fluid{
+  padding: 30px!important;
+}
+
+.smaller {
+  width: 60%;
+  height: auto;
 }

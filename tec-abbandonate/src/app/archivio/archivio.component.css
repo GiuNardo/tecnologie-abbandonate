@@ -1,7 +1,7 @@
-/* da togliere*/
-.img{
-    background-color: grey;
-    height: 300px;
+
+img{
+    width: 400px;
+    max-height: 400px;
 }
 
 li{
@@ -22,14 +22,15 @@ li{
     letter-spacing: 1px;
     font-weight: 700;
     padding-left: 50px;
+
 }
 
 .cell{
-    margin-left: 30px;
     vertical-align: text-top!important;
 }
 
 .row{
+    padding:0!important;
     margin-top: 10px;
 }
 
@@ -38,3 +39,13 @@ li{
     border-bottom: 2px solid grey;
     padding: 20px;
 }
+
+#filter-row{
+    margin:0!important;
+}
+
+.col-f{
+    margin: 0!important;
+    padding: 0!important;
+}
+
