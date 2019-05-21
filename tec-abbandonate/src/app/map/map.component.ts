@@ -6,7 +6,9 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import { DATA } from '../mock-data';
+import {AUTHORS} from '../mock-authors';
 import { makeParamDecorator } from '@angular/core/src/util/decorators';
+import { Author } from '../author';
 
 am4core.useTheme(am4themes_animated);
 
@@ -23,6 +25,7 @@ export class MapComponent {
 	private chart: am4charts.XYChart;
 	private map: am4maps.MapChart;
 	data = DATA;
+	authors = AUTHORS;
 	yearInUse = 2010;
 	techs = [];
 	categoria = 'all';
@@ -143,6 +146,7 @@ export class MapComponent {
 		imageSeriesTemplate.states.create("hover");
 
 		let a = this.data;
+		let aut = this.authors;
 		imageSeriesTemplate.events.on("hit", function(ev) {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
@@ -155,9 +159,19 @@ export class MapComponent {
 					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
 					document.getElementById("year-to").innerHTML = ""+d.yearTo;
 					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
-					document.getElementById("video-parent").innerHTML = '<iframe width="560" height="315" src="'+ d.spot +'?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+					if(d.spot!='') {
+						document.getElementById("video-parent").innerHTML = 
+							'<iframe width="560" height="315" src="' + d.spot + '? ' +
+								'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
+							'</iframe>' 
+					}
 					document.getElementById("image").style.height = '200px';
-					
+					aut.map(t=> {
+						if (t.name == d.author){
+							document.getElementById("author-name").innerHTML = ""+t.name+" "+t.surname;
+							document.getElementById("author-descr").innerHTML = ""+t.description;
+						}
+					})
 				}
 			})
 		})

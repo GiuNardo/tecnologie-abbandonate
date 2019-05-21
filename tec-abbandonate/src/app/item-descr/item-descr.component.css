@@ -15,3 +15,55 @@
 img {
     height : 200px;
 }
+
+/*archivio*/
+
+img{
+    width: 400px;
+    max-height: 400px;
+}
+
+li{
+    list-style:none;
+}
+
+.container-fluid{
+    padding: 50px!important;
+}
+
+.data-col{
+    margin: auto;
+}
+
+.cell-title{
+    color: var(--main-color);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-left: 50px;
+
+}
+
+.cell{
+    vertical-align: text-top!important;
+}
+
+.row{
+    padding:0!important;
+    margin-top: 10px;
+}
+
+.main-row{
+    margin-top: 40px;    
+    border-bottom: 2px solid grey;
+    padding: 20px;
+}
+
+#filter-row{
+    margin:0!important;
+}
+
+.col-f{
+    margin: 0!important;
+    padding: 0!important;
+}

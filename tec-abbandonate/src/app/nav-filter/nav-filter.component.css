@@ -1,5 +1,7 @@
 .navbar{
-  background-color: var(--dark-1);
+  /*background-color: var(--dark-1);*/
+  margin-top: 60px;
+  background-image: linear-gradient( var(--dark-bg) 0%, var(--dark-1) 100%);
 }
 
 .navbar > a{

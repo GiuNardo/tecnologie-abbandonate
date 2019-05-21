@@ -35,15 +35,16 @@ export class ArchivioComponent implements OnInit {
   createContent(){
     document.getElementById("content").innerHTML = 
             '<style>'+
-                'img { width: auto; max-height: 300px; }' +
-                '.img { text-align: center; padding-top: 10px; }' +
-                '#elemento-archivio { list-style:none;border: 2px solid  #d9d9d9; border-radius: 20px; }' +
+                'img { height:300px; max-width:"500px"; margin:auto;}' +
+                '.img { text-align: center; padding-top: 10px; margin:auto; width:100%; padding:auto;}' +
+                '#elemento-archivio { list-style:none;border: 2px solid  #d9d9d9; border-radius: 20px; text-align:center; padding:20px;}' +
                 '.container-fluid{ padding: 50px!important; }'+
                 '.data-col{ margin: auto; }'+ 
                 '.cell-title{ color: var(--main-color); font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
-                '.cell{ margin-left: 30px; vertical-align: text-top!important; }' +
+                '.cell{vertical-align: text-top!important; text-align:left;}' +
                 '.row{ margin-top: 10px; }' +
-                '#descrizione { font-size: 0.8em; margin-right: 20px; margin-bottom: 10px; }' +
+                '#descrizione { margin-right: 20px; margin-bottom: 10px; }' +
+                '.data-col{ margin:auto; margin: 40px;}'+
                 //'.main-row{ margin-top: 40px; border-bottom: 2px solid grey; padding: 20px; }' +
             '</style>';
 
@@ -62,30 +63,29 @@ export class ArchivioComponent implements OnInit {
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
-                        '<div class="col-5 img">' +
-                            '<img src="' + d.image + '"><hr/>' +
-                            '<div id="video-parent">' + link + '</div>' +
+                        '<div class="img row">' +
+                            '<div class="col-6"><img  src="' + d.image + '"><hr/></div>' +
+                            '<div class="col-6" id="video-parent" style="width:100%">' + link + '</div>' +
                         '</div>' +
-                        '<div class="col-1"></div>' + 
-                        '<div class="col-6 data-col">' +
+                        '<div class="data-col">' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Nome: </div>' +
+                                '<div class="col-2 cell cell-title"> Nome: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Di: </div>' +
+                                '<div class="col-2 cell cell-title"> Di: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Anno invenzione: </div>' +
-                                '<div class="col-3 cell ">' + d.yearFrom + '</div>' +
+                                '<div class="col-2 cell cell-title"> Anno invenzione: </div>' +
+                                '<div class="col cell ">' + d.yearFrom + '</div>' +
                             '</div>' +
                             '<div class="row">' + 
-                                '<div class="col-3 cell cell-title"> Anno ritiro: </div>' +
-                                '<div class="col-3 cell ">' + d.yearTo + '</div>' +
+                                '<div class="col-2 cell cell-title"> Anno ritiro: </div>' +
+                                '<div class="col cell ">' + d.yearTo + '</div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Descrizione: </div>' +
+                                '<div class="col-2 cell cell-title"> Descrizione: </div>' +
                                 '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
                             '</div>' + 
                         '</div>' + 
@@ -98,28 +98,29 @@ export class ArchivioComponent implements OnInit {
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
-                        '<div class="col-5 img">' +
-                            '<img src="' + d.image + '">' + d.license +
-                        ' </div>' +
-                        '<div class="col-7 data-col">' +
+                        '<div class="img row">' +
+                            '<div class="col-6"><img  src="' + d.image + '"><hr/></div>' +
+                            '<div class="col-6" id="video-parent" style="width:100%">' + link + '</div>' +
+                        '</div>' +
+                        '<div class="data-col">' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Name: </div>' +
+                                '<div class="col-2 cell cell-title"> Nome: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> From: </div>' +
+                                '<div class="col-2 cell cell-title"> Di: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
                             '</div>' +
-                            '<div class="row">' + 
-                                '<div class="col-3 cell cell-title"> Since: </div>' +
-                                '<div class="col-3 cell ">' + d.yearFrom + '</div>' +
+                            '<div class="row">' +
+                                '<div class="col-2 cell cell-title"> Anno invenzione: </div>' +
+                                '<div class="col cell ">' + d.yearFrom + '</div>' +
                             '</div>' +
                             '<div class="row">' + 
-                                '<div class="col-3 cell cell-title"> To: </div>' +
-                                '<div class="col-3 cell ">' + d.yearTo + '</div>' +
+                                '<div class="col-2 cell cell-title"> Anno ritiro: </div>' +
+                                '<div class="col cell ">' + d.yearTo + '</div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Description: </div>' +
+                                '<div class="col-2 cell cell-title"> Descrizione: </div>' +
                                 '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
                             '</div>' + 
                         '</div>' + 

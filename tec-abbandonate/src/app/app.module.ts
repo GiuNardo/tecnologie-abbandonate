@@ -21,6 +21,7 @@ import { AnteprimaComponent } from './anteprima/anteprima.component';
 import { NavSearchComponent } from './nav-search/nav-search.component';
 import { InfoComponent } from './info/info.component';
 import { NotizieComponent } from './notizie/notizie.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { NotizieComponent } from './notizie/notizie.component';
     MatCheckboxModule,
     MatSliderModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
