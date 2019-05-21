@@ -19,6 +19,7 @@ import { TimesliderComponent } from './timeslider/timeslider.component';
 import { ItemDescrComponent } from './item-descr/item-descr.component';
 import { AnteprimaComponent } from './anteprima/anteprima.component';
 import { NavSearchComponent } from './nav-search/nav-search.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NavSearchComponent } from './nav-search/nav-search.component';
     TimesliderComponent,
     ItemDescrComponent,
     AnteprimaComponent,
-    NavSearchComponent
+    NavSearchComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
