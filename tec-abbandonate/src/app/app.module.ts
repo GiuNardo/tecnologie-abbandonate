@@ -20,6 +20,7 @@ import { ItemDescrComponent } from './item-descr/item-descr.component';
 import { AnteprimaComponent } from './anteprima/anteprima.component';
 import { NavSearchComponent } from './nav-search/nav-search.component';
 import { InfoComponent } from './info/info.component';
+import { NotizieComponent } from './notizie/notizie.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { InfoComponent } from './info/info.component';
     ItemDescrComponent,
     AnteprimaComponent,
     NavSearchComponent,
-    InfoComponent
+    InfoComponent,
+    NotizieComponent
   ],
   imports: [
     BrowserModule,

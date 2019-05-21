@@ -6,6 +6,7 @@ import { MapComponent } from './map/map.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ArchivioComponent } from './archivio/archivio.component';
 import { InfoComponent } from './info/info.component';
+import { NotizieComponent } from './notizie/notizie.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'map', component:MapComponent},
   { path: 'timeline', component:TimelineComponent},
   { path: 'archivio', component:ArchivioComponent},
-  { path: 'info', component:InfoComponent}
+  { path: 'info', component:InfoComponent},
+  { path: 'notizie', component:NotizieComponent}
 ];
 
 @NgModule({
