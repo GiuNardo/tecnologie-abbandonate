@@ -16,7 +16,7 @@ export class AnteprimaComponent implements OnInit {
   onClick() {
     document.getElementById('item-container').style.display = 'block';
     animateScrollTo(document.querySelector('.item-descr'));
-    document.getElementById("author").style.display = "block";
+    document.getElementById("author-container").style.display = "block";
 
   }
 

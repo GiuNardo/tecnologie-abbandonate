@@ -1,11 +1,7 @@
-#item-container{
+#author-container{
     display: none;
     margin: auto;
     margin-top: 100px;
-}
-
-.item-t{
-    margin-right: 40px;
 }
 
 #img-parent{

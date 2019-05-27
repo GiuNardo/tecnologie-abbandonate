@@ -22,6 +22,7 @@ import { NavSearchComponent } from './nav-search/nav-search.component';
 import { InfoComponent } from './info/info.component';
 import { NotizieComponent } from './notizie/notizie.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AuthorDescrComponent } from './author-descr/author-descr.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     AnteprimaComponent,
     NavSearchComponent,
     InfoComponent,
-    NotizieComponent
+    NotizieComponent,
+    AuthorDescrComponent
   ],
   imports: [
     BrowserModule,

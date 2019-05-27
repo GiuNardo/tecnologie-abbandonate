@@ -8,7 +8,8 @@ import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import { DATA } from '../mock-data';
 import {AUTHORS} from '../mock-authors';
 import { makeParamDecorator } from '@angular/core/src/util/decorators';
-import { Author } from '../author';
+import { getParentInjectorLocation } from '@angular/core/src/render3/di';
+
 
 am4core.useTheme(am4themes_animated);
 
@@ -166,10 +167,14 @@ export class MapComponent {
 							'</iframe>' 
 					}
 					document.getElementById("image").style.height = '200px';
+
 					aut.map(t=> {
+						
 						if (t.name == d.author){
-							document.getElementById("author-name").innerHTML = ""+t.name+" "+t.surname;
-							document.getElementById("author-descr").innerHTML = ""+t.description;
+							console.log(t.name + " == " + d.author);
+							document.getElementById("author-name").innerHTML = "<b>" + t.name + " " + t.surname + "</b>";
+							document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
+							document.getElementById("author-descr").innerHTML = "" + t.description;
 						}
 					})
 				}

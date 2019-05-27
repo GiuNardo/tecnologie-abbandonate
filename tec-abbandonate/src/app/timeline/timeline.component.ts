@@ -2,6 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import * as d3 from 'd3';
 
 import { DATA } from '../mock-data';
+import { AUTHORS } from '../mock-authors';
 
 @Component({
   selector: 'app-timeline',
@@ -11,6 +12,7 @@ import { DATA } from '../mock-data';
 export class TimelineComponent {
 
   data = DATA;
+  aut = AUTHORS;
   techs = [];
 	categoria = 'all';
 
@@ -23,6 +25,8 @@ export class TimelineComponent {
   }
 
   draw(tec : any) {
+
+    
     //DISEGNA TUTTO IL GRAFICO DI NUOVO QUANDO CAMBIA LA CATEGORIA SCELTA
 
     /*this.data.map( d => {
@@ -131,7 +135,13 @@ export class TimelineComponent {
             document.getElementById("spot").innerHTML = '';
           }
 					document.getElementById("image").style.height = '200px';
-
+          this.aut.map(t=> {
+            if (t.name == d.author){
+              document.getElementById("author-name").innerHTML = "" + t.name + " " + t.surname;
+              document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
+              document.getElementById("author-descr").innerHTML = "" + t.description;
+            }
+          })
         });
         
     // add the x Axis
