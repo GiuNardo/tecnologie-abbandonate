@@ -6,11 +6,20 @@
 
 img{
     width:600px;
-    float: left;
+    margin: auto;
 }
 
 #banner{
     background-color:rgba(13,35,42,0.9);
-    padding-left: 100px;
-    padding-right:100px;
+    text-align: center;
+}
+
+#video{
+    background-color:rgba(13,35,42,0.9);
+    margin-top: 50px;
+    text-align: center;
+}
+
+#second{
+    margin-top:50px;
 }
