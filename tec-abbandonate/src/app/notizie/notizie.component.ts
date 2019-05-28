@@ -25,7 +25,7 @@ export class NotizieComponent implements OnInit {
   
 
   createContent(){
-    document.getElementById("input").placeholder = "Tecnologia...";
+    //document.getElementById("input").placeholder = "Tecnologia...";
     document.getElementById("content").innerHTML = 
             '<style>'+/*
                 '.img { text-align: center; padding-top: 10px; margin:auto; width:100%; padding:auto;}' +
@@ -66,9 +66,8 @@ export class NotizieComponent implements OnInit {
                         '</div>' +
                         '<div class="myP">'+
                        
-                       ' <a href="https://www.repubblica.it/politica/2019/05/27/news/europee_reazioni-227309862/?ref=RHPPTP-BH-I227211995-C6-P3-S1.6-F6">'+
-                          ' Second text</a> block'+
-                   '   </div>'+                        
+                       
+                        ' </div>'+                        
                       
                         
                       
