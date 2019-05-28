@@ -164,10 +164,10 @@ export class MapComponent {
 							document.getElementById("author-name").innerHTML = "<b>" + t.name + " " + t.surname + "</b>";
 							document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
 							document.getElementById("author-descr").innerHTML = "" + t.description;
-							document.getElementById("author-item-parent").innerHTML = "<img id=\'author-image\' src=" + t.logo + "></img>"
+							document.getElementById("author-img-parent").innerHTML = "<img id=\'author-image\' src=" + t.logo + "></img>"
 
-							document.getElementById("author-item-parent").style.maxWidth = '300px';
-							document.getElementById("author-item-parent").style.height = 'auto';
+							document.getElementById("author-image").style.maxWidth = '300px';
+							document.getElementById("author-image").style.maxHeight = '300px';
 						}
 					})
 				}
