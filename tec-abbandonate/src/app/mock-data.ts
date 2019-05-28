@@ -169,7 +169,7 @@ export const DATA: Data[] =   [
     author: 'Texas Instruments',
     latitude: 33,
     longitude: -97,
-    image: imgPath+"radio.jpg",
+    image: imgPath+"radio.png",
     icon: iconePath+'radio.png',
     fill: audio,
     license : "",

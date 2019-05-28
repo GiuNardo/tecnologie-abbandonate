@@ -67,23 +67,23 @@ export class ArchivioComponent implements OnInit {
                         '</div>' +
                         '<div class="data-col">' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Nome: </div>' +
+                                '<div class="col-3 cell cell-title"> Nome: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Di: </div>' +
+                                '<div class="col-3 cell cell-title"> Di: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Anno invenzione: </div>' +
+                                '<div class="col-3 cell cell-title"> Anno invenzione: </div>' +
                                 '<div class="col cell ">' + d.yearFrom + '</div>' +
                             '</div>' +
                             '<div class="row">' + 
-                                '<div class="col-2 cell cell-title"> Anno ritiro: </div>' +
+                                '<div class="col-3 cell cell-title"> Anno ritiro: </div>' +
                                 '<div class="col cell ">' + d.yearTo + '</div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Descrizione: </div>' +
+                                '<div class="col-3 cell cell-title"> Descrizione: </div>' +
                                 '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
                             '</div>' + 
                         '</div>' + 
