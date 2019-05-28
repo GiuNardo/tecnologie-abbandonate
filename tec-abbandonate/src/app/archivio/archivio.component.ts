@@ -35,7 +35,7 @@ export class ArchivioComponent implements OnInit {
     //document.getElementById("input").placeholder = "Autore...";
     document.getElementById("content").innerHTML = 
             '<style>'+
-                'img { height:300px; max-width:"500px";}' +
+                'img { height:320px; max-width:"500px";}' +
                 '#elemento-archivio { color:#ffff; list-style:none;border: 1px solid #23373D; text-align:center; padding:20px; background-color: rgba(35,55,61,0.8); border-radius: 10px;}' +
                 '.container-fluid{ padding: 50px!important; }'+
                 '.data-col{margin:auto; width:90%; margin-top:10px; border-top: 1px solid #23373D;}'+ 

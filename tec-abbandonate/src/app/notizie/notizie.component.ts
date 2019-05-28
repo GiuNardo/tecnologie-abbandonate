@@ -90,7 +90,7 @@ export class NotizieComponent implements OnInit {
                           
                         '</div>' + 
                 '</li> <br/>';
-                document.getElementById("a").href = 'https://bari.repubblica.it/cronaca/2019/05/27/news/comunali_a_bari_al_via_lo_spoglio_decaro_pd_spera_nel_bis_al_primo_turno_nonostante_la_valanga_gialloverde_alle_europee-227329634/';
+                (<HTMLLinkElement>document.getElementById("a")).href = 'https://bari.repubblica.it/cronaca/2019/05/27/news/comunali_a_bari_al_via_lo_spoglio_decaro_pd_spera_nel_bis_al_primo_turno_nonostante_la_valanga_gialloverde_alle_europee-227329634/';
          
         }
     });

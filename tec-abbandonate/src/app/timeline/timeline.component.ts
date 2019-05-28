@@ -19,27 +19,15 @@ export class TimelineComponent {
   constructor(private zone: NgZone) {}
 
   ngAfterViewInit() {
-
-    this.draw(this.data);
-
+    this.draw(this.data, this.aut);
   }
 
-  draw(tec : any) {
-
-    
-    //DISEGNA TUTTO IL GRAFICO DI NUOVO QUANDO CAMBIA LA CATEGORIA SCELTA
-
-    /*this.data.map( d => {
-			if(this.categoria =='all' ? true : d.category==this.categoria) {
-        tec.push(d);
-      }
-    });*/
-
+  draw(tec : any, aut : any) {
     tec.sort( (a,b) => {
       return b.yearFrom - a.yearFrom;
     });
 
-    var margin = {top: 20, right: 20, bottom: 60, left: 200},
+    var margin = {top: 0, right: 20, bottom: 60, left: 200},
     width = 950 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -56,16 +44,7 @@ export class TimelineComponent {
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
-    //INDICAZIONE SE NON CI SONO DATI DA MOSTRARE
-    /*if(this.techs.length == 0) {
-      svg.append('text')
-        .text("NO DATA : Scegli un\'altra categoria")
-        .attr('x', width/3)
-        .attr('y', height/2)
-        .style('font-weight', 'bold');
-    }*/
-
+      
     // Scale the range of the data in the domains
     x.domain([d3.min(tec, d => d.yearFrom), d3.max(tec, d => d.yearTo)] )
     y.domain(tec.map(d => d.name));
@@ -118,30 +97,48 @@ export class TimelineComponent {
             .attr('font-weight', '400');
         })
         .on("click", function(d){
-					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
-					document.getElementById("icon").innerHTML = "<img width='180px' src=" + d.icon + " />";
+
+          document.getElementById("item-container").innerHTML += 
+            '<style>'+
+                '#image { height:320px; max-width:"500px";}' +
+                '#item-img-parent { text-align: center; }' +
+                '.data-col{margin:auto; width:90%; margin-top: 30px; }'+ 
+                '.cell-title{ color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
+                '.cell{vertical-align: text-top!important; text-align:left;}' +
+                '.row{ margin-top: 10px; }' +
+                '#item-descr { margin-right: 20px; margin-bottom: 10px; }' +
+                '#item-video-parent{ float:right}'+
+            '</style>';
+
 					document.getElementById("anteprima").style.display = "block";
-					document.getElementById("name").innerHTML = '<span style="color:var(--main-color);font-weight:500">'+ d.name + '<span>';
+					document.getElementById("ant-name").innerHTML = '<span style="color:var(--main-color); font-weight:500">' + d.name + '<span>';
+					document.getElementById("ant-descr").innerHTML = d.shortDescription + 
+						"<br/> Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
+					document.getElementById("ant-icon").innerHTML = "<img width='100px' src=" + d.icon + " />";
+					
 					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
-					document.getElementById("item-name").innerHTML = d.name;
-					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
-					document.getElementById("year-to").innerHTML = ""+d.yearTo;
-          document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
-          if(d.spot != '') {
-            document.getElementById("video-parent").innerHTML = '<iframe width="560" height="315" src="'+ d.spot +'?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-            document.getElementById("spot").innerHTML = 'Spot di lancio:';
-          } else {
-            document.getElementById("video-parent").innerHTML = '';
-            document.getElementById("spot").innerHTML = '';
-          }
-					document.getElementById("image").style.height = '200px';
-          this.aut.map(t=> {
-            if (t.name == d.author){
-              document.getElementById("author-name").innerHTML = "" + t.name + " " + t.surname;
-              document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
-              document.getElementById("author-descr").innerHTML = "" + t.description;
-            }
-          })
+					document.getElementById("item-name").innerHTML = '<b>' + d.name + '</b>';
+          document.getElementById("item-aut").innerHTML = d.author;
+					document.getElementById("item-year-from").innerHTML = ""+d.yearFrom;
+					document.getElementById("item-year-to").innerHTML = ""+d.yearTo;
+					document.getElementById("item-img-parent").innerHTML = "<img id=\'item-image\' src=" + d.image + "></img>"
+					
+					if(d.spot!='') {
+						document.getElementById("item-video-parent").innerHTML = 
+							'<iframe width="560" height="315" src="' + d.spot + '? ' +
+								'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
+							'</iframe>' 
+					}
+					document.getElementById("item-image").style.height = '320px';
+					document.getElementById("item-image").style.maxWidth = '550px';
+
+					aut.map(t=> {
+						if (t.name == d.author){
+							document.getElementById("author-name").innerHTML = "<b>" + t.name + " " + t.surname + "</b>";
+							document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
+							document.getElementById("author-descr").innerHTML = "" + t.description;
+						}
+					})
         });
         
     // add the x Axis
@@ -166,10 +163,8 @@ export class TimelineComponent {
 
   onChosen(c : string) {
 		this.categoria = c;
-		//this.map.series.pop();
-    //this.techs = [];
     d3.select("#chartdiv").select('svg').remove();
-		this.draw(this.data);	
+		this.draw(this.data, this.aut);	
 	}
 
 }

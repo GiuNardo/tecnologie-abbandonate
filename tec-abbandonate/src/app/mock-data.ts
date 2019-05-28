@@ -44,7 +44,7 @@ export const DATA: Data[] =   [
     latitude: 36.5,
     longitude: 141,
     icon: iconePath+'betamax.png',
-    image: imgPath+"betamax.jpeg",
+    image: imgPath+"betamax.jpg",
     fill : video,
     license : "",
     spot: youtube+'suclT9u51Fc'

@@ -2,14 +2,10 @@ import { Component, NgZone, Output } from '@angular/core';
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import { DATA } from '../mock-data';
 import {AUTHORS} from '../mock-authors';
-import { makeParamDecorator } from '@angular/core/src/util/decorators';
-import { getParentInjectorLocation } from '@angular/core/src/render3/di';
-
 
 am4core.useTheme(am4themes_animated);
 
@@ -26,7 +22,7 @@ export class MapComponent {
 	private chart: am4charts.XYChart;
 	private map: am4maps.MapChart;
 	data = DATA;
-	authors = AUTHORS;
+	aut = AUTHORS;
 	yearInUse = 2010;
 	techs = [];
 	categoria = 'all';
@@ -56,24 +52,9 @@ export class MapComponent {
 			polygonTemplate.propertyFields.fill = "fill";
 
 			// TO SEE COUNTRY NAMES AND COLOR HOVERS
-			//polygonTemplate.tooltipText = "{name}";
 			let hs = polygonTemplate.states.create("hover");
 			hs.properties.fill = am4core.color("#7A7A7A");
-			
-			/* MANIPULATE ONLY CERTAIN COUNTRIES IN THE WORLD
-			polygonSeries.data = [{
-				"id": "US",
-				"name": "United States",
-				"value": 100,
-				"fill": am4core.color("#F05C5C")
-			}, {
-				"id": "FR",
-				"name": "France",
-				"value": 50,
-				"fill": am4core.color("#5C5CFF")
-			}];
-			*/
-	
+
 			// MARKERS
 			this.draw(map);
 
@@ -122,11 +103,6 @@ export class MapComponent {
 			}
 		});
 
-
-		
-
-		//imageSeriesTemplate.tooltipHTML = '<div>{description}</div>';
-
 		//WHAT PARAMETERS USE AS POSITION ON THE MAP
 		imageSeriesTemplate.propertyFields.latitude = "latitude";
 		imageSeriesTemplate.propertyFields.longitude = "longitude";
@@ -147,34 +123,51 @@ export class MapComponent {
 		imageSeriesTemplate.states.create("hover");
 
 		let a = this.data;
-		let aut = this.authors;
+		let aut = this.aut;
 		imageSeriesTemplate.events.on("hit", function(ev) {
 			a.map( d => {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
-					document.getElementById("descr").innerHTML = d.shortDescription + "<br/>Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
-					document.getElementById("icon").innerHTML = "<img width='180px' src=" + d.icon + " />";
+					document.getElementById("item-container").innerHTML += 
+						'<style>'+
+							'#item-image { height:320px; max-width:"500px";}' +
+							'#item-img-parent { text-align: center; }' +
+							'.data-col{margin:auto; width:90%; margin-top: 30px; }'+ 
+							'.cell-title{ color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
+							'.cell{vertical-align: text-top!important; text-align:left;}' +
+							'.row{ margin-top: 10px; }' +
+							'#item-descr { margin-right: 20px; margin-bottom: 10px; }' +
+							'#item-video-parent{ float:right}'+
+						'</style>';
+
 					document.getElementById("anteprima").style.display = "block";
-					document.getElementById("name").innerHTML = '<span style="color:var(--main-color);font-weight:500">'+ d.name + '<span>';
+					document.getElementById("ant-name").innerHTML = '<span style="color:var(--main-color); font-weight:500">' + d.name + '<span>';
+					document.getElementById("ant-descr").innerHTML = d.shortDescription + 
+						"<br/> Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
+					document.getElementById("ant-icon").innerHTML = "<img width='100px' src=" + d.icon + " />";
+					
 					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
-					document.getElementById("item-name").innerHTML = d.name;
-					document.getElementById("year-from").innerHTML = ""+d.yearFrom;
-					document.getElementById("year-to").innerHTML = ""+d.yearTo;
-					document.getElementById("img-parent").innerHTML = "<img id=\'image\' src=" + d.image + "></img>"
+					document.getElementById("item-name").innerHTML = '<b>' + d.name + '</b>';
+					document.getElementById("item-aut").innerHTML = d.author;
+					document.getElementById("item-year-from").innerHTML = ""+d.yearFrom;
+					document.getElementById("item-year-to").innerHTML = ""+d.yearTo;
+					document.getElementById("item-img-parent").innerHTML = "<img id=\'item-image\' src=" + d.image + "></img>"
+					
 					if(d.spot!='') {
-						document.getElementById("video-parent").innerHTML = 
+						document.getElementById("item-video-parent").innerHTML = 
 							'<iframe width="560" height="315" src="' + d.spot + '? ' +
 								'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
 							'</iframe>' 
 					}
-					document.getElementById("image").style.height = '200px';
 
 					aut.map(t=> {
-						
 						if (t.name == d.author){
-							console.log(t.name + " == " + d.author);
 							document.getElementById("author-name").innerHTML = "<b>" + t.name + " " + t.surname + "</b>";
 							document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
 							document.getElementById("author-descr").innerHTML = "" + t.description;
+							document.getElementById("author-item-parent").innerHTML = "<img id=\'author-image\' src=" + t.logo + "></img>"
+
+							document.getElementById("author-item-parent").style.maxWidth = '300px';
+							document.getElementById("author-item-parent").style.height = 'auto';
 						}
 					})
 				}

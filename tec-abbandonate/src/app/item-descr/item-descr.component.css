@@ -12,20 +12,6 @@
     text-align: center;
 }
 
-img {
-    height : 200px;
-}
-
-/*archivio*/
-.img {
-    width: 100%;
-}
-
-img{
-    width: 400px;
-    max-height: 400px;
-}
-
 li{
     list-style:none;
 }
@@ -70,4 +56,14 @@ li{
 .col-f{
     margin: 0!important;
     padding: 0!important;
+}
+
+.link:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.link{
+    padding-left: 20px;
+    float: left;
 }

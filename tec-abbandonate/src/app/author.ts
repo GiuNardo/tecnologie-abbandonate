@@ -3,7 +3,8 @@ export class Author{
   name: string;
   surname: string;
   dataOfBirth: string;
-  description: string
+  description: string;
+  logo: string;
 }
 
 

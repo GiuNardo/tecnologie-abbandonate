@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import animateScrollTo from 'animated-scroll-to';
 
 @Component({
   selector: 'app-item-descr',
@@ -13,9 +14,4 @@ export class ItemDescrComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
-}
-
 }

@@ -23,11 +23,5 @@ export class NavSearchComponent {
   onChange(name:string){
     this.author.emit(name);
   }
-/*
-  onChosen(chosen:string){
-    this.cat = chosen;
-    console.log("a"+ chosen);
-    this.category.emit(chosen);
-  }
-  */
+  
 }

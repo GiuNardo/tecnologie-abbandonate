@@ -27,13 +27,11 @@
   color: var(--dark-bg);
   font-size: 0.95em;
   transition: 0.5s;
-  
 }
 
 .nav-item{
   margin-left: 10px;
 }
-
 
 .nav-item a:hover {
   background-color: var(--main-color);
@@ -42,17 +40,28 @@
 .navbar-toggler{
   border: 0px;
 }
+
 .navbar-toggler-icon{
   color:var(--light-bg);
   margin-top: -10px;
 }
 
-#main-name:hover{
-  font-size: 1.2em;
-  transition: 0.8s;
+img {
+  height: 50px;
+  width: 50px;
 }
 
-#main-name{
-  width: 200px;
-  transition: 0.8s;
+img:hover {
+  height: 70px;
+  width: 70px;
+  transition: 0.5s;
+}
+
+#main-name {
+  font-size: 0.85em;  
+}
+
+#main-name:hover{
+  font-size: 1em;
+  transition: 0.5s;
 }
