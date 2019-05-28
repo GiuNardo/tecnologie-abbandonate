@@ -3,3 +3,14 @@
     font-weight: 600;
     font-size: 1.1em;
 }
+
+img{
+    width:600px;
+    float: left;
+}
+
+#banner{
+    background-color:rgba(13,35,42,0.9);
+    padding-left: 100px;
+    padding-right:100px;
+}

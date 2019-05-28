@@ -47,13 +47,11 @@
 }
 
 img {
-  height: 50px;
-  width: 50px;
+  height: 200px;
 }
 
 img:hover {
-  height: 70px;
-  width: 70px;
+  height: 180px;
   transition: 0.5s;
 }
 
