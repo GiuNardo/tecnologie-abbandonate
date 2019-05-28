@@ -1,7 +1,7 @@
 #nav-main{
   background-color: var(--dark-bg);
   z-index: 99;
-  height: 60px;
+  height: 80px;
 }
 
 .navbar-brand{

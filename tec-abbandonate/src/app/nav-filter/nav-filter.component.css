@@ -1,7 +1,7 @@
 .navbar{
   /*background-color: var(--dark-1);*/
-  margin-top: 60px;
-  background-image: linear-gradient( var(--dark-bg) 0%, var(--dark-1) 100%);
+  margin-top: 80px;
+  background-color: var(--dark-1);
 }
 
 .navbar > a{
@@ -90,7 +90,7 @@
 
 .nav-link{
   text-align: center;
-  width: 150px;
+  width: 130px;
 
 }
 

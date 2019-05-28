@@ -59,7 +59,7 @@ li{
 
 .main-row{
     margin-top: 40px;    
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid var(--dark-1);
     padding: 20px;
 }
 

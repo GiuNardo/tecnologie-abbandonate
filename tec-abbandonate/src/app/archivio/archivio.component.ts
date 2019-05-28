@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { DATA } from 'src/app/mock-data';
-import { createContentChild } from '@angular/compiler/src/core';
-import { filter } from '@amcharts/amcharts4/.internal/core/utils/Iterator';
 
 @Component({
   selector: 'app-archivio',
@@ -33,19 +31,19 @@ export class ArchivioComponent implements OnInit {
   
 
   createContent(){
+    
+    //document.getElementById("input").placeholder = "Autore...";
     document.getElementById("content").innerHTML = 
             '<style>'+
-                'img { height:300px; max-width:"500px"; margin:auto;}' +
-                '.img { text-align: center; padding-top: 10px; margin:auto; width:100%; padding:auto;}' +
-                '#elemento-archivio { list-style:none;border: 2px solid  #d9d9d9; border-radius: 20px; text-align:center; padding:20px;}' +
+                'img { height:300px; max-width:"500px";}' +
+                '#elemento-archivio { color:#ffff; list-style:none;border: 1px solid #23373D; text-align:center; padding:20px; background-color: rgba(35,55,61,0.8); border-radius: 10px;}' +
                 '.container-fluid{ padding: 50px!important; }'+
-                '.data-col{ margin: auto; }'+ 
-                '.cell-title{ color: var(--main-color); font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
+                '.data-col{margin:auto; width:90%; margin-top:10px; border-top: 1px solid #23373D;}'+ 
+                '.cell-title{ color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
                 '.cell{vertical-align: text-top!important; text-align:left;}' +
                 '.row{ margin-top: 10px; }' +
                 '#descrizione { margin-right: 20px; margin-bottom: 10px; }' +
-                '.data-col{ margin:auto; margin: 40px;}'+
-                //'.main-row{ margin-top: 40px; border-bottom: 2px solid grey; padding: 20px; }' +
+                '#video-parent{ float:right}'+
             '</style>';
 
     this.data.forEach(d => {
@@ -62,9 +60,9 @@ export class ArchivioComponent implements OnInit {
 
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
-                    '<div class="row main-row" >' +
+                    '<div class="row" >' +
                         '<div class="img row">' +
-                            '<div class="col-6"><img  src="' + d.image + '"><hr/></div>' +
+                            '<div class="col-6 img-div"><img  src="' + d.image + '"></div>' +
                             '<div class="col-6" id="video-parent" style="width:100%">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
@@ -99,7 +97,7 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
                         '<div class="img row">' +
-                            '<div class="col-6"><img  src="' + d.image + '"><hr/></div>' +
+                            '<div class="col-6 img-div"><img  src="' + d.image + '"></div>' +
                             '<div class="col-6" id="video-parent" style="width:100%">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
