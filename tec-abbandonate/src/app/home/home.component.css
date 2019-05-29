@@ -10,16 +10,42 @@ img{
 }
 
 #banner{
-    background-color:rgba(13,35,42,0.9);
     text-align: center;
 }
 
 #video{
-    background-color:rgba(13,35,42,0.9);
     margin-top: 50px;
     text-align: center;
+}
+#row-top{
+    border-bottom: 1px solid var(--dark-1);
+    padding-bottom: 50px;
 }
 
 #second{
     margin-top:50px;
+}
+
+#video-pres{
+    background-color: var(--dark-1);
+    color: #ffff;
+    text-align: center;
+    padding: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#first-bottom{
+    border-right: 1px solid var(--dark-1);
+  
+}
+
+#central{
+border-left: 1px solid var(--dark-1);
+border-right: 1px solid var(--dark-1);
+}
+
+.col-3{
+    margin:auto;
+    padding: 50px;
 }

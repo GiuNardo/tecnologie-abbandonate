@@ -15,10 +15,10 @@ body {
 }
 
 :root {
-  --dark-bg: #0D232A;  
+  --dark-bg: #002642;  
   --light-bg: #ffff;
   --main-color: #f8b500;
-  --dark-1: #23373D;
+  --dark-1: #08BDBD;
 }
 
 .title{
@@ -38,3 +38,4 @@ body {
   width: 100px;
   height: auto;
 }
+

@@ -48,6 +48,7 @@
 
 img {
   height: 200px;
+  transition: 0.5s;
 }
 
 img:hover {
