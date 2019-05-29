@@ -5,8 +5,9 @@
     margin-top: 100px;
     width:90%; 
     padding-top:20px;
-    background-color: var(--dark-1);
-    color: #ffff;
+    background-color: #fff;
+    color: #000;
+    border-radius:10px;
 }
 
 img { height:300px; max-height:"500px"; }   

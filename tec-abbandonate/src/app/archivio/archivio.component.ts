@@ -36,7 +36,7 @@ export class ArchivioComponent implements OnInit {
     document.getElementById("content").innerHTML = 
             '<style>'+
                 'img { height:320px; max-width:"500px";}' +
-                '#elemento-archivio { list-style:none; text-align:center; padding:20px;background-color: #ffff;}' +
+                '#elemento-archivio { border-radius:10px; list-style:none; text-align:center; padding:20px;background-color: #ffff;}' +
                 '.container-fluid{ padding: 50px!important; }'+
                 '.data-col{margin:auto; width:90%; margin-top:10px; border-top: 1px solid #23373D;}'+ 
                 '.cell-title{ float:left; color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
