@@ -6,6 +6,7 @@ import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import { DATA } from '../mock-data';
 import {AUTHORS} from '../mock-authors';
+import animateScrollTo from 'animated-scroll-to';
 
 am4core.useTheme(am4themes_animated);
 
@@ -29,6 +30,8 @@ export class MapComponent {
 	anteprima : string;
 
 	ngAfterViewInit() {
+
+		animateScrollTo(document.querySelector("#main2"));
 
 		this.zone.runOutsideAngular(() => {
 			let map = am4core.create("chartdiv", am4maps.MapChart);
@@ -129,8 +132,8 @@ export class MapComponent {
 				if(d.longitude == ev.target.longitude && d.latitude == ev.target.latitude) {
 					document.getElementById("item-container").innerHTML += 
 						'<style>'+
-							'#item-image { height:320px; max-width:"500px";}' +
-							'#item-img-parent { text-align: center; }' +
+							'#item-image { max-width: 400px; max-height: 320px;}' +
+							//'#item-img-parent { text-align: center; }' +
 							'.data-col{margin:auto; width:90%; margin-top: 30px; }'+ 
 							'.cell-title{ color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
 							'.cell{vertical-align: text-top!important; text-align:left;}' +

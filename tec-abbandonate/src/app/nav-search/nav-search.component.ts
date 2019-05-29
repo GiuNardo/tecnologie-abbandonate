@@ -8,7 +8,7 @@ import { Component, OnInit, Output,  EventEmitter, Input  } from '@angular/core'
 })
 export class NavSearchComponent {
 
-  @Output() author = new EventEmitter<string>();
+  @Output() player = new EventEmitter<string>();
 
   cat ="";
   value = "";
@@ -21,7 +21,7 @@ export class NavSearchComponent {
   }
 
   onChange(name:string){
-    this.author.emit(name);
+    this.player.emit(name);
   }
   
 }

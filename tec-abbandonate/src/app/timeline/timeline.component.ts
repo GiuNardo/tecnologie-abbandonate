@@ -4,6 +4,8 @@ import * as d3 from 'd3';
 import { DATA } from '../mock-data';
 import { AUTHORS } from '../mock-authors';
 
+import animateScrollTo from 'animated-scroll-to';
+
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
@@ -19,15 +21,16 @@ export class TimelineComponent {
   constructor(private zone: NgZone) {}
 
   ngAfterViewInit() {
+    animateScrollTo(document.querySelector("#main2"));
     this.draw(this.data, this.aut);
   }
 
   draw(tec : any, aut : any) {
     tec.sort( (a,b) => {
-      return b.yearFrom - a.yearFrom;
+      return a.yearFrom - b.yearFrom;
     });
 
-    var margin = {top: 0, right: 20, bottom: 60, left: 200},
+    var margin = {top: 30, right: 20, bottom: 10, left: 200},
     width = 950 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -100,8 +103,8 @@ export class TimelineComponent {
 
           document.getElementById("item-container").innerHTML += 
             '<style>'+
-                '#image { height:320px; max-width:"500px";}' +
-                '#item-img-parent { text-align: center; }' +
+                '#item-image { max-width: 400px; max-height: 320px;}' +
+                //'#item-img-parent { text-align: center; }' +
                 '.data-col{margin:auto; width:90%; margin-top: 30px; }'+ 
                 '.cell-title{ color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
                 '.cell{vertical-align: text-top!important; text-align:left;}' +
@@ -129,8 +132,6 @@ export class TimelineComponent {
 								'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
 							'</iframe>' 
 					}
-					document.getElementById("item-image").style.height = '320px';
-					document.getElementById("item-image").style.maxWidth = '550px';
 
 					aut.map(t=> {
 						if (t.name == d.author){
@@ -148,20 +149,19 @@ export class TimelineComponent {
     // add the x Axis
     svg.append("g")
       .attr('class','xaxis')
-      .attr("transform", "translate(0," + height + ")")     
+      .attr("transform", "translate(0,"+height+")")     
       .call(d3.axisBottom(x).tickFormat(t => t.toString()) )
       .selectAll('text')
         .attr('text-anchor', 'end')
-        .attr('transform','rotate(-65)')
-        .attr('font-size', '1.8em');
+        .attr('transform','rotate(-25)')
+        .attr('font-size', '1.4em');
         
     // add the y Axis
     svg.append("g")
       .attr('class','yaxis')
       .call(d3.axisLeft(y))
       .selectAll("text")	
-        .attr('font-size', '1.4em')
-        .attr('font', 'Roboto');
+        .attr('font-size', '1.4em');
         
   }
 
