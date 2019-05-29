@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
-import { DATA } from 'src/app/mock-data';
+import { Component, OnInit } from '@angular/core';
+import animateScrollTo from 'animated-scroll-to';
+
+import { DATA } from '../mock-data';
 
 @Component({
   selector: 'app-archivio',
@@ -31,7 +33,8 @@ export class ArchivioComponent implements OnInit {
   
 
   createContent(){
-    
+    animateScrollTo(document.querySelector("#main2"))
+
     document.getElementById("cerca").innerHTML = "Cerca per autore";
     document.getElementById("content").innerHTML = 
             '<style>'+
@@ -63,8 +66,8 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row" >' +
                         '<div class="img row">' +
-                            '<div class="col-5 img-div"><img  src="' + d.image + '"></div>' +
-                            '<div class="col-7" id="video-parent" style="width:100%">' + link + '</div>' +
+                            '<div class="col-6 img-div"><img  src="' + d.image + '"></div>' +
+                            '<div class="col-6" id="video-parent">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
                             '<div class="row">' +

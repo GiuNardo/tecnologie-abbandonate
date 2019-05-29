@@ -26,13 +26,15 @@ export class TimelineComponent {
   }
 
   draw(tec : any, aut : any) {
-    tec.sort( (a,b) => {
+    /*tec.sort( (a,b) => {
       return a.yearFrom - b.yearFrom;
-    });
+    });*/
+
+    tec = this.shuffle(tec);
 
     var margin = {top: 30, right: 20, bottom: 10, left: 200},
     width = 950 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 700 - margin.top - margin.bottom;
 
     var y = d3.scaleBand()
       .range([height, 0])
@@ -100,7 +102,6 @@ export class TimelineComponent {
             .attr('font-weight', '400');
         })
         .on("click", function(d){
-
           document.getElementById("item-container").innerHTML += 
             '<style>'+
                 '#item-image { max-width: 400px; max-height: 320px;}' +
@@ -170,5 +171,23 @@ export class TimelineComponent {
     d3.select("#chartdiv").select('svg').remove();
 		this.draw(this.data, this.aut);	
 	}
+
+  shuffle(array : any) {
+    var m = array.length, t, i;
+  
+    // While there remain elements to shuffle…
+    while (m) {
+  
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+  
+      // And swap it with the current element.
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+  
+    return array;
+  }
 
 }
