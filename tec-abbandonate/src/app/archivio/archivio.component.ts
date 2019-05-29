@@ -43,8 +43,8 @@ export class ArchivioComponent implements OnInit {
                 '.cell{vertical-align: text-top!important; text-align:left;}' +
                 '.row{ margin-top: 10px; }' +
                 '#descrizione { margin-right: 20px; margin-bottom: 10px; }' +
-                '#video-parent{text-align:right}'
-                '.row{margin:auto}'+
+                '#video-parent{text-align:right}'+
+                ' #div-video{text-align:center}'+
             '</style>';
 
     this.data.forEach(d => {
@@ -54,9 +54,9 @@ export class ArchivioComponent implements OnInit {
                 var link = '';
                 if(d.spot!='') {
                     link = 
-                        '<iframe width="560" height="315" src="' + d.spot + '? ' +
+                        '<div id="div-video"><iframe width="560" height="315" src="' + d.spot + '? ' +
                             'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
-                        '</iframe>' 
+                        '</iframe></div>' 
                 }
 
                 document.getElementById("content").innerHTML += 
@@ -98,8 +98,8 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
                         '<div class="img row">' +
-                            '<div class="col-6 img-div"><img  src="' + d.image + '"></div>' +
-                            '<div class="col-6" id="video-parent" style="width:100%">' + link + '</div>' +
+                            '<div class="col-5 img-div"><img  src="' + d.image + '"></div>' +
+                            '<div class="col-7" id="video-parent" style="width:100%">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
                             '<div class="row">' +

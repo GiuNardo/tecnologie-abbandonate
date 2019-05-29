@@ -2,6 +2,7 @@
     display: none;
     margin:auto;
     margin-top: 50px;
+    margin-bottom: 50px;
     width:90%; 
     padding-top:20px;
     background-color: var(--dark-1);
