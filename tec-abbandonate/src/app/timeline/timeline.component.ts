@@ -32,7 +32,7 @@ export class TimelineComponent {
 
     tec = this.shuffle(tec);
 
-    var margin = {top: 30, right: 20, bottom: 10, left: 200},
+    var margin = {top: 30, right: 20, bottom: 30, left: 200},
     width = 950 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
 
@@ -59,8 +59,8 @@ export class TimelineComponent {
     svg.selectAll(".bar")
         .data(tec)
       .enter().append("rect")
-        .attr("rx", 10)
-        .attr("ry", 10)
+        .attr("rx", 5)
+        .attr("ry", 5)
         .attr("class", "bar")
         .attr("x", d => x(d.yearFrom) )
         .attr("width", d => x(d.yearTo)-x(d.yearFrom) )
