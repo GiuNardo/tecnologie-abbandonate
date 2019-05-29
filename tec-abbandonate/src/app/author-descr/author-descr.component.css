@@ -1,69 +1,21 @@
 #author-container{
     display: none;
-    margin: auto;
-    margin-top: 100px;
+    margin:auto;
+    margin-top: 50px;
+    width:90%; 
+    padding-top:20px;
+    background-color: var(--dark-1);
+    color: #ffff;
 }
 
-#img-parent{
-    text-align: center;
-}
 
-img {
-    height : 200px;
-}
-
-/*archivio*/
-.img {
-    width: 100%;
-}
-
-img{
-    width: 400px;
-    max-height: 400px;
-}
-
-li{
-    list-style:none;
-}
-
-.container-fluid{
-    padding: 50px!important;
-}
-
-.data-col{
-    margin: auto;
-}
-
-.cell-title{
-    color: var(--main-color);
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding-left: 50px;
-
-}
-
-.cell{
-    vertical-align: text-top!important;
-    width: 100%;
-}
-
-.row{
-    padding:0!important;
-    margin-top: 10px;
-}
-
-.main-row{
-    margin-top: 40px;    
-    border-bottom: 2px solid grey;
-    padding: 20px;
-}
-
-#filter-row{
-    margin:0!important;
-}
-
-.col-f{
-    margin: 0!important;
-    padding: 0!important;
-}
+img {  max-width:"500px";}   
+#elemento-archivio { list-style:none; text-align:center; padding:20px; }   
+.container-fluid{ padding: 50px!important; }  
+.title{color: var(--dark-1); font-size: 1.2em; letter-spacing: 1px; font-weight: 700; text-align: center;}
+.cell-title{ float:left; color: var(--dark-bg); font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }   
+.cell{vertical-align: text-top!important; text-align:left;}   
+.row{ margin-top: 10px; }   
+#descrizione { margin-right: 20px; margin-bottom: 10px; }   
+#video-parent{text-align:right} 
+.row{margin:auto} 

@@ -22,7 +22,7 @@ export class AnteprimaComponent implements OnInit {
   onClose() {
     document.getElementById("anteprima").style.display = "none";
     document.getElementById("timeline-container").className = "col";
-    //document.getElementById("item-container").style.display = "none";
+    document.getElementById("item-container").style.display = "none";
   }
 
 }

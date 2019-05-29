@@ -1,5 +1,7 @@
 #esterno{
-    border: 2px solid var(--dark-1);    
+    border-left: 1px solid var(--dark-1);    
+    border-top: 1px solid var(--dark-1); 
+    border-bottom: 1px solid var(--dark-1); 
     padding: 20px;
     min-height: 400px;
 }
@@ -36,3 +38,5 @@
     width: 200px;
 }
 
+
+ 
