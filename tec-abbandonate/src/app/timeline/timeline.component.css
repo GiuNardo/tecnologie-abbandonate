@@ -25,3 +25,10 @@
 .container-fluid{
     
 }
+
+#contenitore{
+    background-color: var(--dark-1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+}

@@ -15,10 +15,11 @@ body {
 }
 
 :root {
-  --dark-bg: #002642;  
+  --dark-bg: #3F0D12;/*#002642*/;  
   --light-bg: #ffff;
   --main-color: #f8b500;
-  --dark-1: #08BDBD;
+  --dark-1: #9E9E9E;
+  --light-bg-1: #F8B500;
 }
 
 .title{

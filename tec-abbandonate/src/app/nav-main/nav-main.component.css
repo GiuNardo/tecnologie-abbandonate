@@ -46,17 +46,18 @@
   margin-top: -10px;
 }
 
-img {
+img:hover {
   width: 80%;
   height: auto;
   transition: 0.5s;
   text-align: center;
 }
 
-img:hover {
+img {
   width: 70%;
   height: auto;
   transition: 0.5s;
+  text-align: center;
 }
 
 #main-name {

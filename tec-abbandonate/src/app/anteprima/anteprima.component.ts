@@ -16,12 +16,14 @@ export class AnteprimaComponent implements OnInit {
   onClick() {
     document.getElementById('item-container').style.display = 'block';
     document.getElementById('author-container').style.display = 'block';
+    document.getElementById('contenitore').style.display = 'block';
     animateScrollTo(document.querySelector('#item-container'));
   }
 
   onClose() {
     document.getElementById("anteprima").style.display = "none";
     document.getElementById("timeline-container").className = "col";
+    document.getElementById('contenitore').style.display = 'none';
     document.getElementById("item-container").style.display = "none";
   }
 
