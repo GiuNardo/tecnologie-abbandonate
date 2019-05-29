@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import animateScrollTo from 'animated-scroll-to';
+
 
 @Component({
   selector: 'app-item-descr',
