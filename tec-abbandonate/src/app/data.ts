@@ -1,3 +1,4 @@
+import { Notizia } from './notizia';
 export class Data{
   id: number;
   name : string;
@@ -16,5 +17,5 @@ export class Data{
   fill : string;
   license: string;
   spot: string;
-  notizie: string[];
+  notizie: Notizia[];
 }
