@@ -16,4 +16,5 @@ export class Data{
   fill : string;
   license: string;
   spot: string;
+  notizie: string[];
 }
