@@ -59,6 +59,8 @@ export class TimelineComponent {
     svg.selectAll(".bar")
         .data(tec)
       .enter().append("rect")
+        .attr("rx", 10)
+        .attr("ry", 10)
         .attr("class", "bar")
         .attr("x", d => x(d.yearFrom) )
         .attr("width", d => x(d.yearTo)-x(d.yearFrom) )
