@@ -13,3 +13,8 @@
 }
 
 
+.container-fluid{
+    background-color: var(--dark-1);
+    border-top: 5px solid #ffff;
+}
+    

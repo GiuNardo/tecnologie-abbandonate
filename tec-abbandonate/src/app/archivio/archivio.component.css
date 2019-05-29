@@ -3,10 +3,18 @@
 }
 
 .col-f{
-    margin: 0!important;
+    
     padding: 0!important;
 }
 
 .input{
     width: 100%;
+  }
+.container-fluid{
+      background-color: var(--dark-1);
+      
+  }
+
+  .col-f{
+      border-bottom: 5px solid #ffff;
   }

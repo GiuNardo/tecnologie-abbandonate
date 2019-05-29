@@ -10,15 +10,17 @@
 }
   
 input {
-  background-color: var(--dark-bg);
-  color: var(--light-bg);
+  background-color: #ffff;
+  border: none;
   width: 200px;
   padding-left: 10px;
+  width: 100%;
 } 
 
 .sub-title {
-  color: var(--main-color);
+  color: #ffff;
   padding-right: 20px;
+  text-align: right;
 }
 
 

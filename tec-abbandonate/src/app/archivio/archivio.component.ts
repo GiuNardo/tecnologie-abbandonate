@@ -32,18 +32,19 @@ export class ArchivioComponent implements OnInit {
 
   createContent(){
     
-    //document.getElementById("input").placeholder = "Autore...";
+    document.getElementById("cerca").innerHTML = "Cerca per autore";
     document.getElementById("content").innerHTML = 
             '<style>'+
                 'img { height:320px; max-width:"500px";}' +
-                '#elemento-archivio { color:#ffff; list-style:none;border: 1px solid #23373D; text-align:center; padding:20px; background-color: rgba(35,55,61,0.8); border-radius: 10px;}' +
+                '#elemento-archivio { list-style:none; text-align:center; padding:20px;background-color: #ffff;}' +
                 '.container-fluid{ padding: 50px!important; }'+
                 '.data-col{margin:auto; width:90%; margin-top:10px; border-top: 1px solid #23373D;}'+ 
-                '.cell-title{ color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
+                '.cell-title{ float:left; color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
                 '.cell{vertical-align: text-top!important; text-align:left;}' +
                 '.row{ margin-top: 10px; }' +
                 '#descrizione { margin-right: 20px; margin-bottom: 10px; }' +
-                '#video-parent{ float:right}'+
+                '#video-parent{text-align:right}'
+                '.row{margin:auto}'+
             '</style>';
 
     this.data.forEach(d => {
@@ -79,11 +80,11 @@ export class ArchivioComponent implements OnInit {
                                 '<div class="col cell ">' + d.yearFrom + '</div>' +
                             '</div>' +
                             '<div class="row">' + 
-                                '<div class="col-3 cell cell-title"> Anno ritiro: </div>' +
+                                '<div class="col-3 cell cell-title "> Anno ritiro: </div>' +
                                 '<div class="col cell ">' + d.yearTo + '</div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-3 cell cell-title"> Descrizione: </div>' +
+                                '<div class="col-3 cell cell-title "> Descrizione: </div>' +
                                 '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
                             '</div>' + 
                         '</div>' + 

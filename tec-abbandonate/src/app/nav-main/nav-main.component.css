@@ -47,12 +47,15 @@
 }
 
 img {
-  height: 200px;
+  width: 80%;
+  height: auto;
   transition: 0.5s;
+  text-align: center;
 }
 
 img:hover {
-  height: 180px;
+  width: 70%;
+  height: auto;
   transition: 0.5s;
 }
 

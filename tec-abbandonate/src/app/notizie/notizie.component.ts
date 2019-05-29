@@ -25,27 +25,15 @@ export class NotizieComponent implements OnInit {
   
 
   createContent(){
-    //document.getElementById("input").placeholder = "Tecnologia...";
+    document.getElementById("cerca").innerHTML = "Cerca per tecnologia";
+    document.getElementById("input").style.width = "40%";
     document.getElementById("content").innerHTML = 
-            '<style>'+/*
-                '.img { text-align: center; padding-top: 10px; margin:auto; width:100%; padding:auto;}' +
-                '#elemento-archivio { list-style:none;border: 2px solid  #d9d9d9; border-radius: 20px; text-align:center; padding:20px;}' +
-                '.container-fluid{ padding: 50px!important; }'+
-                '.data-col{ text-align:center!important;margin: auto; width:100%}'+ 
-                '.cell-title{ color: var(--main-color); font-size: 1.2em; letter-spacing: 1px; font-weight: 700; padding-left: 50px; }' +
-                '.cell{vertical-align: text-center!important; text-align:center;}' +
-                '.row{ margin-top: 10px; }' +
-                '#descrizione { margin-right: 20px; margin-bottom: 10px; }' +
-                '.data-col{ margin:auto; margin: 40px;}'+
-                //'.main-row{ margin-top: 40px; border-bottom: 2px solid grey; padding: 20px; }' +
-                */
-               '.cell-title{ color: #ffffff; font-size: 1.2em; letter-spacing: 1px; font-weight: 700; }' +
-               'row{text-align:center}'+ 
-               'main-row{ text-align:center!important, margin:auto}'+
-               'row{display:inline!important}'+
-               '#elemento-archivio { list-style:none;background-color: rgba(248,181,0,0.5); text-align:center; padding:20px;}' +
-            '</style>';
-
+            '<style>'+
+            '#elemento-archivio { list-style:none; text-align:center; padding:20px;background-color: #ffff;}' +
+            '.container-fluid{ padding: 50px!important; }'+
+            '.cell-title{  color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700;}' +
+            '.article{height: 100px; margin-top:20px; border: 1px solid grey; overflow: scroll;}' +
+        '</style>';
     this.data.forEach(d => {
             if(d.name.toLocaleLowerCase().includes(this.tec.toLocaleLowerCase())){
             
@@ -59,19 +47,8 @@ export class NotizieComponent implements OnInit {
 
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
-                '<div class="row main-row" >' +
-                        '<div class="row">' +
-                            '<div class="cell-title"> Nome: </div>' +
-                            '<div class=""><b>' + d.name + '</b></div>' +
-                        '</div>' +
-                        '<div class="myP">'+
-                       
-                       
-                        ' </div>'+                        
-                      
-                        
-                      
-                    '</div>' + 
+                '<div>Articoli riguardanti: <span class="cell-title"> '+ d.name +'</span></div>'+
+                '<div class="article">A</div>'+
             '</li> <br/>';
             
         }else{
@@ -79,17 +56,9 @@ export class NotizieComponent implements OnInit {
             
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
-                    '<div class="row main-row" >' +
-                            '<div class="row">' +
-                                '<div class="cell-title"> Nome: </div>' +
-                                '<div class=""><b>' + d.name + '</b></div>' +
-                            '</div>' +
-                                               
-                          
-                            
-                          
-                        '</div>' + 
-                '</li> <br/>';
+                '<div>Articoli riguardanti: <span class="cell-title"> '+ d.name +'</span></div>'+
+                '<div class="article">A</div>'+
+            '</li> <br/>';
                 (<HTMLLinkElement>document.getElementById("a")).href = 'https://bari.repubblica.it/cronaca/2019/05/27/news/comunali_a_bari_al_via_lo_spoglio_decaro_pd_spera_nel_bis_al_primo_turno_nonostante_la_valanga_gialloverde_alle_europee-227329634/';
          
         }

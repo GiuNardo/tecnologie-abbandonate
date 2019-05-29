@@ -10,6 +10,7 @@ img{
 }
 
 #banner{
+    height: 90%;
     text-align: center;
 }
 
@@ -48,4 +49,5 @@ border-right: 1px solid var(--dark-1);
 .col-3{
     margin:auto;
     padding: 50px;
+    font-size: 1.1em;
 }
