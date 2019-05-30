@@ -11,22 +11,24 @@
             <div class="map">
                 <div id="chartdiv"></div>
             </div>
+
+            <div class="timeline margin">
+                <div class="title">Seleziona decennio di utilizzo:</div>
+                <app-timeslider
+                    (timed)="onChanged($event) "
+                ></app-timeslider>
+            </div>
         </div>
 
         <app-anteprima class="col-3" id="anteprima" style="display:none"></app-anteprima>
 
     </div>
 
-    <div class="timeline margin">
-        <div class="title">Seleziona decennio di utilizzo:</div>
-        <app-timeslider
-            (timed)="onChanged($event) "
-        ></app-timeslider>
-    </div>
+    
+
     <div id="contenitore">
         <app-item-descr></app-item-descr>
         <app-author-descr></app-author-descr>
     </div>
-    
 
 </div>

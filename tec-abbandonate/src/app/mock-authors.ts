@@ -16,7 +16,7 @@ export const AUTHORS: Author[] =   [
         surname: "",
         dataOfBirth: "01/01/1878",
         description: "La Kodak è un'azienda multinazionale statunitense concentrata sulla tecnologia, in particolare oggi è famosa per i prodotti di elettronica. E' stata fondata da George  Eastman a Rochester, New York.",
-        logo: path+''
+        logo: path+'kodaklogo.png'
     }, {
         id: 3,
         name: "JVC",

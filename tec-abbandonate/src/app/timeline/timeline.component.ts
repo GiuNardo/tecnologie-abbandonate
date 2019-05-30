@@ -22,17 +22,18 @@ export class TimelineComponent {
 
   ngAfterViewInit() {
     animateScrollTo(document.querySelector("#main2"));
-    this.draw(this.data, this.aut);
+    this.techs = this.shuffle(this.data);
+    this.draw(this.techs, this.aut);
   }
 
   draw(tec : any, aut : any) {
-    /*tec.sort( (a,b) => {
-      return a.yearFrom - b.yearFrom;
-    });*/
+    /*
+      tec.sort( (a,b) => {
+        return a.yearFrom - b.yearFrom;
+      });
+    */
 
-    tec = this.shuffle(tec);
-
-    var margin = {top: 30, right: 20, bottom: 30, left: 200},
+    var margin = {top: 30, right: 20, bottom: 10, left: 200},
     width = 950 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
 
@@ -59,8 +60,8 @@ export class TimelineComponent {
     svg.selectAll(".bar")
         .data(tec)
       .enter().append("rect")
-        .attr("rx", 5)
-        .attr("ry", 5)
+        .attr("rx", 7)
+        .attr("ry", 7)
         .attr("class", "bar")
         .attr("x", d => x(d.yearFrom) )
         .attr("width", d => x(d.yearTo)-x(d.yearFrom) )
@@ -146,17 +147,19 @@ export class TimelineComponent {
 							document.getElementById("author-image").style.maxWidth = '300px';
 							document.getElementById("author-image").style.maxHeight = '300px';
 						}
-					})
+          })
+          
+          animateScrollTo(document.querySelector("#timeline-container"));
         });
         
     // add the x Axis
     svg.append("g")
       .attr('class','xaxis')
-      .attr("transform", "translate(0,"+height+")")     
-      .call(d3.axisBottom(x).tickFormat(t => t.toString()) )
+      //.attr("transform", "translate(0,"+height+")")     
+      .call(d3.axisTop(x).tickFormat(t => t.toString()) )
       .selectAll('text')
         .attr('text-anchor', 'end')
-        .attr('transform','rotate(-25)')
+        //.attr('transform','rotate(-25)')
         .attr('font-size', '1.4em');
         
     // add the y Axis
