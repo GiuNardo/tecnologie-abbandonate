@@ -9,7 +9,7 @@ export const AUTHORS: Author[] =   [
         surname: "",
         dataOfBirth: "07/05/1946",
         description: "L'azienda è una multinazionale giapponese con sede stabile a Tokyo. Il core dell'azienda è quello dell'elettronica di consumo, ed è particolarmente famosa nel campo dell'intrattenimento, specialmente nell'ambito dei videogiochi.",
-        logo: path+''
+        logo: path+'sonylogo.png'
     }, {
         id: 2,
         name: "Kodak",
@@ -23,7 +23,7 @@ export const AUTHORS: Author[] =   [
         surname: "",
         dataOfBirth: "01/01/1927",
         description: "Questa azienda giapponese è stata fondataa a Yokohama e si concentra sull'elettronica di consumo. Uno dei fondatori è stato Kunihko Sato e i loro prodotti principali sono: televisori, radio, videocamere, videoproiettori e lettori DVD e BluRay.",
-        logo: path+''
+        logo: path+'jvclogo.png'
     }, {
         id: 4,
         name: "David Paul",
@@ -65,14 +65,14 @@ export const AUTHORS: Author[] =   [
         surname: "",
         dataOfBirth: "01/01/1891",
         description: "Fondata nei Paesi Bassi, ad Eindhoven, la Philips ha la sua sede principale ad Amsterdam e i due fondatori sono stati Gerard Philips e Anton Philips. E' stata una delle maggiori aziende al mondo nel settore elettronico, occupandosi di audio, video, illuminazione, microprocessori, compact disc e piccoli elettrodomestici.",
-        logo: path+''
+        logo: path+'philipslogo.png'
     }, {
         id: 10,
-        name: "Texas Instruments",
+        name: "Texas Instrument",
         surname: "",
         dataOfBirth: "01/01/1930",
         description: "Fondata da Cecil Howard Green, la Texas Instruments è un'azienda statunitense con sede a Dallas, in Chicago. E' stata una multinazionale di prodotti di tecnologia informatica in generale.",
-        logo: path+''
+        logo: path+'texaslogo.png'
     }, {
         id: 11,
         name: "Claude",
@@ -86,7 +86,7 @@ export const AUTHORS: Author[] =   [
         surname: "",
         dataOfBirth: "12/10/1847",
         description: "La Siemens è una multinazionale tedesca, con sede a Monaco di Baviera, fondata da Werner von Siemens. Ancora attiva nei settori delle tecnologie, delle mobilità e dei servizi, è una delle aziende più proficue.",
-        logo: path+''
+        logo: path+'siemenslogo.png'
     }, {
         id: 15,
         name: "Psion",

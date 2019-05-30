@@ -47,7 +47,7 @@ export class ArchivioComponent implements OnInit {
             '.row{ margin-top: 10px; text-align: center;}' +
             '#descrizione { margin-right: 20px; margin-bottom: 10px; }' +
             '#video-parent{ text-align:center }'+
-            '#image-parent{ padding-left: 60px; text-align:center }'+
+            '#image-parent{ padding-left: 40px; text-align:center }'+
         '</style>';
 
     this.data.forEach(d => {
@@ -67,8 +67,8 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row" >' +
                         '<div class="row">' +
-                            '<div class="col-6" id="image-parent"><img  src="' + d.image + '"></div>' +
-                            '<div class="col-6" id="video-parent">' + link + '</div>' +
+                            '<div class="col-7" id="image-parent"><img  src="' + d.image + '"></div>' +
+                            '<div class="col-5" id="video-parent">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
                             '<div class="row">' +
@@ -95,11 +95,6 @@ export class ArchivioComponent implements OnInit {
                     '</div>'+
                 '</li> <br/>';
 
-                if(link == '') {
-                    document.getElementById('video-parent').className.replace("6", "0");
-                    document.getElementById('image-parent').className.replace("6", "12");
-                    document.getElementById('image-parent').style.textAlign = "center";
-                }
             }
 
         } else {
@@ -110,8 +105,8 @@ export class ArchivioComponent implements OnInit {
                 '<li id="elemento-archivio">'+
                     '<div class="row main-row" >' +
                         '<div class="img row">' +
-                            '<div class="col-6" id="image-parent><img  src="' + d.image + '"></div>' +
-                            '<div class="col-6" id="video-parent" style="width:100%">' + link + '</div>' +
+                            '<div class="col-7" id="image-parent><img  src="' + d.image + '"></div>' +
+                            '<div class="col-5" id="video-parent" style="width:100%">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
                             '<div class="row">' +
@@ -137,13 +132,6 @@ export class ArchivioComponent implements OnInit {
                         '</div>' + 
                     '</div>'+
                 '</li> <br/>';
-
-
-                if(link == '') {
-                    document.getElementById('video-parent').className = "col-0";
-                    document.getElementById('image-parent').className = "col-12";
-                    document.getElementById('image-parent').style.textAlign = "center";
-                }
 
             }
         }
