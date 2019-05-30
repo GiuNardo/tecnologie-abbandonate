@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DATA } from 'src/app/mock-data';
+import { DATA } from '../mock-data';
 
 @Component({
   selector: 'app-notizie',
@@ -11,7 +11,7 @@ export class NotizieComponent implements OnInit {
   constructor() { }
     
   data = DATA;
-  tec ="";
+  tec ='';
 
   ngOnInit() {
       this.createContent();
@@ -25,7 +25,7 @@ export class NotizieComponent implements OnInit {
   createContent(){
     document.getElementById("cerca").innerHTML = "Cerca per tecnologia";
     document.getElementById("input").style.width = "40%";
-    document.getElementById("content").innerHTML = 
+    document.getElementById("notizie-content").innerHTML = 
       '<style>'+
         '#elemento-archivio { list-style:none; text-align:center; padding:20px;background-color: #ffff;}' +
         '.container-fluid{ padding: 50px!important; }'+
@@ -36,15 +36,13 @@ export class NotizieComponent implements OnInit {
     this.data.forEach(d => {
       if(d.name.toLocaleLowerCase().includes(this.tec.toLocaleLowerCase())){
 
-        document.getElementById("content").innerHTML += 
+        document.getElementById("notizie-content").innerHTML += 
           '<li id="elemento-archivio">'+
             '<div>Articoli riguardanti: <span class="cell-title"> '+ d.name +'</span></div>'+
-            '<div class="article">A</div>'+
+            '<div class="article">NOTIZIE</div>'+
           '</li> <br/>';
       
       };
-      
-      (<HTMLLinkElement>document.getElementById("a")).href = 'https://bari.repubblica.it/cronaca/2019/05/27/news/comunali_a_bari_al_via_lo_spoglio_decaro_pd_spera_nel_bis_al_primo_turno_nonostante_la_valanga_gialloverde_alle_europee-227329634/';
          
     })
     

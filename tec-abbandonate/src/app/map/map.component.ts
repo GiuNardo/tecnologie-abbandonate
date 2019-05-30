@@ -55,8 +55,8 @@ export class MapComponent {
 			polygonTemplate.propertyFields.fill = "fill";
 
 			// TO SEE COUNTRY NAMES AND COLOR HOVERS
-			let hs = polygonTemplate.states.create("hover");
-			hs.properties.fill = am4core.color("#7A7A7A");
+			//let hs = polygonTemplate.states.create("hover");
+			//hs.properties.fill = am4core.color("#7A7A7A");
 
 			// MARKERS
 			this.draw(map);

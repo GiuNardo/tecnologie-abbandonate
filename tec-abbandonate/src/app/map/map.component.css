@@ -1,18 +1,21 @@
 .map{
     margin: auto;
-    
 }
 
 .timeline{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #anteprima{
-    width: 80%;
+    width: 85%;
     text-align: center;
     margin: auto;
     padding-right:80px;
+}
+
+.row {
+    margin-right: 0px!important;
 }
 
 #esterno{
@@ -40,6 +43,11 @@
     text-align: center;
     margin-top: 50px;
 }
+
+.map {
+    text-align: center;
+}
+
 #chartdiv {
     height: 350px;
 }
