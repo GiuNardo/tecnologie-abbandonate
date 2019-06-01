@@ -10,8 +10,11 @@ img{
 }
 
 #banner{
-    height: 80%;
+    margin-top: 80px;
+    height: 50%;
     text-align: center;
+    background-image: url("/assets/sfondoLegnoBig.jpg");  
+    background-size: cover;
 }
 
 #video{
