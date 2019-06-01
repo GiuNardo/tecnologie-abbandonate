@@ -37,3 +37,17 @@
     padding-bottom: 20px;
     display: none;
 }
+
+#scroll-up{
+    float: right;
+    background-color: var(--main-color);
+    color: var(--dark-bg);
+    margin-top: -30px;
+    margin-right: 20px;
+    
+}
+
+#scroll-up:hover{
+    color: var(--main-color);
+    background-color: var(--dark-bg);
+}

@@ -35,7 +35,7 @@ export class ArchivioComponent implements OnInit {
   createContent(){
     animateScrollTo(document.querySelector("#main2"))
 
-    document.getElementById("cerca").innerHTML = "Cerca per autore";
+    document.getElementById("cerca").innerHTML = "Cerca autore";
     document.getElementById("content").innerHTML = 
         '<style>'+
             'img { max-width: 400px; max-height: 320px; }' +
@@ -58,7 +58,7 @@ export class ArchivioComponent implements OnInit {
                 var link = '';
                 if(d.spot!='') {
                     link = 
-                        '<div id="div-video"><iframe width="550" height="320" src="' + d.spot + '? ' +
+                        '<div id="div-video"><iframe width="500" height="320" src="' + d.spot + '? ' +
                             'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
                         '</iframe></div>' 
                 }

@@ -68,7 +68,7 @@ export class MapComponent {
 			zoomControl.fill = am4core.color("#000000");
 
 			let home = map.chartContainer.createChild(am4core.Button);
-			home.label.text = "Reset";
+			home.label.text = "Reset zoom";
 			home.align = "center";
 			home.events.on("hit", function(ev) {
 				map.goHome();
@@ -199,6 +199,10 @@ export class MapComponent {
 				this.chart.dispose();
 			}
 		})
+	}
+
+	scrollUp(e: Event){
+		animateScrollTo(document.querySelector("#main2"));
 	}
 
 }

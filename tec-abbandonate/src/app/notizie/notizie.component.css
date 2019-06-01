@@ -5,7 +5,7 @@
 
 
 #filter-row{
-    margin:0!important;
+    margin:auto;
 }
 
 .content{
@@ -15,6 +15,6 @@
 
 .container-fluid{
     background-color: var(--dark-1);
-    border-top: 5px solid #ffff;
+    border-top: 10px solid #ffff;
 }
     

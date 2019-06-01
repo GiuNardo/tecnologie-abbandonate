@@ -1,8 +1,9 @@
 .navbar{
-  margin: auto;
+  padding: 10px;
+  margin:auto;
   margin-top:80px;
   background-color: var(--dark-1);
-  
+  border-radius: 0 0 10px 10px;
 }
   
 .navbar > a{
@@ -32,8 +33,7 @@ input {
   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 1s;
-  height: 60px;
-  padding-right:0px!important;
+  height: 50px;
   text-align: center;
 }
 

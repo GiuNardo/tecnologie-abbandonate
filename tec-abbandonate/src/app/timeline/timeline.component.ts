@@ -195,4 +195,9 @@ export class TimelineComponent {
     return array;
   }
 
+  scrollUp(e: Event){
+		animateScrollTo(document.querySelector("#main2"));
+		console.log("a");
+	}
+
 }
