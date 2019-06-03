@@ -5,15 +5,15 @@
 }
 
 img{
-    height:100%;
+    height: 90%;
     margin: auto;
 }
 
 #banner{
-    margin-top: 80px;
-    height: 50%;
+    margin-top: 40px;
+    height: 70%;
     text-align: center;
-    background-image: url("/assets/sfondoLegnoBig.jpg");  
+    background-image: url("/assets/sfondoLegno.jpg");  
     background-size: cover;
 }
 
