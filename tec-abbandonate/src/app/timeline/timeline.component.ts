@@ -138,7 +138,8 @@ export class TimelineComponent {
 					}
 
 					aut.map(t=> {
-						if (t.name == d.author){
+						let confronta = t.surname=="" ? t.name : t.name+" "+t.surname;
+						if (confronta == d.author){
 							document.getElementById("author-name").innerHTML = "<b>" + t.name + " " + t.surname + "</b>";
 							document.getElementById("author-date").innerHTML = "" + t.dataOfBirth;
 							document.getElementById("author-descr").innerHTML = "" + t.description;
