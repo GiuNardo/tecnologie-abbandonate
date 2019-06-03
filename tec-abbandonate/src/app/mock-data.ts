@@ -517,7 +517,7 @@ export const DATA: Data[] =   [
     dateTo: '2019',
     yearFrom: 1960,
     yearTo: 2019,
-    author: 'Louis Misuraca - Kodak',
+    author: 'Kodak',
     latitude: 43.165556,
     longitude: -77.611389,
     fill: foto,

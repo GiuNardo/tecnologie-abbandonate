@@ -128,7 +128,7 @@ export const AUTHORS: Author[] =   [
         surname: "Farnsworth",
         dataOfBirth: "19/08/1906",
         description: "Farnsworth è stato un inventore statunitense. Risulta infatti essere il primo nella storia a realizzare un televisore elettronico. Il televisore da lui realizzato è stato quello che oggi conosciamo come <i>Televisore a tubo catodico</i>.",
-        logo: path+'fansworth.jpg'
+        logo: path+'farnsworth.jpg'
     },{
         id: 21,
         name: "Peter",
@@ -159,8 +159,8 @@ export const AUTHORS: Author[] =   [
         logo: path+'land.jpg'
     },{
         id: 25,
-        name: "Eadweard ",
-        surname: "Muybridge ",
+        name: "Eadweard",
+        surname: "Muybridge",
         dataOfBirth: "09/04/1904",
         description: "Muybridge, originariamente noto come Edward James Muggeridge, è stato un pioniere nell'ambito della fotografia. Inizialmente libraio ed editore, decide di interessarsi all'ambito fotografico realizzando dei servizi per il famoso Parco Nazionale di Yosemite e poi di San Francisco.",
         logo: path+'muybridge.jpg'
