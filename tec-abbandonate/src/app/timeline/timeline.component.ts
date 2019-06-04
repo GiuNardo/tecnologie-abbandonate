@@ -5,6 +5,8 @@ import { DATA } from '../mock-data';
 import { AUTHORS } from '../mock-authors';
 
 import animateScrollTo from 'animated-scroll-to';
+import { getTreeNoValidDataSourceError } from '@angular/cdk/tree';
+import { NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR } from '@angular/core/src/view/provider';
 
 @Component({
   selector: 'app-timeline',
@@ -135,8 +137,11 @@ export class TimelineComponent {
 							'<iframe width="560" height="315" src="' + d.spot + '? ' +
 								'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
 							'</iframe>' 
-					}
-
+					} else {
+            document.getElementById("item-video-parent").innerHTML = "";
+          }
+          
+          var found = false;
 					aut.map(t=> {
 						let confronta = t.surname=="" ? t.name : t.name+" "+t.surname;
 						if (confronta == d.author){
@@ -146,10 +151,17 @@ export class TimelineComponent {
 							document.getElementById("author-img-parent").innerHTML = "<img id=\'author-image\' src=" + t.logo + "></img>"
 
 							document.getElementById("author-image").style.maxWidth = '300px';
-							document.getElementById("author-image").style.maxHeight = '300px';
-						}
+              document.getElementById("author-image").style.maxHeight = '300px';
+              found = true;
+            }
+            
           })
-          
+          if(!found) {
+            document.getElementById("author-name").innerHTML = "";
+            document.getElementById("author-date").innerHTML = "";
+            document.getElementById("author-descr").innerHTML = "";
+            document.getElementById("author-img-parent").innerHTML = "";
+          }
           animateScrollTo(document.querySelector("#timeline-container"));
         });
         

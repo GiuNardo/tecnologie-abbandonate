@@ -160,8 +160,11 @@ export class MapComponent {
 							'<iframe width="560" height="315" src="' + d.spot + '? ' +
 								'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
 							'</iframe>' 
+					} else {
+						document.getElementById("item-video-parent").innerHTML = "";
 					}
 
+					var found = false;
 					aut.map(t=> {
 						let confronta = t.surname=="" ? t.name : t.name+" "+t.surname;
 						if (confronta == d.author){
@@ -172,6 +175,14 @@ export class MapComponent {
 
 							document.getElementById("author-image").style.maxWidth = '300px';
 							document.getElementById("author-image").style.maxHeight = '300px';
+							found = true;
+						}
+
+						if(!found) {
+							document.getElementById("author-name").innerHTML = "";
+							document.getElementById("author-date").innerHTML = "";
+							document.getElementById("author-descr").innerHTML = "";
+							document.getElementById("author-img-parent").innerHTML = "";
 						}
 					})
 				}
