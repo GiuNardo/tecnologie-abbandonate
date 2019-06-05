@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DATA } from '../mock-data';
+import { element } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-notizie',
@@ -35,13 +36,23 @@ export class NotizieComponent implements OnInit {
       
     this.data.forEach(d => {
       if(d.name.toLocaleLowerCase().includes(this.tec.toLocaleLowerCase())){
+        
+        document.getElementById("notizie-content").innerHTML += '<li id="elemento-archivio"></li> <br/>';
 
-        document.getElementById("notizie-content").innerHTML += 
-          '<li id="elemento-archivio">'+
-            '<div>Articoli riguardanti: <span class="cell-title"> '+ d.name +'</span></div>'+
-            '<div class="article">NOTIZIE</div>'+
-          '</li> <br/>';
-      
+        var superNode = document.createElement('div');
+        superNode.className = "article";
+        superNode.innerHTML = 'Articoli riguardanti: <span class="cell-title"> '+ d.name +'</span>';
+        
+         d.notizie.forEach(n => {
+          var node = document.createElement('div');
+          node.className = "inner-article";
+          node.innerHTML = '<b>'+ n.sito+' </b> <a href="'+ n.link + '"> ' + n.name + '</a>';
+          superNode.appendChild(node);
+           
+        });
+
+        document.getElementById("elemento-archivio").appendChild(superNode);
+
       };
          
     })
