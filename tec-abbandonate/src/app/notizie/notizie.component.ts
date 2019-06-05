@@ -31,7 +31,7 @@ export class NotizieComponent implements OnInit {
         '#elemento-archivio { list-style:none; text-align:center; padding:20px;background-color: #ffff;}' +
         '.container-fluid{ padding: 50px!important; }'+
         '.cell-title{  color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700;}' +
-        '.article{height: 100px; margin-top:20px; border: 1px solid grey; overflow: scroll;}' +
+        '.article{height: 200px; margin-top:20px; border: 1px solid grey; overflow: scroll;}' +
       '</style>';
       
     this.data.forEach(d => {
