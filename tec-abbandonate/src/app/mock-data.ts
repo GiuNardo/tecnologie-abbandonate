@@ -1,6 +1,6 @@
-
 import { Data } from './data';
 import { Notizia } from './notizia';
+
 
 var video = '#b10f2e'
 var audio = '#0A8AB5'
@@ -8,9 +8,11 @@ var comunicazione = '#eac435'
 var foto = '#0F5257'
 var elettronica = '#5fad56'
 
+
 var iconePath = './assets/DataImage/icone/'
 var imgPath = './assets/DataImage/foto/'
 var youtube = 'https://www.youtube.com/embed/'
+
 
 export const DATA: Data[] =   [
   {
@@ -20,7 +22,7 @@ export const DATA: Data[] =   [
     shortDescription: 'La Super 8 millimetri, o semplicemente Super 8, è una videocamera che utilizza nello specifico il formato 8 millimetri, dal quale prende il nome.',
     category: 'video',
     dateFrom: '1965',
-    dateTo: '1075',
+    dateTo: '1975',
     yearFrom: 1965,
     yearTo: 1975,
     author: 'Kodak',
@@ -31,7 +33,7 @@ export const DATA: Data[] =   [
     icon: iconePath+'super8.png',
     license : "",
     spot: youtube+'ly0mn0Jev4Y',
-    notizie: [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"Repubblica.it", name:"Super 8, quelle pellicole che ci raccontano come eravamo",link:"http://www.repubblica.it/cultura/2016/04/14/news/super8-137582282/"}]
   },{
     id: 2,
     name: 'Betamax',
@@ -50,7 +52,7 @@ export const DATA: Data[] =   [
     fill : video,
     license : "",
     spot: youtube+'suclT9u51Fc',
-    notizie: [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"il POST.it", name:"La fine del Betamax",link:"https://www.ilpost.it/2015/11/11/la-fine-del-betamax/"}]
   },{
     id: 3,
     name: 'Formato VHS',
@@ -69,7 +71,7 @@ export const DATA: Data[] =   [
     icon: iconePath+'vhs.png',
     license : "",
     spot: youtube+'pjXh-tNLqHQ',
-    notizie: [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"Dailybest", name:"Un fanatico di cinema ha creato le VHS funzionanti dei grandi film di oggi",link:"https://www.dailybest.it/tv-cinema/vhs-funzionanti-film-cinema/"}]
   },{
     id: 4,
     name: 'Laserdisc',
@@ -88,7 +90,7 @@ export const DATA: Data[] =   [
     fill : video,
     license:"",
     spot: youtube+'ZGjw3gUwMOo',
-    notizie: [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"Repubblica.it", name:"Ascoltami sono il laser",link:"https://ricerca.repubblica.it/repubblica/archivio/repubblica/1991/03/02/ascoltami-sono-il-laser.html"}]
   },{
     id: 5 ,
     name: 'Grammofono',
@@ -107,8 +109,8 @@ export const DATA: Data[] =   [
     icon: iconePath+'gramophone.png',
     license:"",
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
-  },{
+    notizie: [{sito:"Corriere della Sera", name:"Bollettini di guerra e grandi discorsi Il grammofono dà voce alla storia",link:"https://roma.corriere.it/notizie/cultura_e_spettacoli/15_maggio_08/bollettini-guerra-grandi-discorsi-grammofono-da-voce-storia-1e4a4ed4-f575-11e4-9c1c-931a52508e78.shtml?refresh_ce-cp"}]
+ },{
     id: 6 ,
     name: 'Giradischi',
     description: 'Come il grammofono, il giradischi è un dispositivo per la riproduzione e l’incisione meccanica del suono, sviluppato però successivamente rispetto al primo e costruito con meccanismi più moderni. Il giradischi è composto da un piatto, ovvero la parte rotante su cui viene posizionato il vinile e di solito è in acrilico, un tappetino antiscivolo (oppure mat, dall’inglese), che funge da interfaccia tra giradischi e dischi, il contrappeso è un peso posizionato sul braccio e controlla la cartuccia nel suo monitoraggio, l’antitasking è un’altra parte applicata al braccio di lettura del giradischi e non è altro che la punta che poggia su disco in vinile, il meccanismo di cueing viene utilizzato per alzare e abbassare il braccio del giradischi, un perno di centraggio dove poter inserire il disco, la base del dispositivo ed un interruttore per regolare l’accensione o spegnimento.',
@@ -126,11 +128,11 @@ export const DATA: Data[] =   [
     image: imgPath+"giradischi.jpg",
     license:"",
     spot: youtube+'apf_tjyRVfI',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"WIRED.it", name:"Sony presenta un giradischi con connessione bluetooth",link:"https://www.wired.it/gadget/audio-e-tv/2019/04/11/sony-ps-lx310bt-giradischi-bluetooth/"}]
   },{
     id: 7,
     name: 'Bobina Aperta',
-    shortDescription: 'Supporto per la registrazione del suono / reel-to-reel',
+    shortDescription: 'Supporto per la registrazione del suono, noto come reel-to-reel.',
     description: 'La bobina aperta, conosciuta anche in inglese come <i> reel to reel </i>, è un formato diverso rispetto a quello delle videocassette e delle musicassette in quanto è un nastro magnetico, ma lascia un’estremità del nastro libera. È diventata una tipologia di registrazione obsoleta da quanto, dall’inizio degli anni 2000 è stato introdotto il formato digitale. Le ultime macchine a bobine aperte che sono state prodotte sono stati i registratori Digital Audio Stationary Head, intorno al 1995. Il vantaggio della bobina aperta consisteva nella sua lunghezza, infatti permetteva delle sessioni di registrazioni estremamente lunghe, senza la necessità di interrompere le registrazioni dopo 30 minuti, come invece accadeva nel disco fonografico. Un altro punto a favore della bobina aperta era la possibilità di poter maneggiare le registrazioni audio come se fossero delle vere e proprie entità fisiche.',
     category: 'audio',
     dateFrom: '1950',
@@ -145,11 +147,11 @@ export const DATA: Data[] =   [
     fill : audio,
     license : "",
     spot: youtube+'0V426FsFvX8',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"Rockit.it", name:"Ritrovato in una radio universitaria un raro registratore a bobina usato per tutti i dischi dei Beatles",link:"https://www.rockit.it/news/registratore-bobina-btr-3-bealtles"}]
   },{
     id: 8,
     name: 'Registratore a nastro',
-    shortDescription: 'Dispositivo per la registrazione su cassette a nastro',
+    shortDescription: 'Dispositivo per la registrazione su cassette a nastro.',
     description: ' In gergo è anche detto registratore magnetico, oppure anche magnetofono. Il registratore a nastro viene utilizzato per riprodurre e registrare dei suoni, ed il formato supportato da questo dispositivo è quello della bobina aperta, già trattato tra le tecnologie in disuso. La tecnologia precedente che il registratore a nastro è andata a sostituire è il grande registratore Siemens, che supportava delle bobine di grandi dimensioni, come quelle dei proiettori cinematografici 35mm.',
     category: 'audio',
     dateFrom: '1963',
@@ -164,11 +166,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'registr_nastro.png',
     license : "",
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:[{sito:"ilnastrone.it",name:"Il funzionamento del registratore a nastro",link:"http://www.ilnastrone.it/Funzionamento/funzionamento.html"}]
   },{
     id: 9 ,
     name: 'Radio Transistor',
-    shortDescription: 'Dispositivo audio con circuito a transistor',
+    shortDescription: 'Dispositivo audio con circuito a transistor.',
     description: 'La radio transistor è un piccolo dispositivo di ricezione radio portatile utilizza un circuito basato sul conduttore transistor. Questi dispositivi sono diventati tra i più popolari mezzi di comunicazione della storia intorno alla metà del 1900, con milioni di dispositivi realizzati tra il 1960 e il 1970. La loro dimensione ridotta li ha resi davvero indispensabili in quel periodo, cambiando le abitudini della popolazione nell’ascoltare la musica - soprattutto essendo dei dispositivi portatili e permettendo alle persone di ascoltare i loro artisti preferiti. ',
     category: 'audio',
     dateFrom: '1954',
@@ -183,11 +185,11 @@ export const DATA: Data[] =   [
     fill: audio,
     license : "",
     spot: youtube+'mO5d63WpNa8',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"fm-world.it", name:"64 anni fa, la radio diventava mobile con i primi ricevitori a transistor",link:"https://www.fm-world.it/news/64-anni-fa-la-radio-diventava-mobile-con-i-primi-ricevitori-a-transistor/"}]
   },{
     id:10 ,
     name: 'Cassette',
-    shortDescription: 'Supporto audio a nastro magnetico / compact cassette',
+    shortDescription: 'Supporto audio a nastro magnetico - compact cassette.',
     description: 'La cassetta o più precisamente musicassetta, è un dispositivo in grado di memorizzare adti in sequenza su un nastro magnetico. Formata da due bobine di nastro magnetico protette da un contenitore di plastica può essere utilizzata da entrambi i lati. È possibile sia registrare una traccia audio, sia riprodurne una memorizzata all’interno. Prodotta da Philips agli inizi degli anni 60 ha trovato la sua maggiore diffusione negli anni ottanta e novante per poi cedere il proprio posto ai più moderni CD. La sua diffusione si deve soprattutto alla manegevolezza, alla versatilità, alla facilità di utilizzo ed all’economicità che l’ha caratterizzata.',
     category: 'audio',
     dateFrom: '1962',
@@ -202,11 +204,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'cassette.png',
     license : "",
     spot: youtube+'EMN1FqYMbRw',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"WIRED.it", name:"Il ritorno delle musicassette: ecco 15 nuovi stereo per ascoltarle",link:"https://www.wired.it/gadget/accessori/2019/01/25/15-accessori-musicassette/"}]
   },{
     id: 11,
     name: 'Ghetto Blaster',
-    shortDescription: 'Stereo Portatile / Boombox',
+    shortDescription: 'Più comunemente noto come Stereo Portatile o Boombox.',
     description: 'Il Ghetto Blaster chiamato anche Boombox è uno stereo portatile composto da un lettore di musicassette, una radio e due (o più) altoparlanti integrati. Questo dispositivo ha contribuito alla crescita dell’ hip hop sia dal punto di vista musicale che della moda. I modelli più conosciuti e ritenuti anche tra i migliori sono il: VC RC-M90, Sharp GF-777, Lasonic TRC 931.',
     category: 'audio',
     dateFrom: '1966',
@@ -221,11 +223,11 @@ export const DATA: Data[] =   [
     fill: audio,
     license : "",
     spot: youtube+'xwpp5pNyKFo',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"rockit.it", name:"Una delle più grandi collezioni di ghetto blaster è andata all'asta",link:"https://www.rockit.it/news/ghetto-blaster-asta"}]
   },{
     id: 12,
     name:  'Telegrafo',
-    shortDescription: 'Il telegrafo è un sistema di comunicazione a distanza',
+    shortDescription: 'Il telegrafo è un sistema di comunicazione a distanza.',
     description: 'Il telegrafo è un apparecchio che, attraverso l’invio di impulsi elettrici, permette di inviare a distanza messaggi scritti utilizzando un apposito codice inventato da Samuel Morse nella prima metà del diciannovesimo secolo. Questo dispositivo rappresenta uno dei pilastri fondamentali per lo sviluppo della nostra civiltà. Definibile come la prima forma di comunicazione moderna, è stato il primo dispositivo in grado di coprire grandi distanze in tempo reale. Il primo esemplare di sistema telegrafico fu quello ottico inventato da Claude Chappe in Francia.',
     category: 'comunicazione',
     dateFrom: '1793',
@@ -240,7 +242,7 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     license : "",
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"Rai Scuola", name:"Guglielmo Marconi: un telegrafo per la storia",link:"http://www.raiscuola.rai.it/medialibrary/video.aspx?id=3212"}]
   },{
     id: 13,
     name: 'Telex',
@@ -259,12 +261,12 @@ export const DATA: Data[] =   [
     image: imgPath+"telex.png",
     license : "",
     spot: youtube+'byarX5L_Ki8',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"LaStampa.it", name:"I radioamatori che hanno sostituito lo smartphone con vecchie Telex",link:"https://www.lastampa.it/2017/01/22/tecnologia/i-radioamatori-che-hanno-sostituito-lo-smartphone-con-vecchie-telex-0yJYoQOy4ZrcplYMsrYQXP/pagina.html"}]
   },{
     id: 14,
     name: 'Siemens S62',
     description: 'Questo apparecchio telefonico, noto anche in Italia come Bigrigio grazie ai suoi tipici colori sulle tonalità di grigio, è noto sotto il nome di S62. E’ un telefono fisso a batteria che è stato ideato e prodotto dall’azienda Sit-Siemens ed è stato pensato esclusivamente per uso domestico. Questo strumento è stato particolarmente in voga tra gli anni 60-70, fino a quando non è caduto in disuso a causa di telefoni utilizzabili in casa più moderni e più comodi, come gli apparecchi da tastiera.',
-    shortDescription: 'Telefono a disco',
+    shortDescription: 'Telefono a disco, o a rotella, utilizzato tra gli anni sessanta e ottanta.',
     category: 'comunicazione',
     dateFrom: '1962',
     dateTo: '1985',
@@ -278,7 +280,7 @@ export const DATA: Data[] =   [
     image: imgPath+"s62.jpg",
     license : "",
     spot: youtube+'jwO7Qr-O9OU',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"italianways.com", name:"IL “BIGRIGIO”, L’ULTIMO TELEFONO A DISCO",link:"http://www.italianways.com/il-bigrigio-lultimo-telefono-a-disco/"}]
   },{
     id: 15,
     name: 'Computer Palmare',
@@ -297,12 +299,12 @@ export const DATA: Data[] =   [
     fill: elettronica,
     license : "",
     spot: youtube+'k6QjICoMgso',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"advister.it", name:"Computer Palmari: Storia di un prodotto e innovazione",link:"https://www.advister.it/computer-palmari/"}]
   },{
     id: 16,
     name: 'Watchman',
     description: 'Il Sony Watchman era un tipo di televisore portatile introdotto intorno al 1980 e andato fuori produzione nel 2000. Prima di cadere in disuso però era una tecnologia molto popolare, tanto da avere ben più di 65 modelli. Man mano che si procedeva con gli anni, questi televisori avevano schermi sempre più grandi e avevano sempre più funzioni al loro interno. Questa tecnologia è caduta in disuso a causa del passaggio al mondo digitale, fornendo soluzioni più comode del Watchman.',
-    shortDescription: 'Televisore portatile',
+    shortDescription: 'Il Watchman era un dispositivo fisicamente simile ad una radio, dotato però di uno schermo. Era una sorta di televisore portatile.',
     category: 'video',
     dateFrom: '1982',
     dateTo: '2000',
@@ -316,12 +318,12 @@ export const DATA: Data[] =   [
     icon: iconePath+'portabletv.png',
     license : "",
     spot: youtube+'tdZ6LyaHJWI',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"Pokemon Millenium", name:"Ultimate su un Sony Watchman degli anni ’80" ,link:"https://www.pokemonmillennium.net/curiosita/175257-ultra-hd-un-utente-e-riuscito-a-far-girare-super-smash-bros-ultimate-su-un-sony-watchman-degli-anni-80/"}]
   },{
     id: 17,
     name: 'Walkman',
     description: 'Il walkman è una tecnologia della Sony, originariamente era stato pensato per essere un lettore di musicassette. Iniziato a diffondersi all’inizio degli anni ‘80, diventa così popolare che tutte le tecnologie di riproduzione di musicassette vengono chiamate impropriamente “Walkman”, anche quelle non prodotte da Sony. Successivamente l’azienda ha deciso di espandere e sfruttare la popolarità di questo marchio, dando questo nome a tutti i dispositivi che potessero riprodurre della musica, indipendentemente dalle musicassette. Negli anni ‘80 il walkman è stato lanciato e pubblicizzato involontariamente da uno dei film più popolari di quel periodo: “Il Tempo delle Mele”.',
-    shortDescription: 'Lettore di musicassette',
+    shortDescription: 'Il Walkman è un lettore di musicassette utilizzato per ascoltare la musica anche quando si era fuori casa.',
     category: 'audio',
     dateFrom: '01/07/1979',
     dateTo: '22/10/2010',
@@ -335,12 +337,12 @@ export const DATA: Data[] =   [
     fill : audio,
     license : "",
     spot: youtube+'xOTfzZCyCmo',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"WIRED.it", name:"Come il primo Walkman ha cambiato il mondo, 40 anni fa",link:"https://www.wired.it/gadget/audio-e-tv/2019/06/04/walkman-40-anni-storia/"}]
   },{
     id: 18 ,
     name: 'Cercapersone',
     description: 'Questo apparecchio è stato utilizzato soprattutto negli anni ‘80 e ‘90, e come suggerisce il nome, era un dispositivo utilizzato per contattare le persone. Il suo limite risultava essere il fatto di non poter comunicare attraverso il dispositivo: era infatti possibile solamente far sapere ad una persona che la si stava cercando. È facilmente intuibile che questa tecnologia è stata presto sostituita nel momento in cui i telefoni cellulari sono diventati convenienti e accessibili a tutti. Il cercapersone è dotato da un sistema wireless e può essere unidirezionale (ovvero che può solamente ricevere il messaggio), oppure bidirezionale (che può ricevere ed inviare il messaggio).',
-    shortDescription: 'Pagers apparecchio elettronico precedente ai telefoni cellulare',
+    shortDescription: 'Il cercapersone, o pager, è un apparecchio elettronico precedente ai telefoni cellulari.',
     category: 'comunicazione',
     dateFrom: '1949',
     dateTo: '2001',
@@ -354,12 +356,12 @@ export const DATA: Data[] =   [
     image: imgPath+"pager.jpg",
     license : "",
     spot: youtube+'jrUVYTqvIfI',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"Electronics.howstuffworks", name:"How Page",link:"https://electronics.howstuffworks.com/everyday-tech/restaurant-pager1.htm"}]
   },{
     id: 19,
     name: 'Pulsar',
     description: 'È stato il primo orologio digitale ad essere presentato sul mercato all’inizio del 1970, presentava un display digitale formato da diodi ad alta emissione luminosa. L’ora veniva visualizzata premendo un tasto presente sulla quadrante. Successivamente sono stati introdotti altri modelli sul mercato anche con calcolatrice integrata.',
-    shortDescription: 'Primo orologio led',
+    shortDescription: 'Il Pulsar è stato il primo orologio led.',
     category: 'elettronica',
     dateFrom: '1970',
     dateTo: '2019',
@@ -373,12 +375,12 @@ export const DATA: Data[] =   [
     image: imgPath+'pulsar.jpg',
     license: '',
     spot: youtube+'Ixj5125v4j8',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"wikipedia.org", name:"Pulsar (orologi)",link:"https://it.wikipedia.org/wiki/Pulsar_(orologi)"}]
   }, {
     id: 20,
     name: 'TV Watch',
     description: 'Chiamato precisamente Seiko T001 è un dispositivo del tutto simile ed indossabile come un orologio che permetteva di vedere e ricevere un segnale TV attraverso uno schermo LCD da un quarto di pollice. Era composto anche da un altro schermo più piccolo, posto nella parte superiore, da cui era possibile leggere l’ora, utilizzare la funzione sveglia e leggere la data. Per il suo utilizzo era necessario un ricevitore da collegare via cavo delle dimensioni di un walkman al quale era possibile collegare delle cuffie per fruire anche dell’audio.',
-    shortDescription: 'Orologio con schermo per TV',
+    shortDescription: 'Il TV Watch, come suggerisce il nome, è un orologio dotato di un piccolo display che funge da televisore. ',
     category: 'elettronica',
     dateFrom: '1982',
     dateTo: '2019',
@@ -392,7 +394,7 @@ export const DATA: Data[] =   [
     image: imgPath+'tvwatch.jpg',
     license: '',
     spot: youtube+'5tIAPwyVuXI',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"monochrome-watches.com", name:"The Seiko T001 - Mother Of All Smart Watches",link:"https://monochrome-watches.com/seiko-t001-mother-smart-watches/"}]
   },  {
     id: 21,
     name: 'Seiko Wrist Computer',
@@ -411,12 +413,12 @@ export const DATA: Data[] =   [
     image: imgPath+'seiko.jpg',
     license: '',
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"gizmodo.com", name:"The Seiko UC-2000 Wrist PC: An Ankward ‘80s Attempt To Live The Cyborg Life",link:"https://gizmodo.com/the-seiko-uc-2000-wrist-pc-an-awkward-80s-attempt-to-l-5401391"}]
   }, {
     id: 22,
     name: 'Calculator Watches',
     description: 'Presentato da Casio alla fine degli anni settanta, era un orologio con un modulo elettronico che possedeva la funzione di calcolatrice utilizzabile attraverso la tastiera posta sotto lo schermo. La calcolatrice poteva svolgere i seguenti calcoli: +, -, x, /. Ne seguirono poi altri modelli anche di altri marchi con funzioni aggiuntive.',
-    shortDescription: 'Orologio da polso con calcolatrice integrata',
+    shortDescription: 'Orologio da polso con calcolatrice integrata.',
     category: 'elettronica',
     dateFrom: '1987',
     dateTo: '1997',
@@ -430,12 +432,12 @@ export const DATA: Data[] =   [
     image: imgPath+'calculatorwatch.jpg',
     license: '',
     spot: youtube+'jdwLdEv3z2Q',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"gizmodo.com", name:"The Gadget We Miss: The Calculator Watch",link:"https://gizmodo.com/the-gadget-we-miss-the-calculator-watch-1344076812"}]
   }, {
     id: 23,
     name: 'Monitor CRT',
     description: 'Chiamato comunemente schermo a tubo catodico, è una tipologia di schermo formata sostanzialmente da un tubo a raggi catodici in cui per la formazione delle immagini i fasci di elettroni sono diretti su una superficie fotosensibile frontale. La tecnologia da cui deriva questo dispositivo è quella sviluppata dal tedesco Karl Ferdinand Braun che inventò il primo oscilloscopio. Questa tipologia di schermi a partire dall’inizio del ventunesimo secolo è stata sostituita dai cristalli liquidi e più recentemente dagli schermi a LED.',
-    shortDescription: 'Schemo a tubo catodico',
+    shortDescription: 'Schemo a tubo catodico.',
     category: 'elettronica',
     dateFrom: '1927',
     dateTo: '2004',
@@ -449,12 +451,12 @@ export const DATA: Data[] =   [
     image: imgPath+'computer.png',
     license: '',
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"01net.it", name:"Come funziona il monitor CRT",link:"https://www.01net.it/come-funziona-il-monitor-crt/"}]
   }, {
     id: 24,
     name: 'Macchina da Scrivere',
     description: 'Si tratta di uno strumento composto da una tastiera e da dispositivi meccanici, elettrici o elettronici, che permette di ottenere l’impressione dei caratteri su un supporto cartaceo. Nata alla fine del diciannovesimo secolo è stato uno dei primi dispositivi, disponibile per un ampio pubblico, utilizzati per la realizzazione di documenti in formati standardizzati. Non esiste un unico autore a cui attribuire l’invenzione della macchina da scrivere, ma sicuramente il “tacheografo” di Pietro Conti ne fu precursore. Le macchine da scrivere esistono ancora, ma sono state inequivocabilmente sostituite dai moderni computer.',
-    shortDescription: 'Strumento per l\'impressione di caratteri su supporto cartaceo ',
+    shortDescription: 'Strumento per l\'impressione di caratteri su supporto cartaceo. ',
     category: 'comunicazione',
     dateFrom: '1864',
     dateTo: '2019',
@@ -468,12 +470,12 @@ export const DATA: Data[] =   [
     image: imgPath+'typewriter.jpg',
     license: '',
     spot: youtube+'7mxlroZT6no',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"ansa.it", name:"Macchina da scrivere, vecchia passione. Origini e sotria di un’icona",link:"http://www.ansa.it/lifestyle/notizie/passioni/musthave/2016/04/21/macchine-da-scrivere-vecchia-passione.-origini-e-storia-di-unicona_7c035fad-f429-44ab-a56a-947de141d4a2.html"}]
   },  {
     id: 25,
     name: 'Dial-up Modem',
     description: 'Il modem è un dispositivo che converte segnali digitali in analogici e segnali analogici in digitali connettendo un terminale ad una rete di trasmissione di dati. Questo dispositivo nasce dall’esigenza di connettere le postazioni di telescriventi alle linee telefoniche. I precursori dei moderni modem sono rintracciabili già nei servizi di trasmissione di notizie usati negli anni 20. Attualmente ne esistono di varie  tipologie che sfruttano tecnologie diverse.',
-    shortDescription: 'Dispositivo utilizzato per la connessione di un terminale ad una rete di dati',
+    shortDescription: 'Dispositivo utilizzato per la connessione di un terminale ad una rete di dati.',
     category: 'comunicazione',
     dateFrom: '1979',
     dateTo: '2019',
@@ -487,12 +489,12 @@ export const DATA: Data[] =   [
     image: imgPath+'modem.jpg',
     license: '',
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"speedcheck.org", name:"Che cos’è il Dial-up",link:"https://www.speedcheck.org/it/wiki/dial-up/"}]
   },  {
     id: 26,
     name: 'Zip Drive',
     description: 'Prodotto principalmente da Iomega, è un supporto di memoria rimovibile sviluppato inizialmente con una capacità di 100 Mb poi successivamente da 250 e 750 Mb che è stato lanciato sul mercato nel 1994. Al suo interno era composto da un disco di materiale magnetico simile a quello dei floppy, ma di dimensioni maggiori. L’uso di questa tecnologia si è ridotta con la diffusione dei masterizzatori e la rapida diminuzione del costo dei CD e DVD, fino a terminare definitivamente con l’entrata sul mercato delle comunemente chiamate “chiavi USB”.',
-    shortDescription: 'Supporto di memoria rimovibile composto da un disco magnetico',
+    shortDescription: 'Supporto di memoria rimovibile composto da un disco magnetico.',
     category: 'elettronica',
     dateFrom: '1994',
     dateTo: '2011',
@@ -506,12 +508,12 @@ export const DATA: Data[] =   [
     image: imgPath+'zipdrive.jpeg',
     license: '',
     spot: youtube+'civsZLQzrjs',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"tomshw.it", name:"lomega Zip Drive (1994)",link:"https://www.tomshw.it/hardware/i-fallimenti-epici-dellindustria-hardware-dei-pc/iomega-zip-drive-1994/"}]
   },  {
     id: 27,
     name: 'Proiettore di Diapositive',
-    description: '',
-    shortDescription: '',
+    description: 'Questo apparecchio ottico permetteva di proiettare su degli schermi delle immagini. I supporti da inserire in questo dispositivo, per poi visualizzare le immagini, venivano chiamati <i>diapositive</i>. Il proiettore a diapositive è stato a lungo tenuto in commercio, tra gli anni ‘50 e ‘90, ed era per le famiglie di quegli anni una notevole forma di intrattenimento. Era usanza infatti trascorrere del tempo con il proprio nucleo familiare, mentre venivano proiettate queste diapositive. Purtroppo questa tecnologia è caduta in disuso con lo sviluppo e l’entrata in commercio della fotografia digitale.',
+    shortDescription: 'Il proiettore a diapositive è uno strumento utilizzato per mostrare e visualizzare delle immagini su degli schermi.',
     category: 'fotografia',
     dateFrom: '1960',
     dateTo: '2019',
@@ -525,12 +527,12 @@ export const DATA: Data[] =   [
     image: imgPath+'projector.jpg',
     license: '',
     spot: youtube+'OEGiOHoTqfk',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"museoscienza.org", name:"Proiettore per diapositive 35mm e 40x40mm a caricatore circolare orizzontale",link:"https://www.museoscienza.org/dipartimenti/catalogo_collezioni/scheda_oggetto.asp?idk_in=ST110-00682&arg=Sealed%20Air%20s.r.l."}]
   },  {
     id: 28,
     name: 'Floppy Disk',
-    description: '',
-    shortDescription: '',
+    description: 'Questa tecnologia è stata largamente usata per la memorizzazione digitale di file su supporto magnetico. È stato introdotto dalla famosa IBM, e per moltissimi anni è stato utilizzato come unico supporto di memoria esterno. Nel mondo delle interfacce grafiche dei nostri computer è stata infatti utilizzata la sua icona, quella del Floppy Disk, per simboleggiare il comando di salvataggio. Questo perchè era uno strumento molto famoso e gli utenti avrebbero facilmente capito qual era la funzione di quel comando. Nati all’inizio degli anni ‘70, sono stati utilizzati fino alla fine degli anni ‘90, quando lo sviluppo di nuove tecnologie li ha resi obsoleti. Nel 2015 è stata ufficialmente cessata la produzione di questi dispositivi',
+    shortDescription: 'I Floppy Disk sono dei dispositivi di memoria esterna largamente utilizzati tra gli anni settanta e novanta.',
     category: 'elettronica',
     dateFrom: '1967',
     dateTo: '2010',
@@ -544,12 +546,12 @@ export const DATA: Data[] =   [
     image: imgPath+'floppydisk.jpg',
     license: '',
     spot: youtube+'hJ0CebOs8aE',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"ansa.it", name:"Sulla Stazione Spaziale Internazionale scoperti floppy disk del ‘95",link:"http://www.ansa.it/canale_scienza_tecnica/notizie/spazio_astronomia/2018/11/22/sulla-stazione-spaziale-internazionale-scoperti-floppy-disk-del-95_0b87bc11-bdd6-4448-b9d0-7f3cc96314df.html"}]
   },  {
     id: 29,
     name: 'Polaroid',
-    description: '',
-    shortDescription: '',
+    description: 'Il nome Polaroid viene ormai utilizzato per fare riferimento a tutti i prodotti creati e realizzati dall’omonima azienda. Il settore di questa compagnia è quello fotografico, e risulta essere uno dei più produttivi e proficui fino ad oggi. Questo brand è famoso principalmente per la realizzazione di supporti per le fotografie istantanee: sia macchinette che pellicole. Il loro prodotto più venduto sono infatti le pellicole, realizzate con un materiale plastico per polarizzare la luce in modo da catturare le immagini. Dal 2010 l’azienda ha nominato come direttrice creativa la cantante Lady Gaga, e con il passare del tempo quest’azienda diventa sempre più famosa, continuando a sviluppare nuove proposte per queste antiche macchine fotografiche. ',
+    shortDescription: 'La famosa macchina fotografica istantanea che permette di stampare su pellicola una immagine poco dopo lo scatto. ',
     category: 'fotografia',
     dateFrom: '1948',
     dateTo: '2019',
@@ -563,12 +565,12 @@ export const DATA: Data[] =   [
     image: imgPath+'polaroid.jpg',
     license: '',
     spot: youtube+'mqLhZwbA3Ok',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"topmarketfotovideo.com", name:"perchè la fotografia istantanea ci piace così tanto?",link:"https://www.topmarketfotovideo.com/perche-la-fotografia-istantanea-ci-piace-cosi-tanto"}]
   },  {
     id: 30,
     name: 'Proiettore cinematografico',
-    description: '',
-    shortDescription: '',
+    description: 'Il proiettore cinematografico non è altro che una macchina che proietta un’immagine su uno schermo. Questo tipo di proiettore era utilizzato principalmente nei cinema, nonostante fosse possibile trovarlo anche delle case private. È stato pian piano sostituito con l’avvento del cinema LED. Questa macchina proiettava a degli intervalli regolari, un fotogramma, che era impresso su pellicola cinematografica. Questa veniva fatta scorrere continuamente tramite i macchinari del dispositivo. Vi era inoltre un obiettivo che metteva a fuoco l’immagine che veniva proiettata.',
+    shortDescription: 'Il proiettore cinematografico era la tecnologie utilizzata per proiettare delle immagini in movimento su uno schermo. È stato utilizzato nei cinema fino agli 2000. ',
     category: 'video',
     dateFrom: '1879',
     dateTo: '1999',
@@ -582,12 +584,12 @@ export const DATA: Data[] =   [
     image: imgPath+'videoprojector.jpg',
     license: '',
     spot: youtube+'YaJndQhYiaI',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"museoscienza.org", name:"Proiettore cinematografico a manovella",link:"http://www.museoscienza.org/dipartimenti/catalogo_collezioni/scheda_oggetto.asp?idk_in=ST110-00566&arg=Croce%20G."}]
   }, {
     id: 31,
     name: 'Disco in Vinile',
     description: 'Il disco in vinile, tornato ultimamente in voga, è stato introdotto intorno alla fine degli anni ‘40 dalla Columbia Records, azienda discografica statunitense. Questo risulta essere un supporto per memorizzare analogicamente i segnali sonori. È una sorta di successore del 78 giri, che aveva infatti simili caratteristiche ed era composto di un materiale chiamato <i> gommalacca </i>. Per riprodurre un disco in vinile è necessario utilizzare un giradischi, collegato ad un amplificatore.',
-    shortDescription: 'supporto per memorizzare analogicamente i segnali sonori',
+    shortDescription: 'Supporto per memorizzare analogicamente i segnali sonori.',
     category: 'audio',
     dateFrom: '1948',
     dateTo: '2019',
@@ -601,7 +603,7 @@ export const DATA: Data[] =   [
     image: imgPath+'discovinile.jpeg',
     license: '',
     spot: '',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie: [{sito:"iltempo.it", name:"La rivincita del disco è 2.0: arriva il vinile ad alta definizione",link:"https://www.iltempo.it/hitech/2018/10/06/news/dischi-vinile-hdvinyl--hifi-qualita-del-suono-digitale-flac-cd-rebeat-innovation-1090778/"}]
   },  {
     id: 33,
     name: 'Stereo 8',
@@ -620,6 +622,44 @@ export const DATA: Data[] =   [
     image: imgPath+'stereo8.jpg',
     license: '',
     spot: youtube+'uovdc3C08gQ',
-    notizie:  [{sito:"", name:"",link:""}, {sito:"", name:"",link:""}]
+    notizie:  [{sito:"lastampa.it", name:"Il fascino degli Anni 60: sì, ma solo con le Stereo 8",link:"https://www.lastampa.it/2015/04/07/societa/il-fascino-degli-anni-s-ma-solo-con-le-stereo-quS9t2zEVA3qM4BkllEa9O/pagina.html"}]
+  }, {
+    id: 34,
+    name: 'Kodak Brownie',
+    description: 'La macchina fotocamera detta Brownie, conosciuta anche come <i> fotocamera a cassetta </i> è stato un supporto fotografico per tanti anni. Prodotto dalla kodak, era particolarmente noto e popolare per il suo basso prezzo, che ha reso la Brownie accessibile a molte famiglie. Esteticamente questa fotocamera è effettivamente una scatola che su uno dei lati presenta una lente, e su un altro lato - laterale a quello della lente - presenta un bottone. Questa fotocamera era stata realizzata per uso esclusivo di bambini, questo spiega anche il basso prezzo sia per la realizzazione che per l’acquisto. Divenne così popolare da permettere all’azienda di realizzare diverse versioni, esteticamente più colorate e accattivanti.',
+    shortDescription: 'Fotocamera dalla forma cubica, particolarmente popolare per i sou bassi costi di realizzazione e vendita.',
+    category: 'fotografia',
+    dateFrom: '01/02/1900',
+    dateTo: '1986',
+    yearFrom: 1900,
+    yearTo: 1986,
+    author: 'Kodak',
+    latitude: 1,
+    longitude: 1,
+    fill: foto,
+    icon: iconePath+'brownie.png',
+    image: imgPath+'brownie.jpg',
+    license: '',
+    spot: youtube+'6Zn3t3-2m2Y',
+    notizie: [{sito:"brownie.camera", name:"Box Brownie The Complete Overview",link:"https://www.brownie.camera/"}]
+  }, {
+    id: 35,
+    name: 'Leica M3',
+    description: 'Questa fotocamera è stata tra le prime ad avere la messa a fuoco manuale, e per questo motivo è stata considerata tra le più famose del suo periodo. Nata nel 1953, questo dispositivo ha permesso di ottenere degli eccellenti risultati fotografici, grazie all’ottima ingegneria bavarese. Era infatti una macchina davvero robusta, quasi sempre indenne da guasti o malfunzionamenti. Per questi pregi e per i suoi ottimi risultati, questa fotocamera è sempre stata particolarmente costosa, tant’è che l’ultimo modello in commercio è stato venduto nel 2009 a 72.000€.',
+    shortDescription: 'Fotocamera nota per le sue eccellenti performance e la sua robustezza.',
+    category: 'fotografia',
+    dateFrom: '1953',
+    dateTo: '1966',
+    yearFrom: 1953 ,
+    yearTo: 1966,
+    author: 'Leitz',
+    latitude: 1,
+    longitude: 1,
+    fill: foto,
+    icon: iconePath+'leica.png',
+    image: imgPath+'leica.jpg',
+    license: '',
+    spot: '',
+    notizie: [{sito:"leica-camera.it", name:"Leica Milestones: M3",link:"http://www.lab.leica-camera.it/portfolio-articoli/leica-milestones-m3/"}]
   }
 ]

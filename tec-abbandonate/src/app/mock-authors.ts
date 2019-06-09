@@ -180,11 +180,11 @@ export const AUTHORS: Author[] =   [
         logo: path+'lear.jpg'
     },{
         id: 28,
-        name: " ",
-        surname: " ",
-        dataOfBirth: "",
-        description: "",
-        logo: path+''
+        name: "Leitz",
+        surname: "",
+        dataOfBirth: "1869",
+        description: "1986",
+        logo: path+'leica.png'
     },{
         id: 29,
         name: " ",

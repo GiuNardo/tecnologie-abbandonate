@@ -1,5 +1,5 @@
 export class Notizia{
     sito: string;
-    name:string;
-    link:string;
+    name: string;
+    link: string;
 }
