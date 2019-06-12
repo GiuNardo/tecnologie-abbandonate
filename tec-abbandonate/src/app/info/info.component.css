@@ -1,22 +1,49 @@
-.container{
-    margin-top: 120px;
-}
-
 #video-pres{
     background-color: var(--light-bg-1);
     color: #ffff;
     text-align: center;
-    padding-top: 95px;
+    height: 560px;
+    padding-top: 90px;
+}
+
+.cell-title-g { 
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    color: var(--dark-bg); 
+    font-size: 1.5em; 
+    letter-spacing: 1px; 
+    padding-left: 20px; 
+}
+
+.row {
+    margin:0!important;
+}
+
+.cell-title {
+    margin-top: 20px;
+    float:left; 
+    color: var(--dark-bg); 
+    font-size: 1.1em; 
+    letter-spacing: 1px; 
+    padding-left: 50px; 
+}
+
+#primo {
+    margin-top: 50px;
+    padding-left: 70px;
+    text-align: justify;
+}
+
+#secondo {
+    margin-top: 50px;
+    padding-right: 70px;
+    text-align: justify;
 }
 
 video{
     border: 5px solid #ffff;
     width: 352px;
     height: auto;
-}
-
-.video2{
-    border: 5px solid #ffff;
-    width: 700px;
-    height: auto;
+    margin-top: 50px;
 }
