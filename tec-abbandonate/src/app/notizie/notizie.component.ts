@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DATA } from '../mock-data';
 import { element, elementStyleProp } from '@angular/core/src/render3';
+import animateScrollTo from 'animated-scroll-to';
 
 @Component({
   selector: 'app-notizie',
@@ -15,7 +16,8 @@ export class NotizieComponent implements OnInit {
   tec ='';
 
   ngOnInit() {
-      this.createContent();
+    animateScrollTo(document.querySelector("#main2"));
+    this.createContent();
   }
   
   onChange(tec:string){

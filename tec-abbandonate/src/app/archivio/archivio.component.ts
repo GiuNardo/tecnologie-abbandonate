@@ -18,7 +18,8 @@ export class ArchivioComponent implements OnInit {
   category="";
 
   ngOnInit() {
-      this.createContent();
+    animateScrollTo(document.querySelector("#main2"))
+    this.createContent();
   }
   
   onChange(author:string){
@@ -33,7 +34,6 @@ export class ArchivioComponent implements OnInit {
   
 
   createContent(){
-    animateScrollTo(document.querySelector("#main2"))
 
     document.getElementById("cerca").innerHTML = "Cerca autore";
     document.getElementById("content").innerHTML = 
