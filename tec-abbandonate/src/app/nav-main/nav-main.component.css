@@ -16,16 +16,14 @@
 .nav-item a {
     color: var(--light-bg);
     padding: 10px;
-    width: 120px;
     height: 40px;
     text-align: center;
     margin-left: 10px; 
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .nav-item a:hover{
   color: var(--dark-bg);
-  font-size: 0.95em;
   transition: 0.5s;
 }
 
