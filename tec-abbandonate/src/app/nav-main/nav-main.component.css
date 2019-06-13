@@ -2,6 +2,7 @@
   background-color: var(--dark-bg);
   z-index: 99;
   height: 80px;
+  text-align: center;
 }
 
 .navbar-brand{
@@ -60,6 +61,7 @@ img {
 
 #main-name {
   font-size: 0.85em;  
+  text-align: center;
 }
 
 #main-name:hover{
