@@ -376,7 +376,7 @@ export const DATA: Data[] =   [
     latitude: 36,
     longitude: 138.5,
     fill : video,
-    image: imgPath+"watchman.jpeg",
+    image: imgPath+"watchman.jpg",
     icon: iconePath+'portabletv.png',
     license : "",
     spot: youtube+'tdZ6LyaHJWI',
