@@ -94,7 +94,7 @@ export const DATA: Data[] =   [
     dateTo: '1995',
     yearFrom: 1978,
     yearTo: 1995,
-    author: 'David Paul Greg - James Russell',
+    author: 'David Paul Greg e James Russell',
     latitude: 33,
     longitude: -116,
     image: imgPath+"laserdisc.png",

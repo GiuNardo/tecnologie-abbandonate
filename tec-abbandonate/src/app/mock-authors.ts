@@ -26,18 +26,11 @@ export const AUTHORS: Author[] =   [
         logo: path+'jvclogo.png'
     }, {
         id: 4,
-        name: "David Paul",
-        surname: "Gregg",
-        dataOfBirth: "11/03/1923",
-        description: "Gregg è stato l'inventore del Laser Disc mentre lavorava per l'azienda di elettronica Western Electric. ",
+        name: "David Paul Greg e",
+        surname: "James Russell",
+        dataOfBirth: "11/03/1923 e 1931",
+        description: "Gregg è stato l'inventore del Laser Disc mentre lavorava per l'azienda di elettronica Western Electric. Russel, insieme a Gregg è stato uno dei due inventori del Laser Disc. E' stato un dipendente della General Electrics vicino Washington",
         logo: path+'paulgregg.jpg'
-    }, {
-        id: 5,
-        name: "James",
-        surname: "Russel",
-        dataOfBirth: "01/01/1931",
-        description: "Insieme a Gregg è stato uno dei due inventori del Laser Disc. E' stato un dipendente della General Electrics vicino Washington",
-        logo: path+'russel.jpg'
     }, {
         id: 6,
         name: "Thomas",
@@ -152,7 +145,7 @@ export const AUTHORS: Author[] =   [
         logo: path+'ibmlogo.png'
     },{
         id: 24,
-        name: "Edwin Herbert",
+        name: "Edwin H.",
         surname: "Land",
         dataOfBirth: "07/05/1909",
         description: "Land è stato un inventore e imprenditore degli Stati Uniti, creatore della Polaroid e pioniere nel campo dei filtri polarizzanti. Per primo, ha proiettato una foto a colori, dimostrando che è il cervello il vero protagonista nel meccanismo di percezione dei colori.",
@@ -185,13 +178,5 @@ export const AUTHORS: Author[] =   [
         dataOfBirth: "1869",
         description: "1986",
         logo: path+'leica.png'
-    },{
-        id: 29,
-        name: " ",
-        surname: " ",
-        dataOfBirth: "",
-        description: "",
-        logo: path+''
-    },
-
+    }
 ];
