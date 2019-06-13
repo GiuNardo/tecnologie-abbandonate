@@ -33,7 +33,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'super8.png',
     license : "",
     spot: youtube+'ly0mn0Jev4Y',
-    notizie: [{sito:"Repubblica.it", name:"Super 8, quelle pellicole che ci raccontano come eravamo",link:"http://www.repubblica.it/cultura/2016/04/14/news/super8-137582282/"}]
+    notizie: [
+        {sito:"Repubblica.it", name:"Super 8, quelle pellicole che ci raccontano come eravamo",link:"http://www.repubblica.it/cultura/2016/04/14/news/super8-137582282/"}, 
+        {sito:"Comingsoon", name:"Kodak rilancia il Super 8 a 50 anni dalla sua nascita",link:"https://www.comingsoon.it/cinema/news/kodak-rilancia-il-super-8-a-50-anni-dalla-sua-nascita/n53225/"}, 
+        {sito:"super8.tv", name:"SUPER8.TV",link:"https://www.super8.tv/en/"}
+      ]
   },{
     id: 2,
     name: 'Betamax',
@@ -52,11 +56,15 @@ export const DATA: Data[] =   [
     fill : video,
     license : "",
     spot: youtube+'suclT9u51Fc',
-    notizie: [{sito:"il POST.it", name:"La fine del Betamax",link:"https://www.ilpost.it/2015/11/11/la-fine-del-betamax/"}]
+    notizie: [
+        {sito:"il POST.it", name:"La fine del Betamax", link: "https://www.ilpost.it/2015/11/11/la-fine-del-betamax/"},
+        {sito:"La Stampa", name:"Il videoregistratore ha 40 anni: chi ricorda la guerra tra Betamax e VHS? ", link:"https://www.lastampa.it/2015/05/31/tecnologia/il-videoregistratore-ha-anni-chi-ricorda-la-guerra-tra-betamax-e-vhs-aU5oiOp6nxlVwuDkO2tiyM/pagina.html"},  
+        {sito:"corriere.it", name:"Sony annuncia la morte del betamax: ‘Niente più cassette da marzo’", link:"https://www.corriere.it/tecnologia/cyber-cultura/15_novembre_11/sony-annuncia-morte-betamax-niente-piu-cassette-marzo-a128fe6e-8863-11e5-829e-1238c241c234.shtml"}
+      ]
   },{
     id: 3,
     name: 'Formato VHS',
-    description: 'Il Video Home System è un sistema di videoregistrazione standard in formato analogico su supporto meccanico. Inizialmente il nome derivava da “Vertical Helicoidal Scan” cioè la tecnica utilizzata per la lettura. JVC presentò il suo primo VHS a cassetta nel 1976 che divenne poi lo standard per la registrazione su nastro e la riproduzione di filmati analogici tramite videoregistratore. Questo apparecchio viste le ridotte dimensioni divenne lo strumento dominante per la registrazione domestica vendendo una notevole diffusione nelle case dei consumatori. La maggior diffusione rispetto al Betamax derivò dal minor costo dei videoregistratori VHS che divennero presto il sistema dominante del mercato. Durante gli anni 80 i videoregistratori VHS divennero stereofonici, guadagnando così un audio di migliore qualità. Negli stessi anni venne implementata  la modalità LP (long play) che permetteva, di raddoppiare la durata di registrazione, a discapito della qualità video, ma non di quella audio. Verso la fine degli anni novanta l’introduzione dei DVD e di altri supporti di registrazione digitale fecero lentamente ridurre la fetta di mercato del VHS. VHS è entrato ufficialmente nell’elenco delle tecnologie dimenticate nel luglio 2016 quando la Funai Electric, l’ultima azienda rimasta al mondo a produrre questo tipo di supporto cessò la produzione.',
+    description: 'Il Video Home System è un sistema di videoregistrazione standard in formato analogico su supporto meccanico. Inizialmente il nome derivava da “Vertical Helicoidal Scan" cioè la tecnica utilizzata per la lettura. JVC presentò il suo primo VHS a cassetta nel 1976 che divenne poi lo standard per la registrazione su nastro e la riproduzione di filmati analogici tramite videoregistratore. Questo apparecchio viste le ridotte dimensioni divenne lo strumento dominante per la registrazione domestica vendendo una notevole diffusione nelle case dei consumatori. La maggior diffusione rispetto al Betamax derivò dal minor costo dei videoregistratori VHS che divennero presto il sistema dominante del mercato. Durante gli anni 80 i videoregistratori VHS divennero stereofonici, guadagnando così un audio di migliore qualità. Negli stessi anni venne implementata  la modalità LP (long play) che permetteva, di raddoppiare la durata di registrazione, a discapito della qualità video, ma non di quella audio. Verso la fine degli anni novanta l’introduzione dei DVD e di altri supporti di registrazione digitale fecero lentamente ridurre la fetta di mercato del VHS. VHS è entrato ufficialmente nell’elenco delle tecnologie dimenticate nel luglio 2016 quando la Funai Electric, l’ultima azienda rimasta al mondo a produrre questo tipo di supporto cessò la produzione.',
     shortDescription: 'Sistema di videoregistrazione standard in formato analogico su supporto meccanico. ',
     category: 'video',
     dateFrom: '09/11/1976',
@@ -71,7 +79,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'vhs.png',
     license : "",
     spot: youtube+'pjXh-tNLqHQ',
-    notizie: [{sito:"Dailybest", name:"Un fanatico di cinema ha creato le VHS funzionanti dei grandi film di oggi",link:"https://www.dailybest.it/tv-cinema/vhs-funzionanti-film-cinema/"}]
+    notizie: [
+        {sito:"Dailybest", name:"Un fanatico di cinema ha creato le VHS funzionanti dei grandi film di oggi",link:"https://www.dailybest.it/tv-cinema/vhs-funzionanti-film-cinema/"},
+        {sito:"Corriere Quotidiano.it", name:"Come Convertire I Vecchi Nastri VHS In Formato Digitale", link:"https://corrierequotidiano.it/tecnologia/come-convertire-i-vecchi-nastri-vhs-in-formato-digitale/"},
+        {sito:"webnews.it",name:"Dopo vinili e cassette, tornano anche le VHS", link:"https://www.webnews.it/2017/12/19/vinili-cassette-tornano-vhs/"}
+      ]
   },{
     id: 4,
     name: 'Laserdisc',
@@ -90,12 +102,16 @@ export const DATA: Data[] =   [
     fill : video,
     license:"",
     spot: youtube+'ZGjw3gUwMOo',
-    notizie: [{sito:"Repubblica.it", name:"Ascoltami sono il laser",link:"https://ricerca.repubblica.it/repubblica/archivio/repubblica/1991/03/02/ascoltami-sono-il-laser.html"}]
+    notizie: [
+        {sito:"Repubblica.it", name:"Ascoltami sono il laser",link:"https://ricerca.repubblica.it/repubblica/archivio/repubblica/1991/03/02/ascoltami-sono-il-laser.html"}, 
+        {sito:"Cinema4love", name:"Le vecchie tecnologie – I LaserDisc", link:"https://www.cinema4love.it/le-vecchie-tecnologie-i-laserdisc/"}, 
+        {sito:"homecinemachoice.com", name:"LaserDisc - celebrating the first premium home cinema format", link:"https://www.homecinemachoice.com/content/laserdisc-%E2%80%93-celebrating-first-premium-home-cinema-format"}
+]
   },{
     id: 5 ,
     name: 'Grammofono',
     shortDescription: 'Sistema di registrazione e riproduzione del suono. ',
-    description: 'Il grammofono è una tecnologia sviluppata intorno al 1870 ed aveva la funzione di registrare e di riprodurre dei suoni. La differenza dalle principali tecnologie precedenti è l’utilizzo dei dischi per la lettura e riproduzione di questi suoni. Questi dischi erano realizzati in vinile ed erano caratterizzati da una velocità tra i 33 e i 78 giri al minuto. Un motore elettrico procedeva nell’avviare la rotazione del piatto del disco, ed il valore di registrazione del disco era lo stesso valore di velocità a cui esso doveva girare. Una curiosa storia sulla creazione del grammofono riguarda la prima incisione: Edison infatti stava canticchiando <i>“Mary had a little lamb”</i>. Dopo diversi anni sono state create due diverse macchine che svolgessero le funzioni del grammofono originario: ovvero una tecnologia per l’incisione del suono e un’altra per la riproduzione.',
+    description: 'Il grammofono è una tecnologia sviluppata intorno al 1870 ed aveva la funzione di registrare e di riprodurre dei suoni. La differenza dalle principali tecnologie precedenti è l’utilizzo dei dischi per la lettura e riproduzione di questi suoni. Questi dischi erano realizzati in vinile ed erano caratterizzati da una velocità tra i 33 e i 78 giri al minuto. Un motore elettrico procedeva nell’avviare la rotazione del piatto del disco, ed il valore di registrazione del disco era lo stesso valore di velocità a cui esso doveva girare. Una curiosa storia sulla creazione del grammofono riguarda la prima incisione: Edison infatti stava canticchiando <i>“Mary had a little lamb"</i>. Dopo diversi anni sono state create due diverse macchine che svolgessero le funzioni del grammofono originario: ovvero una tecnologia per l’incisione del suono e un’altra per la riproduzione.',
     category: 'audio',
     dateFrom: '1877',
     dateTo: '1929',
@@ -109,7 +125,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'gramophone.png',
     license:"",
     spot: '',
-    notizie: [{sito:"Corriere della Sera", name:"Bollettini di guerra e grandi discorsi Il grammofono dà voce alla storia",link:"https://roma.corriere.it/notizie/cultura_e_spettacoli/15_maggio_08/bollettini-guerra-grandi-discorsi-grammofono-da-voce-storia-1e4a4ed4-f575-11e4-9c1c-931a52508e78.shtml?refresh_ce-cp"}]
+    notizie: [
+        {sito:"Corriere della Sera", name:"Bollettini di guerra e grandi discorsi Il grammofono dà voce alla storia",link:"https://roma.corriere.it/notizie/cultura_e_spettacoli/15_maggio_08/bollettini-guerra-grandi-discorsi-grammofono-da-voce-storia-1e4a4ed4-f575-11e4-9c1c-931a52508e78.shtml?refresh_ce-cp"}, 
+        {sito:"Grammofoni", name:"Il Grammofono", link:"http://www.grammofoni.it/"},
+        {sito:"commons.wikimedia.org",name:"Grammofono portatile - Museo scienza tecnologia Milano", link:"https://commons.wikimedia.org/wiki/File:Grammofono_portatile_-_Museo_scienza_tecnologia_Milano_07940.jpg"}
+      ]
  },{
     id: 6 ,
     name: 'Giradischi',
@@ -121,14 +141,18 @@ export const DATA: Data[] =   [
     yearFrom: 1937,
     yearTo: 1997,
     author: 'RCA Victor',
-    latitude: 38, 
+    latitude: 38,
     longitude: -76,
     fill: audio,
     icon: iconePath+'giradischi.png',
     image: imgPath+"giradischi.jpg",
     license:"",
     spot: youtube+'apf_tjyRVfI',
-    notizie:  [{sito:"WIRED.it", name:"Sony presenta un giradischi con connessione bluetooth",link:"https://www.wired.it/gadget/audio-e-tv/2019/04/11/sony-ps-lx310bt-giradischi-bluetooth/"}]
+    notizie:  [
+        {sito:"WIRED.it", name:"Sony presenta un giradischi con connessione bluetooth",link:"https://www.wired.it/gadget/audio-e-tv/2019/04/11/sony-ps-lx310bt-giradischi-bluetooth/"}, 
+        {sito:"webnews.it", name:"Giradischi in calo nonostante il boom dei vinili", link:"https://www.webnews.it/2018/02/22/giradischi-calo-boom-vinili/"},
+        {sito:"ilgiradischi.net",name:"COM’È FATTO UN GIRADISCHI: COMPOSIZIONE E FUNZIONAMENTO", link:"https://www.ilgiradischi.net/come-fatto-un-giradischi/"}
+      ]
   },{
     id: 7,
     name: 'Bobina Aperta',
@@ -147,7 +171,11 @@ export const DATA: Data[] =   [
     fill : audio,
     license : "",
     spot: youtube+'0V426FsFvX8',
-    notizie: [{sito:"Rockit.it", name:"Ritrovato in una radio universitaria un raro registratore a bobina usato per tutti i dischi dei Beatles",link:"https://www.rockit.it/news/registratore-bobina-btr-3-bealtles"}]
+    notizie: [
+        {sito:"Rockit.it", name:"Ritrovato in una radio universitaria un raro registratore a bobina usato per tutti i dischi dei Beatles",link:"https://www.rockit.it/news/registratore-bobina-btr-3-bealtles"},
+        {sito:"musicaememoria-tecno", name:"Magia dell'analogico", link:"https://musicaememoria-tecno.blogspot.com/2009/12/magia-dellanalogico.html"},
+        {sito:"h2g2.com", name:"The History of Magnetic Recording", link:"https://h2g2.com/edited_entry/A3224936"}
+      ]
   },{
     id: 8,
     name: 'Registratore a nastro',
@@ -166,7 +194,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'registr_nastro.png',
     license : "",
     spot: '',
-    notizie:[{sito:"ilnastrone.it",name:"Il funzionamento del registratore a nastro",link:"http://www.ilnastrone.it/Funzionamento/funzionamento.html"}]
+    notizie:[
+        {sito:"ilnastrone.it",name:"Il funzionamento del registratore a nastro",link:"http://www.ilnastrone.it/Funzionamento/funzionamento.html"},
+        {sito:"musicoff.com", name:"I REGISTRATORI ANALOGICI A BOBINA PT.1", link:"https://www.musicoff.com/articolo/i-registratori-analogici-bobina-pt1"}, 
+        {sito:"musicoff.com",link:"https://www.musicoff.com/articolo/i-registratori-analogici-bobina-pt2",name:"I REGISTRATORI ANALOGICI A BOBINA PT.2"}
+      ]
   },{
     id: 9 ,
     name: 'Radio Transistor',
@@ -174,9 +206,9 @@ export const DATA: Data[] =   [
     description: 'La radio transistor è un piccolo dispositivo di ricezione radio portatile utilizza un circuito basato sul conduttore transistor. Questi dispositivi sono diventati tra i più popolari mezzi di comunicazione della storia intorno alla metà del 1900, con milioni di dispositivi realizzati tra il 1960 e il 1970. La loro dimensione ridotta li ha resi davvero indispensabili in quel periodo, cambiando le abitudini della popolazione nell’ascoltare la musica - soprattutto essendo dei dispositivi portatili e permettendo alle persone di ascoltare i loro artisti preferiti. ',
     category: 'audio',
     dateFrom: '1954',
-    dateTo: '2019',
+    dateTo: '1980',
     yearFrom: 1954,
-    yearTo: 2019,
+    yearTo: 1980,
     author: 'Texas Instruments',
     latitude: 33,
     longitude: -97,
@@ -185,17 +217,21 @@ export const DATA: Data[] =   [
     fill: audio,
     license : "",
     spot: youtube+'mO5d63WpNa8',
-    notizie: [{sito:"fm-world.it", name:"64 anni fa, la radio diventava mobile con i primi ricevitori a transistor",link:"https://www.fm-world.it/news/64-anni-fa-la-radio-diventava-mobile-con-i-primi-ricevitori-a-transistor/"}]
+    notizie: [
+        {sito:"fm-world.it", name:"64 anni fa, la radio diventava mobile con i primi ricevitori a transistor",link:"https://www.fm-world.it/news/64-anni-fa-la-radio-diventava-mobile-con-i-primi-ricevitori-a-transistor/"},
+        {sito:"Avvenire.it", name:"60 anni fa la rivoluzione della radio a transistor", link:"https://www.avvenire.it/agora/pagine/transistor-prima-radio-1954-regency-tr-1-60-anni"}, 
+        {sito:"ansa.it", name:"Radio a transistor, ha 60 anni antenata iPod e smartphone", link:"http://www.ansa.it/sito/notizie/tecnologia/2014/10/11/radio-a-transistor-ha-60-anni-antenata-ipod-e-smartphone-_71533e4d-00b0-4ed4-92d3-79183f41caf0.html"}
+      ]
   },{
     id:10 ,
     name: 'Cassette',
     shortDescription: 'Supporto audio a nastro magnetico - compact cassette.',
-    description: 'La cassetta o più precisamente musicassetta, è un dispositivo in grado di memorizzare adti in sequenza su un nastro magnetico. Formata da due bobine di nastro magnetico protette da un contenitore di plastica può essere utilizzata da entrambi i lati. È possibile sia registrare una traccia audio, sia riprodurne una memorizzata all’interno. Prodotta da Philips agli inizi degli anni 60 ha trovato la sua maggiore diffusione negli anni ottanta e novante per poi cedere il proprio posto ai più moderni CD. La sua diffusione si deve soprattutto alla manegevolezza, alla versatilità, alla facilità di utilizzo ed all’economicità che l’ha caratterizzata.',
+    description: 'La cassetta o più precisamente musicassetta, è un dispositivo in grado di memorizzare dati in sequenza su un nastro magnetico. Formata da due bobine di nastro magnetico protette da un contenitore di plastica può essere utilizzata da entrambi i lati. È possibile sia registrare una traccia audio, sia riprodurne una memorizzata all’interno. Prodotta da Philips agli inizi degli anni 60 ha trovato la sua maggiore diffusione negli anni ottanta e novante per poi cedere il proprio posto ai più moderni CD. La sua diffusione si deve soprattutto alla manegevolezza, alla versatilità, alla facilità di utilizzo ed all’economicità che l’ha caratterizzata.',
     category: 'audio',
     dateFrom: '1962',
-    dateTo: '2019',
+    dateTo: '2000',
     yearFrom: 1962,
-    yearTo: 2019,
+    yearTo: 2000,
     author: 'Philips',
     latitude: 51,
     longitude: 6,
@@ -204,7 +240,11 @@ export const DATA: Data[] =   [
     icon: iconePath+'cassette.png',
     license : "",
     spot: youtube+'EMN1FqYMbRw',
-    notizie:  [{sito:"WIRED.it", name:"Il ritorno delle musicassette: ecco 15 nuovi stereo per ascoltarle",link:"https://www.wired.it/gadget/accessori/2019/01/25/15-accessori-musicassette/"}]
+    notizie:  [
+      {sito:"WIRED.it", name:"Il ritorno delle musicassette: ecco 15 nuovi stereo per ascoltarle",link:"https://www.wired.it/gadget/accessori/2019/01/25/15-accessori-musicassette/"},
+      {sito:"Ansa.it", name:"DOPO IL VINILE UN ALTRO RITORNO, LE MUSICASSETTE",link:"http://www.ansa.it/canale_lifestyle/notizie/tempo_libero/2019/01/15/dopo-il-vinile-un-altro-ritorno-le-musicassette_bcabed29-915d-4a1c-9b4b-f3a22e402148.html"}, 
+      {sito:"rollingstone.it", name:"Abbiamo ancora bisogno delle musicasette",link:"https://www.rollingstone.it/opinioni/opinioni-musica/abbiamo-ancora-bisogno-delle-musicassette/441008/"}
+    ]
   },{
     id: 11,
     name: 'Ghetto Blaster',
@@ -223,7 +263,11 @@ export const DATA: Data[] =   [
     fill: audio,
     license : "",
     spot: youtube+'xwpp5pNyKFo',
-    notizie: [{sito:"rockit.it", name:"Una delle più grandi collezioni di ghetto blaster è andata all'asta",link:"https://www.rockit.it/news/ghetto-blaster-asta"}]
+    notizie: [
+      {sito:"rockit.it", name:"Una delle più grandi collezioni di ghetto blaster è andata all'asta",link:"https://www.rockit.it/news/ghetto-blaster-asta"},
+      {sito:"wired.it",name:"La sfida dei ghetto blaster: guarda il confronto tra il Sony Gtk-X1bt e il Philips Ntrx100",link:"https://www.wired.it/play/musica/2014/06/26/la-sfida-dei-ghetto-blaster-guarda-il-video-confronto-tra-il-sony-gtk-x1bt-e-il-philips-ntrx100/"}, 
+      {sito:"wired.it",name:"Dagli anni ‘80 torna il boombox a musicassette",link:"https://www.wired.it/gadget/audio-e-tv/2018/05/15/boombox-gpo-brooklyn/"}
+]
   },{
     id: 12,
     name:  'Telegrafo',
@@ -242,7 +286,11 @@ export const DATA: Data[] =   [
     fill: comunicazione,
     license : "",
     spot: '',
-    notizie: [{sito:"Rai Scuola", name:"Guglielmo Marconi: un telegrafo per la storia",link:"http://www.raiscuola.rai.it/medialibrary/video.aspx?id=3212"}]
+    notizie: [
+      {sito:"Rai Scuola", name:"Guglielmo Marconi: un telegrafo per la storia",link:"http://www.raiscuola.rai.it/medialibrary/video.aspx?id=3212"},
+      {sito:"okpedia", name:"Telegrafo", link:"https://www.okpedia.it/telegrafo"}, 
+      {sito:"lacomunicazione.it", name:"Telegrafo", link:"https://www.lacomunicazione.it/voce/telegrafo/"}
+]
   },{
     id: 13,
     name: 'Telex',
@@ -261,7 +309,12 @@ export const DATA: Data[] =   [
     image: imgPath+"telex.png",
     license : "",
     spot: youtube+'byarX5L_Ki8',
-    notizie: [{sito:"LaStampa.it", name:"I radioamatori che hanno sostituito lo smartphone con vecchie Telex",link:"https://www.lastampa.it/2017/01/22/tecnologia/i-radioamatori-che-hanno-sostituito-lo-smartphone-con-vecchie-telex-0yJYoQOy4ZrcplYMsrYQXP/pagina.html"}]
+    notizie: [
+      {sito:"LaStampa.it", name:"I radioamatori che hanno sostituito lo smartphone con vecchie Telex",link:"https://www.lastampa.it/2017/01/22/tecnologia/i-radioamatori-che-hanno-sostituito-lo-smartphone-con-vecchie-telex-0yJYoQOy4ZrcplYMsrYQXP/pagina.html"},
+      {sito:"brightworkresearch.com", name:"How to Understand the Telegraph and Telex in the History of supply chain", link:"https://www.brightworkresearch.com/scmhistory/2013/08/the-telegraph-and-telex-in-the-history-of-supply-chain/"}, 
+      {sito:"webnews.it", name:"Telex, il servizio di telecomunicazioni che fece storia", link:"https://www.webnews.it/2008/10/09/telex-il-servizio-di-telecomunicazioni-che-fece-storia/"}
+
+]
   },{
     id: 14,
     name: 'Siemens S62',
@@ -280,11 +333,16 @@ export const DATA: Data[] =   [
     image: imgPath+"s62.jpg",
     license : "",
     spot: youtube+'jwO7Qr-O9OU',
-    notizie:  [{sito:"italianways.com", name:"IL “BIGRIGIO”, L’ULTIMO TELEFONO A DISCO",link:"http://www.italianways.com/il-bigrigio-lultimo-telefono-a-disco/"}]
+    notizie:  [
+      {sito:"italianways.com", name:"IL \"BIGRIGIO\", L’ULTIMO TELEFONO A DISCO",link:"http://www.italianways.com/il-bigrigio-lultimo-telefono-a-disco/"}, 
+      {sito:"curiosando708090", name:"Telefono BIGRIGIO SIEMENS S62 SIP – (1962/1993)", link:"http://curiosando708090.altervista.org/telefono-bigrigio-siemens-sip-19621993/"},
+      {sito:"teknoring.com", name:"Il telefono di casa, per eccellenza", link:"https://www.teknoring.com/news/progettazione/il-telefono-di-casa-per-eccellenza/"}
+
+]
   },{
     id: 15,
     name: 'Computer Palmare',
-    description: 'Il computer palmare è più comunemente noto sotto il semplice nome di “palmare”. Questa tecnologia non è altro che un computer di dimensioni molto ristrette, da cui il nome, in quanto può essere utilizzato e portato sul palmo della mano. Il suo scopo originario era quello di essere utilizzato come una sorta di planner o agenda elettronica, in quanto era dotato di un piccolo schermo tattile, e aveva funzione di orologio, calendario, rubrica e forniva la possibilità di creare liste e note per eventuali appunti. La Psion ha messo in commercio i primi computer palmari e successivamente anche la IBM ha iniziato a produrli, aggiungendo però le classiche operazioni di telefonia all’elenco precedente. ',
+    description: 'Il computer palmare è più comunemente noto sotto il semplice nome di “palmare". Questa tecnologia non è altro che un computer di dimensioni molto ristrette, da cui il nome, in quanto può essere utilizzato e portato sul palmo della mano. Il suo scopo originario era quello di essere utilizzato come una sorta di planner o agenda elettronica, in quanto era dotato di un piccolo schermo tattile, e aveva funzione di orologio, calendario, rubrica e forniva la possibilità di creare liste e note per eventuali appunti. La Psion ha messo in commercio i primi computer palmari e successivamente anche la IBM ha iniziato a produrli, aggiungendo però le classiche operazioni di telefonia all’elenco precedente. ',
     shortDescription: 'PDA. E\' un computer di dimensioni contenute, tali da essere portato sul palmo di una mano, dotato di uno schermo tattile',
     category: 'elettronica',
     dateFrom: '1984',
@@ -299,7 +357,11 @@ export const DATA: Data[] =   [
     fill: elettronica,
     license : "",
     spot: youtube+'k6QjICoMgso',
-    notizie:  [{sito:"advister.it", name:"Computer Palmari: Storia di un prodotto e innovazione",link:"https://www.advister.it/computer-palmari/"}]
+    notizie:  [
+      {sito:"advister.it", name:"Computer Palmari: Storia di un prodotto e innovazione",link:"https://www.advister.it/computer-palmari/"}, 
+      {sito:"macitynet.it", name:"Apple Newton, un documentario dedicato al primo parlare della storia", link:"https://www.macitynet.it/apple-newton-un-documentario-dedicato-ama-amato-primo-palmare-della-mela/"}, 
+      {sito:"iphoneitalia.com", name:"Newton, il prodotto Apple tanto odiato da Steve Jobs che diede vita ad iPhone e iPad", link:"https://www.iphoneitalia.com/311652/newton-il-prodotto-apple-tanto-odiato-da-steve-jobs-che-diede-vita-ad-iphone-e-ipad"}
+]
   },{
     id: 16,
     name: 'Watchman',
@@ -318,11 +380,15 @@ export const DATA: Data[] =   [
     icon: iconePath+'portabletv.png',
     license : "",
     spot: youtube+'tdZ6LyaHJWI',
-    notizie:  [{sito:"Pokemon Millenium", name:"Ultimate su un Sony Watchman degli anni ’80" ,link:"https://www.pokemonmillennium.net/curiosita/175257-ultra-hd-un-utente-e-riuscito-a-far-girare-super-smash-bros-ultimate-su-un-sony-watchman-degli-anni-80/"}]
+    notizie:  [
+      {sito:"Pokemon Millenium", name:"Ultimate su un Sony Watchman degli anni ’80" ,link:"https://www.pokemonmillennium.net/curiosita/175257-ultra-hd-un-utente-e-riuscito-a-far-girare-super-smash-bros-ultimate-su-un-sony-watchman-degli-anni-80/"},
+      {sito:"Time.com", name:"Sony Watchman", link:"http://content.time.com/time/specials/packages/article/0,28804,2023689_2023681_2023599,00.html"}, 
+      {sito:"wikiwand.com", name:"Sony Watchman", link:"https://www.wikiwand.com/en/Sony_Watchman"}
+]
   },{
     id: 17,
     name: 'Walkman',
-    description: 'Il walkman è una tecnologia della Sony, originariamente era stato pensato per essere un lettore di musicassette. Iniziato a diffondersi all’inizio degli anni ‘80, diventa così popolare che tutte le tecnologie di riproduzione di musicassette vengono chiamate impropriamente “Walkman”, anche quelle non prodotte da Sony. Successivamente l’azienda ha deciso di espandere e sfruttare la popolarità di questo marchio, dando questo nome a tutti i dispositivi che potessero riprodurre della musica, indipendentemente dalle musicassette. Negli anni ‘80 il walkman è stato lanciato e pubblicizzato involontariamente da uno dei film più popolari di quel periodo: “Il Tempo delle Mele”.',
+    description: 'Il walkman è una tecnologia della Sony, originariamente era stato pensato per essere un lettore di musicassette. Iniziato a diffondersi all’inizio degli anni ‘80, diventa così popolare che tutte le tecnologie di riproduzione di musicassette vengono chiamate impropriamente “Walkman", anche quelle non prodotte da Sony. Successivamente l’azienda ha deciso di espandere e sfruttare la popolarità di questo marchio, dando questo nome a tutti i dispositivi che potessero riprodurre della musica, indipendentemente dalle musicassette. Negli anni ‘80 il walkman è stato lanciato e pubblicizzato involontariamente da uno dei film più popolari di quel periodo: “Il Tempo delle Mele".',
     shortDescription: 'Il Walkman è un lettore di musicassette utilizzato per ascoltare la musica anche quando si era fuori casa.',
     category: 'audio',
     dateFrom: '01/07/1979',
@@ -337,7 +403,12 @@ export const DATA: Data[] =   [
     fill : audio,
     license : "",
     spot: youtube+'xOTfzZCyCmo',
-    notizie:  [{sito:"WIRED.it", name:"Come il primo Walkman ha cambiato il mondo, 40 anni fa",link:"https://www.wired.it/gadget/audio-e-tv/2019/06/04/walkman-40-anni-storia/"}]
+    notizie:  [
+      {sito:"WIRED.it", name:"Come il primo Walkman ha cambiato il mondo, 40 anni fa",link:"https://www.wired.it/gadget/audio-e-tv/2019/06/04/walkman-40-anni-storia/"},
+      {sito:"catawiki.it", name:"10 fatti sulla storia del walkman della Sony che vi porteranno indietro nel tempo", link:"https://www.catawiki.it/stories/4365-10-fatti-sulla-storia-del-walkman-della-sony-che-vi-porteranno-indietro-nel-tempo"}, 
+      {sito:"brand-news.it", name:"Dal walkman ai podcast: Sony riporta l’audio al centro del suo business e sigla un’alleanza su contenuti e produzione", link:"https://www.brand-news.it/brand/tempo-libero/entertainment/dal-walkman-ai-podcast-sony-riporta-laudio-al-centro-del-suo-business-e-sigla-unalleanza-su-contenuti-e-produzione/"}
+
+]
   },{
     id: 18 ,
     name: 'Cercapersone',
@@ -356,7 +427,12 @@ export const DATA: Data[] =   [
     image: imgPath+"pager.jpg",
     license : "",
     spot: youtube+'jrUVYTqvIfI',
-    notizie:  [{sito:"Electronics.howstuffworks", name:"How Page",link:"https://electronics.howstuffworks.com/everyday-tech/restaurant-pager1.htm"}]
+    notizie:  [
+      {sito:"Electronics.howstuffworks", name:"How Page",link:"https://electronics.howstuffworks.com/everyday-tech/restaurant-pager1.htm"},
+      {sito:"treccani.it", name:"CERCAPERSONE", link:"http://www.treccani.it/90anni/parole/1970-cercapersone.html"}, 
+      {sito:"ansa.it", name:"Giappone: addio al ‘cercapersone’", link:"http://www.ansa.it/sito/notizie/mondo/asia/2018/12/03/giappone-addio-al-cercapersone_9c058515-fcde-49e1-9bd6-8d996119594e.html"}
+
+]
   },{
     id: 19,
     name: 'Pulsar',
@@ -375,7 +451,8 @@ export const DATA: Data[] =   [
     image: imgPath+'pulsar.jpg',
     license: '',
     spot: youtube+'Ixj5125v4j8',
-    notizie: [{sito:"wikipedia.org", name:"Pulsar (orologi)",link:"https://it.wikipedia.org/wiki/Pulsar_(orologi)"}]
+    notizie: [{sito:"wikipedia.org", name:"Pulsar (orologi)",link:"https://it.wikipedia.org/wiki/Pulsar_(orologi)"}
+]
   }, {
     id: 20,
     name: 'TV Watch',
@@ -383,9 +460,9 @@ export const DATA: Data[] =   [
     shortDescription: 'Il TV Watch, come suggerisce il nome, è un orologio dotato di un piccolo display che funge da televisore. ',
     category: 'elettronica',
     dateFrom: '1982',
-    dateTo: '2019',
+    dateTo: '2014',
     yearFrom: 1982,
-    yearTo: 2019,
+    yearTo: 2014,
     author: 'Seiko',
     latitude: 35.683333,
     longitude: 139.683333,
@@ -394,7 +471,11 @@ export const DATA: Data[] =   [
     image: imgPath+'tvwatch.jpg',
     license: '',
     spot: youtube+'5tIAPwyVuXI',
-    notizie:  [{sito:"monochrome-watches.com", name:"The Seiko T001 - Mother Of All Smart Watches",link:"https://monochrome-watches.com/seiko-t001-mother-smart-watches/"}]
+    notizie:  [
+      {sito:"monochrome-watches.com", name:"The Seiko T001 - Mother Of All Smart Watches",link:"https://monochrome-watches.com/seiko-t001-mother-smart-watches/"},
+      {link:"https://www.inexhibit.com/it/case-studies/seiko-uc-2000-1984-primo-orologio-computer-da-polso/", name:"SEIKO UC-2000 (1984). Il primo computer da polso della storia", sito:"inexhibit.com"},
+      {sito:"dailyonigiri.com", name:"Seiko’s TV Watch from the early 1980s",link:"http://www.dailyonigiri.com/2016/09/seikos-tv-watch-from-the-early-1980s/"}
+ ]
   },  {
     id: 21,
     name: 'Seiko Wrist Computer',
@@ -402,9 +483,9 @@ export const DATA: Data[] =   [
     shortDescription: 'L’ UC-2000 è il primo orologio-computer da polso lanciato nel 1984 da Seiko.',
     category: 'elettronica',
     dateFrom: '1984',
-    dateTo: '2019',
+    dateTo: '2000',
     yearFrom: 1984,
-    yearTo: 2019,
+    yearTo: 2000,
     author: 'Seiko',
     latitude: 36.683333,
     longitude: 140.683333,
@@ -413,7 +494,11 @@ export const DATA: Data[] =   [
     image: imgPath+'seiko.jpg',
     license: '',
     spot: '',
-    notizie:  [{sito:"gizmodo.com", name:"The Seiko UC-2000 Wrist PC: An Ankward ‘80s Attempt To Live The Cyborg Life",link:"https://gizmodo.com/the-seiko-uc-2000-wrist-pc-an-awkward-80s-attempt-to-l-5401391"}]
+    notizie:  [
+      {sito:"gizmodo.com", name:"The Seiko UC-2000 Wrist PC: An Ankward ‘80s Attempt To Live The Cyborg Life",link:"https://gizmodo.com/the-seiko-uc-2000-wrist-pc-an-awkward-80s-attempt-to-l-5401391"}, 
+      {sito:"techeblog.com", name:"Before Smartwatches, There was the Seiko UC-2000 Wrist Computer", link:"https://www.techeblog.com/before-smartwatches-there-was-the-seiko-uc-2000-wrist-computer-here-are-5-cool-facts/"},
+      {sito:"inexhibit.com", name:"SEIKO UC-2000 (1984). Il primo computer da polso della storia", link:"https://www.inexhibit.com/it/case-studies/seiko-uc-2000-1984-primo-orologio-computer-da-polso/"}
+]
   }, {
     id: 22,
     name: 'Calculator Watches',
@@ -432,7 +517,11 @@ export const DATA: Data[] =   [
     image: imgPath+'calculatorwatch.jpg',
     license: '',
     spot: youtube+'jdwLdEv3z2Q',
-    notizie: [{sito:"gizmodo.com", name:"The Gadget We Miss: The Calculator Watch",link:"https://gizmodo.com/the-gadget-we-miss-the-calculator-watch-1344076812"}]
+    notizie: [
+      {sito:"gizmodo.com", name:"The Gadget We Miss: The Calculator Watch",link:"https://gizmodo.com/the-gadget-we-miss-the-calculator-watch-1344076812"}, 
+      {sito:"leganerd.com", name:"Casio CA-53W, il ‘nerd watch’ per eccellenza", link:"https://leganerd.com/2018/07/02/casio-ca-53w-nerd-watch/"}, 
+      {sito:"g-central.com", name:"The Best Casio Calculator Watches", link:"https://www.g-central.com/the-best-casio-calculator-watches/"}
+]
   }, {
     id: 23,
     name: 'Monitor CRT',
@@ -451,17 +540,21 @@ export const DATA: Data[] =   [
     image: imgPath+'computer.png',
     license: '',
     spot: '',
-    notizie:  [{sito:"01net.it", name:"Come funziona il monitor CRT",link:"https://www.01net.it/come-funziona-il-monitor-crt/"}]
+    notizie:  [
+      {sito:"01net.it", name:"Come funziona il monitor CRT",link:"https://www.01net.it/come-funziona-il-monitor-crt/"}, 
+      {sito:"kinetica.it", name:"monitor crt: ergonomico a chi, scusi?!?",link:"https://www.kinetica.it/monitor-crt-ergonomico-a-chi-scusi/"},
+      {sito:"boscarol.com", name:"Monitor: CRT o LCD?",link:"http://www.boscarol.com/blog/?p=26513"}
+]
   }, {
     id: 24,
     name: 'Macchina da Scrivere',
-    description: 'Si tratta di uno strumento composto da una tastiera e da dispositivi meccanici, elettrici o elettronici, che permette di ottenere l’impressione dei caratteri su un supporto cartaceo. Nata alla fine del diciannovesimo secolo è stato uno dei primi dispositivi, disponibile per un ampio pubblico, utilizzati per la realizzazione di documenti in formati standardizzati. Non esiste un unico autore a cui attribuire l’invenzione della macchina da scrivere, ma sicuramente il “tacheografo” di Pietro Conti ne fu precursore. Le macchine da scrivere esistono ancora, ma sono state inequivocabilmente sostituite dai moderni computer.',
+    description: 'Si tratta di uno strumento composto da una tastiera e da dispositivi meccanici, elettrici o elettronici, che permette di ottenere l’impressione dei caratteri su un supporto cartaceo. Nata alla fine del diciannovesimo secolo è stato uno dei primi dispositivi, disponibile per un ampio pubblico, utilizzati per la realizzazione di documenti in formati standardizzati. Non esiste un unico autore a cui attribuire l’invenzione della macchina da scrivere, ma sicuramente il “tacheografo" di Pietro Conti ne fu precursore. Le macchine da scrivere esistono ancora, ma sono state inequivocabilmente sostituite dai moderni computer.',
     shortDescription: 'Strumento per l\'impressione di caratteri su supporto cartaceo. ',
     category: 'comunicazione',
     dateFrom: '1864',
-    dateTo: '2019',
+    dateTo: '2012',
     yearFrom: 1864,
-    yearTo: 2019,
+    yearTo: 2012,
     author: 'Peter Mitterhofer',
     latitude: 48.20833,
     longitude: 16.373064,
@@ -470,7 +563,11 @@ export const DATA: Data[] =   [
     image: imgPath+'typewriter.jpg',
     license: '',
     spot: youtube+'7mxlroZT6no',
-    notizie:  [{sito:"ansa.it", name:"Macchina da scrivere, vecchia passione. Origini e sotria di un’icona",link:"http://www.ansa.it/lifestyle/notizie/passioni/musthave/2016/04/21/macchine-da-scrivere-vecchia-passione.-origini-e-storia-di-unicona_7c035fad-f429-44ab-a56a-947de141d4a2.html"}]
+    notizie:  [
+      {sito:"ansa.it", name:"Macchina da scrivere, vecchia passione. Origini e sotria di un’icona",link:"http://www.ansa.it/lifestyle/notizie/passioni/musthave/2016/04/21/macchine-da-scrivere-vecchia-passione.-origini-e-storia-di-unicona_7c035fad-f429-44ab-a56a-947de141d4a2.html"},
+      {link:"http://www.typewriterstory.com/index.php/storia", name:"Breve storia dell'evoluzione della macchina da scrivere", sito:"typeweriterhistory.com"},
+      {sito:"ilpopolo.news", name:"189 anni fa nasceva la prima macchina da scrivere: la conseguente evoluzione del giornalismo",link:"http://www.ilpopolo.news/2018/06/23/189-anni-fa-nasceva-la-prima-macchina-da-scrivere-evoluzione-del-giornalismo/"}
+    ]
   },  {
     id: 25,
     name: 'Dial-up Modem',
@@ -489,11 +586,15 @@ export const DATA: Data[] =   [
     image: imgPath+'modem.jpg',
     license: '',
     spot: '',
-    notizie:  [{sito:"speedcheck.org", name:"Che cos’è il Dial-up",link:"https://www.speedcheck.org/it/wiki/dial-up/"}]
+    notizie:  [
+      {sito:"speedcheck.org", name:"Che cos’è il Dial-up",link:"https://www.speedcheck.org/it/wiki/dial-up/"}, 
+      {sito:"webnews.it", name:"TIM, addio al dial-up", link:"https://www.webnews.it/2019/03/18/tim-addio-dial-up/"}, 
+      {sito:"over-blog.com", name:"Internet Dial Up: che cos’è e come funziona il servizio?", link:"https://it.over-blog.com/Internet_Dial_Up_che_cose_e_come_funziona_il_servizio-1228321781-art245976.html"}
+]
   },  {
     id: 26,
     name: 'Zip Drive',
-    description: 'Prodotto principalmente da Iomega, è un supporto di memoria rimovibile sviluppato inizialmente con una capacità di 100 Mb poi successivamente da 250 e 750 Mb che è stato lanciato sul mercato nel 1994. Al suo interno era composto da un disco di materiale magnetico simile a quello dei floppy, ma di dimensioni maggiori. L’uso di questa tecnologia si è ridotta con la diffusione dei masterizzatori e la rapida diminuzione del costo dei CD e DVD, fino a terminare definitivamente con l’entrata sul mercato delle comunemente chiamate “chiavi USB”.',
+    description: 'Prodotto principalmente da Iomega, è un supporto di memoria rimovibile sviluppato inizialmente con una capacità di 100 Mb poi successivamente da 250 e 750 Mb che è stato lanciato sul mercato nel 1994. Al suo interno era composto da un disco di materiale magnetico simile a quello dei floppy, ma di dimensioni maggiori. L’uso di questa tecnologia si è ridotta con la diffusione dei masterizzatori e la rapida diminuzione del costo dei CD e DVD, fino a terminare definitivamente con l’entrata sul mercato delle comunemente chiamate “chiavi USB".',
     shortDescription: 'Supporto di memoria rimovibile composto da un disco magnetico.',
     category: 'elettronica',
     dateFrom: '1994',
@@ -508,8 +609,12 @@ export const DATA: Data[] =   [
     image: imgPath+'zipdrive.jpeg',
     license: '',
     spot: youtube+'civsZLQzrjs',
-    notizie:  [{sito:"tomshw.it", name:"lomega Zip Drive (1994)",link:"https://www.tomshw.it/hardware/i-fallimenti-epici-dellindustria-hardware-dei-pc/iomega-zip-drive-1994/"}]
-  },  {
+    notizie:  [
+      {sito:"tomshw.it", name:"lomega Zip Drive (1994)",link:"https://www.tomshw.it/hardware/i-fallimenti-epici-dellindustria-hardware-dei-pc/iomega-zip-drive-1994/"}, 
+      {sito:"kinetica.it", name:"iomega zip: il fratello maggiore dei floppy disk", link:"https://www.kinetica.it/iomega-zip-il-fratello-maggiore-dei-floppy-disk/"}, {sito:"silicon.co.uk", name:"Tales In Tech History: Iomega Zip Drive", link:"https://www.silicon.co.uk/data-storage/storage/tales-tech-history-iomega-zip-drive-209499"}, 
+      {sito:"searchmobilecomputing.techtarget.com", name:"Zip drive", link:"https://searchmobilecomputing.techtarget.com/definition/Zip-drive"}
+]},
+{
     id: 27,
     name: 'Proiettore di Diapositive',
     description: 'Questo apparecchio ottico permetteva di proiettare su degli schermi delle immagini. I supporti da inserire in questo dispositivo, per poi visualizzare le immagini, venivano chiamati <i>diapositive</i>. Il proiettore a diapositive è stato a lungo tenuto in commercio, tra gli anni ‘50 e ‘90, ed era per le famiglie di quegli anni una notevole forma di intrattenimento. Era usanza infatti trascorrere del tempo con il proprio nucleo familiare, mentre venivano proiettate queste diapositive. Purtroppo questa tecnologia è caduta in disuso con lo sviluppo e l’entrata in commercio della fotografia digitale.',
@@ -527,7 +632,11 @@ export const DATA: Data[] =   [
     image: imgPath+'projector.jpg',
     license: '',
     spot: youtube+'OEGiOHoTqfk',
-    notizie:  [{sito:"museoscienza.org", name:"Proiettore per diapositive 35mm e 40x40mm a caricatore circolare orizzontale",link:"https://www.museoscienza.org/dipartimenti/catalogo_collezioni/scheda_oggetto.asp?idk_in=ST110-00682&arg=Sealed%20Air%20s.r.l."}]
+    notizie:  [
+      {sito:"museoscienza.org", name:"Proiettore per diapositive 35mm e 40x40mm a caricatore circolare orizzontale",link:"https://www.museoscienza.org/dipartimenti/catalogo_collezioni/scheda_oggetto.asp?idk_in=ST110-00682&arg=Sealed%20Air%20s.r.l."},
+      {link:"https://paigesarlin.info/the-last-slide-projector-2006/", sito:"paigesarlin.info", name:"The Last Slide Projector (2006 Documentary)"}, 
+      {sito:"lombardiabeniculturali.it", name:"Proiettore per diapositive a caricatore orizzontale", link:"http://www.lombardiabeniculturali.it/scienza-tecnologia/schede/ST110-00796/"}
+  ]
   },  {
     id: 28,
     name: 'Floppy Disk',
@@ -546,7 +655,11 @@ export const DATA: Data[] =   [
     image: imgPath+'floppydisk.jpg',
     license: '',
     spot: youtube+'hJ0CebOs8aE',
-    notizie: [{sito:"ansa.it", name:"Sulla Stazione Spaziale Internazionale scoperti floppy disk del ‘95",link:"http://www.ansa.it/canale_scienza_tecnica/notizie/spazio_astronomia/2018/11/22/sulla-stazione-spaziale-internazionale-scoperti-floppy-disk-del-95_0b87bc11-bdd6-4448-b9d0-7f3cc96314df.html"}]
+    notizie: [
+      {sito:"ansa.it", name:"Sulla Stazione Spaziale Internazionale scoperti floppy disk del ‘95",link:"http://www.ansa.it/canale_scienza_tecnica/notizie/spazio_astronomia/2018/11/22/sulla-stazione-spaziale-internazionale-scoperti-floppy-disk-del-95_0b87bc11-bdd6-4448-b9d0-7f3cc96314df.html"}, 
+      {sito:"ilgiornale.it", name:"Ritrovati sulla Stazione Spaziale dei floppy disk di vent’anni fa", link:"http://www.ilgiornale.it/news/tecnologia/ritrovati-sulla-stazione-spaziale-dei-floppy-disk-ventanni-1605931.html"}, 
+      {sito:"bbc.com", name:"The long legacy of the floppy disk", link:"https://www.bbc.com/news/technology-36389711"}, {sito:"repubblica.it", name:"I floppy vanno in pensione si chiude un’era informatica", link:"https://www.repubblica.it/tecnologia/2010/04/26/news/addio_floppy_disk-3632795/"}
+]
   },  {
     id: 29,
     name: 'Polaroid',
@@ -565,7 +678,11 @@ export const DATA: Data[] =   [
     image: imgPath+'polaroid.jpg',
     license: '',
     spot: youtube+'mqLhZwbA3Ok',
-    notizie:  [{sito:"topmarketfotovideo.com", name:"perchè la fotografia istantanea ci piace così tanto?",link:"https://www.topmarketfotovideo.com/perche-la-fotografia-istantanea-ci-piace-cosi-tanto"}]
+    notizie:  [
+      {sito:"topmarketfotovideo.com", name:"perchè la fotografia istantanea ci piace così tanto?",link:"https://www.topmarketfotovideo.com/perche-la-fotografia-istantanea-ci-piace-cosi-tanto"}, 
+      {sito:"polaroid.com", name:"Polaroid Originals News", link:"https://www.polaroid.com/news"}, 
+      {sito:"pocket-lint.com", name:"Latest Polaroid camera news", link:"https://www.pocket-lint.com/cameras/news/polaroid"}
+]
   },  {
     id: 30,
     name: 'Proiettore cinematografico',
@@ -584,7 +701,11 @@ export const DATA: Data[] =   [
     image: imgPath+'videoprojector.jpg',
     license: '',
     spot: youtube+'YaJndQhYiaI',
-    notizie:  [{sito:"museoscienza.org", name:"Proiettore cinematografico a manovella",link:"http://www.museoscienza.org/dipartimenti/catalogo_collezioni/scheda_oggetto.asp?idk_in=ST110-00566&arg=Croce%20G."}]
+    notizie:  [
+      {sito:"museoscienza.org", name:"Proiettore cinematografico a manovella",link:"http://www.museoscienza.org/dipartimenti/catalogo_collezioni/scheda_oggetto.asp?idk_in=ST110-00566&arg=Croce%20G."}, 
+      {sito:"ildialogodimonza.it", name:"I fratelli Lumière presentano il proiettore cinematografico: ‘un invenzione senza futuro’", link:"http://www.ildialogodimonza.it/fratelli-lumiere-presentano-il-proiettore-cinematografico-uninvenzione-senza-futuro/"}, 
+      {sito:"zibalsc.blogspot.com", name:"Come Funziona il Proiettore Cinematografico", link:"http://zibalsc.blogspot.com/2011/08/76-come-funziona-il-proiettore.html"}
+]
   }, {
     id: 31,
     name: 'Disco in Vinile',
@@ -603,7 +724,11 @@ export const DATA: Data[] =   [
     image: imgPath+'discovinile.jpeg',
     license: '',
     spot: '',
-    notizie: [{sito:"iltempo.it", name:"La rivincita del disco è 2.0: arriva il vinile ad alta definizione",link:"https://www.iltempo.it/hitech/2018/10/06/news/dischi-vinile-hdvinyl--hifi-qualita-del-suono-digitale-flac-cd-rebeat-innovation-1090778/"}]
+    notizie: [
+      {sito:"iltempo.it", name:"La rivincita del disco è 2.0: arriva il vinile ad alta definizione",link:"https://www.iltempo.it/hitech/2018/10/06/news/dischi-vinile-hdvinyl--hifi-qualita-del-suono-digitale-flac-cd-rebeat-innovation-1090778/"}, 
+      {sito:"musicvan.wordpress.com", name:"Breve storia del vinile: il re dei supporti musicali", link:"https://musicvan.wordpress.com/2011/04/07/breve-storia-del-vinile/"}, 
+      {sito:"lettera43.it", name:"Il vinile compie 70 anni: cosa c’è dietro la nuova vita degli Lp", link:"https://www.lettera43.it/musica-vinile-storia/"}, {sito:"rockol.it", name:"La rivincita del vinile, 180 grammi di storia e di musica serviti su un piatto", link:"https://www.rockol.it/news-703048/rivincita-del-vinile-180-grammi-storia-e-musica-serviti"}
+]
   },  {
     id: 33,
     name: 'Stereo 8',
@@ -622,7 +747,11 @@ export const DATA: Data[] =   [
     image: imgPath+'stereo8.jpg',
     license: '',
     spot: youtube+'uovdc3C08gQ',
-    notizie:  [{sito:"lastampa.it", name:"Il fascino degli Anni 60: sì, ma solo con le Stereo 8",link:"https://www.lastampa.it/2015/04/07/societa/il-fascino-degli-anni-s-ma-solo-con-le-stereo-quS9t2zEVA3qM4BkllEa9O/pagina.html"}]
+    notizie:  [
+      {sito:"lastampa.it", name:"Il fascino degli Anni 60: sì, ma solo con le Stereo 8",link:"https://www.lastampa.it/2015/04/07/societa/il-fascino-degli-anni-s-ma-solo-con-le-stereo-quS9t2zEVA3qM4BkllEa9O/pagina.html"}, 
+      {sito:"animamia.net", name:"Le grosse cassette audio Stereo 8 e le relative autoradio", link:"https://www.animamia.net/le-grosse-cassette-audio-stereo-8-e-le-relative-autoradio/"}, 
+      {sito:"stereo8.net", name:"Cos’è la stereo 8", link:"http://www.stereo8.net/cose-la-stereo-8/"}
+]
   }, {
     id: 34,
     name: 'Kodak Brownie',
@@ -634,14 +763,18 @@ export const DATA: Data[] =   [
     yearFrom: 1900,
     yearTo: 1986,
     author: 'Kodak',
-    latitude: 1,
-    longitude: 1,
+    latitude: 44,
+    longitude: -77,
     fill: foto,
     icon: iconePath+'brownie.png',
     image: imgPath+'brownie.jpg',
     license: '',
     spot: youtube+'6Zn3t3-2m2Y',
-    notizie: [{sito:"brownie.camera", name:"Box Brownie The Complete Overview",link:"https://www.brownie.camera/"}]
+    notizie: [
+      {sito:"brownie.camera", name:"Box Brownie The Complete Overview",link:"https://www.brownie.camera/"}, 
+      {sito:"daily.jstor.org", name:"How the Brownie Camera Made Everyone a Photographer", link:"https://daily.jstor.org/how-the-brownie-camera-made-everyone-a-photographer/"},
+      {sito: "instantclubitalia.com", name: "Il nuovo adattatore STAR35 e la Kodak Brownie Star ritorna di moda!", link: "http://instantclubitalia.com/la-kodak-brownie-star-ritorna-di-moda/"}
+]
   }, {
     id: 35,
     name: 'Leica M3',
@@ -653,13 +786,18 @@ export const DATA: Data[] =   [
     yearFrom: 1953 ,
     yearTo: 1966,
     author: 'Leitz',
-    latitude: 1,
-    longitude: 1,
+    latitude: 50,
+    longitude: 8,
     fill: foto,
     icon: iconePath+'leica.png',
     image: imgPath+'leica.jpg',
     license: '',
     spot: '',
-    notizie: [{sito:"leica-camera.it", name:"Leica Milestones: M3",link:"http://www.lab.leica-camera.it/portfolio-articoli/leica-milestones-m3/"}]
+    notizie: [
+      {sito:"leica-camera.it", name:"Leica Milestones: M3",link:"http://www.lab.leica-camera.it/portfolio-articoli/leica-milestones-m3/"}, 
+      {sito:"emanuelescicolone.it", name:"Leica M3: Quando la Fotografia è Poesia", link:"http://www.emanuelescicolone.it/blog/leica-m3-quando-la-fotografia-e-poesia"}, 
+      {sito:"wetzlar-historica-italia.it", name:"Leica M3", link:"http://www.wetzlar-historica-italia.it/m3.html"}  
+]
   }
 ]
+
