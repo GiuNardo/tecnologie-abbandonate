@@ -101,32 +101,40 @@ export class ArchivioComponent implements OnInit {
 
             if(d.author.toLocaleLowerCase().includes(this.author.toLocaleLowerCase()) && this.category==d.category){
             
+                var link = '';
+                if(d.spot!='') {
+                    link = 
+                        '<div id="div-video"><iframe width="500" height="320" src="' + d.spot + '? ' +
+                            'frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + 
+                        '</iframe></div>' 
+                }
+
                 document.getElementById("content").innerHTML += 
                 '<li id="elemento-archivio">'+
-                    '<div class="row main-row" >' +
-                        '<div class="img row">' +
-                            '<div class="col-7" id="image-parent><img  src="' + d.image + '"></div>' +
-                            '<div class="col-5" id="video-parent" style="width:100%">' + link + '</div>' +
+                    '<div class="row" >' +
+                        '<div class="row">' +
+                            '<div class="col-7" id="image-parent"><img  src="' + d.image + '"></div>' +
+                            '<div class="col-5" id="video-parent">' + link + '</div>' +
                         '</div>' +
                         '<div class="data-col">' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Nome: </div>' +
+                                '<div class="col-3 cell cell-title"> Nome: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.name + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Di: </div>' +
+                                '<div class="col-3 cell cell-title"> Di: </div>' +
                                 '<div class="col cell text-justify"><b>' + d.author + '</b></div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Anno invenzione: </div>' +
+                                '<div class="col-3 cell cell-title"> Anno invenzione: </div>' +
                                 '<div class="col cell ">' + d.yearFrom + '</div>' +
                             '</div>' +
                             '<div class="row">' + 
-                                '<div class="col-2 cell cell-title"> Anno ritiro: </div>' +
+                                '<div class="col-3 cell cell-title "> Anno ritiro: </div>' +
                                 '<div class="col cell ">' + d.yearTo + '</div>' +
                             '</div>' +
                             '<div class="row">' +
-                                '<div class="col-2 cell cell-title"> Descrizione: </div>' +
+                                '<div class="col-3 cell cell-title "> Descrizione: </div>' +
                                 '<div id="descrizione" class="col cell text-justify">' + d.description + ' </div>'+
                             '</div>' + 
                         '</div>' + 
