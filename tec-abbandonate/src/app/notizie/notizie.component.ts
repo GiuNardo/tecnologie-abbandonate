@@ -26,6 +26,11 @@ export class NotizieComponent implements OnInit {
   }
 
   createContent(){
+    this.data.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+  });
     document.getElementById("cerca").innerHTML = "Cerca per tecnologia";
     document.getElementById("input").style.width = "40%";
     document.getElementById("notizie-content").innerHTML = 
@@ -33,7 +38,7 @@ export class NotizieComponent implements OnInit {
         '.container-fluid{ padding: 50px!important; }'+
         '.cell-title{  color: #f8b500; font-size: 1.2em; letter-spacing: 1px; font-weight: 700;}' +
         '.article{height: 200px; margin-top:20px; border: 1px solid grey; overflow: scroll; text-align:center; padding:20px;background-color: #ffff;}' +
-        '.inner-article{margin-top:10px;}'+
+        '.inner-article{margin-top:10px; text-align:center;  margin-left: 50px;}'+
       '</style>';
       
     this.data.forEach(d => {
@@ -42,7 +47,7 @@ export class NotizieComponent implements OnInit {
     
         document.getElementById("notizie-content").innerHTML += 
           '<div class="article">Articoli riguardanti: <span class="cell-title"> '+ d.name +'</span>'+
-            '<div class="inner-article" id="'+d.id+'" style=" text-align: left; margin-left: 50px;">'+
+            '<div class="inner-article" id="'+d.id+'" >'+
             '</div>'+
           '</div>';
         

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import animateScrollTo from 'animated-scroll-to';
 
 import { DATA } from '../mock-data';
+import { Data } from '../data';
 
 @Component({
   selector: 'app-archivio',
@@ -34,6 +35,11 @@ export class ArchivioComponent implements OnInit {
   
 
   createContent(){
+    this.data.sort(function(a, b){
+        if(a.name < b.name) { return -1; }
+        if(a.name > b.name) { return 1; }
+        return 0;
+    });
 
     document.getElementById("cerca").innerHTML = "Cerca autore";
     document.getElementById("content").innerHTML = 
