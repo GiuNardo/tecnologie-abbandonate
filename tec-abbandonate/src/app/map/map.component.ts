@@ -147,13 +147,14 @@ export class MapComponent {
 					document.getElementById("ant-descr").innerHTML = d.shortDescription + 
 						"<br/> Da <b>" + d.dateFrom + "</b> a <b>" + d.dateTo + "</b>";
 					document.getElementById("ant-icon").innerHTML = "<img width='100px' src=" + d.icon + " />";
-					
+					document.getElementById("licenseIcon").innerHTML = "<div style='font-size:0.5em; margin-top:5px;'>License by:" +d.licenseIcon+"</div>"
 					document.getElementById("item-descr").innerHTML = '<p>' + d.description + '</p>';
 					document.getElementById("item-name").innerHTML = '<b>' + d.name + '</b>';
 					document.getElementById("item-aut").innerHTML = d.author;
 					document.getElementById("item-year-from").innerHTML = ""+d.yearFrom;
 					document.getElementById("item-year-to").innerHTML = ""+d.yearTo;
 					document.getElementById("item-img-parent").innerHTML = "<img id=\'item-image\' src=" + d.image + "></img>"
+					document.getElementById("license").innerHTML = "<div style='font-size:0.5em; margin-top:5px;'>License by:" +d.license+"</div>"
 					
 					if(d.spot!='') {
 						document.getElementById("item-video-parent").innerHTML = 

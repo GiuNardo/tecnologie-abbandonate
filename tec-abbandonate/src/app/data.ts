@@ -16,6 +16,7 @@ export class Data{
   icon: string;
   fill : string;
   license: string;
+  licenseIcon: string;
   spot: string;
   notizie: Notizia[];
 }
